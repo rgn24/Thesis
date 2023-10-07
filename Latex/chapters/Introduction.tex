@@ -1,0 +1,35 @@
+Many everyday phenomena that we observe are, contrary to expectations, not yet fully understood. This does not mean that they are not utilized in a variety of technical devices. In the case of wetting, we encounter many different things in everyday life, such as a drop on a window pane that seems to slide down randomly, or the sleeve of a sweater that seems to soak up water when washing hands.
+
+Nature has a head start in this effect and has produced creatures that can walk on water because they take advantage of the water's surface tension. The flora also uses surface tension, whether it's trees that wouldn't reach the size we know without the capillary effect, or the lotus flower, which, with its water-repellent (hydrophobic) surface, ensures that water rolls off and takes dirt with it in the process.
+
+Porous media, through their use in oxygenators, became lifesavers during the Corona pandemic by reoxygenating blood. The potential applications and necessities of this phenomenon could be demonstrated with many more examples. This work aims to describe the dynamics of capillary rise through simulations. A porous medium can be simplified as a collection of many small tubes. Insights from these small tubes can then be extrapolated to determine the behavior of the porous medium. Therefore, experiments with both porous media and individual capillaries are of great interest to understand how the rise in the capillary is designed. Simulations of these processes are also increasingly being carried out, as they have the advantage of fixing certain relevant material properties to examine their influence, or to look into areas that would not be possible with a conventional experimental setup.
+
+In this work, the rise of a liquid column (water) in a capillary is investigated. Specifically, for a two-phase system, the area around the interface in the water phase is examined, and how dissipative processes in this region influence the rise of the water column. Possible phase changes (evaporation, boiling, condensation, etc.) are not taken into account. An isothermal and isobaric system is also assumed. All fluids treated are Newtonian, and the flow can be assumed to be Poiseuille flow. Furthermore, newly implemented boundary conditions of the used solver, which are supposed to better represent the behavior of the contact line and contact angle, will also be checked. 
+
+This work will first discuss important findings in the description of capillary rise, the contact line, and the simulation of such problems with phase field methods in Chapter \ref{chap: BibliographyReview}. This is followed by an overview of the important influencing factors of wetting and their influence on the topics discussed in Chapter \ref{chap: wettingTheory}. Chapter \ref{chap: PhaseFieldMethod} provides an introduction to the phase field method and how it is implemented to simulate such problems. Chapter \ref{chap: Validation} shows that the solver used has already shown in many other simulations that it produces correct results and is applicable to these problems. Validation of the geometries used here is not possible due to their size, as they have a radius of 3 nm. It is not currently known that there are experiments that provide reliable results with a constant cross-section and such small radii. Subsequently, Chapter \ref{chap: CaseSetup} describes the setup of the simulations with descriptions of the geometry, material properties used, and solver settings. Finally, the results are discussed in Chapter \todo{ADD CHAPTER}, and an outlook for upcoming investigations is given in Chapter \todo{ADD CHAPTER}.
+
+The solver used here is \texttt{phaseFieldFoam}, which is an extension of the open-source environment \texttt{OpenFOAM-extend}. The version used of \texttt{OpenFOAM-extend} is 5.0, and the version of the solver is still in development. The further development and maintenance of the solver are carried out through a cooperation between KIT (Karlsruhe Institute of Technology) and TU Darmstadt, especially by Dr.-Ing. Xuan Cai and Dr.-Ing. Holger Marschall. The simulations for this research were conducted on the Lichtenberg high-performance computer of the TU Darmstadt.
+
+
+
+
+\todo[inline]{Here a introduction, but probably only after the most is done and the layout of the thesis is set.}
+
+The dynamics of a rising fluid in the capillary is the subject of many processes. In nature, for example, trees would not be able to grow as high as they do without the capillary effect, and in technology many processes with a porous medium exist. Porous media can be simplified as many small tubes through which a fluid travels. Therefore, this process has long been of great interest in science and yet there are many uncertainties in the description of the dynamics.   
+
+The Lucas Washburn equation, introduced in 1921 \cite{lucas_ueber_1918, washburn_dynamics_1921}, attempts to describe the height of the propagating fluid column as a function of time. This equation is sufficiently accurate for many applications.   
+  
+However, due to the assumptions made in the derivation of the equation, it is clear that it cannot be applied to every problem. Therefore, there are many approaches to adapt this equation to problems and simply maintain the behaviour of the equation. 
+
+It is shown, that the Lucas Washburn equation has its problems in early stages of the imbibition\cite{bosanquet_lv_1923, quere_inertial_1997}\todo{check if quere1997 is also a source. Probably talked about that. Maybe even Washburn talked about that? }, due to the undefined behaviour for $t=0$ and neglecting the inertia of the fluid. 
+
+The early stages of the imbibition process is yet to be understood and in this work we show how the different forces are acting on the meniscus for small time steps with a simulation of the such a problem. This simulations are done with the open source framework of foam extend, which is a fork of open foam. Here the department of mathmatics of the TU Darmstadt and the KIT developed a solver for a phase field approach. \todo{rework this regment.}
+
+The developed solver phaseFieldFoam is maintained and developed by the department of MMA at the Tu darmstadt and ... KIT. It is using the Phase field approach to solve the Navier Stokes Equations (NSE).
+
+In this work, first the attempts to describe the imbibition of a fluid in a capillay, especially for the early stages and small capillaies are discussed\todo{ref chapter}. Followed by the work, which has been done to simulate such problems with the phase field approach\todo{ref chapter}. Important interrelationships and derivations of the process of wetting is discussed, again followed by the equivalent numerical relations\todo{ref to both chapters}. How the simulations are setup and the results are in the chapers \todo{chapter} and \todo{chapter}.  
+
+
+Lucas needed to prewet the tube to get the results he predicted 
+
+In this work 
