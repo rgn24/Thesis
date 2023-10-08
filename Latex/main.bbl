@@ -253,6 +253,69 @@
       \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\buttPhysicsChemistryInterfaces.pdf
       \endverb
     \endentry
+    \entry{cai2015NumericalSimulationWetting}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4dfaacfeac6953db34581372ec8ba607}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57745d9509625ddbbcfbf69f96ff467d}{%
+           family={Deutschmann},
+           familyi={D\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{fullhash}{893238832afac2b5b2f6b2fc13511ab6}
+      \strng{bibnamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authorbibnamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authornamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authorfullhash}{893238832afac2b5b2f6b2fc13511ab6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phase-field method coupled with the Navier-Stokes equations is a rather new approach for scale-resolving numerical simulation of interfacial two-phase flows. The intention is to implement it as finite-volume method in the open source library for computational continuum mechanics OpenFOAMâ and make it freely available. An overview on the governing equations is given and the numerical method is shortly discussed. The focus is on application and validation of the code for some fundamental wetting phenomena, namely the capillary rise in a narrow channel and the spreading of a droplet on a flat surface, which is chemically homogeneous or regularly patterned. The numerical results on static meshes agree well with analytical solutions and experimental/numerical results from literature. Also, first 3D finite-volume simulations with adaptive mesh refinement near the interface are presented as a key element to achieve CPU-time efficient simulations.}
+      \field{issn}{0930-7516, 1521-4125}
+      \field{journaltitle}{Chemical Engineering \& Technology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Chem Eng \&amp; Technol}
+      \field{title}{Numerical {{Simulation}} of {{Wetting Phenomena}} with a {{Phase}}‐{{Field Method Using OpenFOAM}}®}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{38}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1985\bibrangedash 1992}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/ceat.201500089
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\cai2015NumericalSimulationWetting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/ceat.201500089
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/ceat.201500089
+      \endverb
+    \endentry
     \entry{carlsonCapillarityDynamicWetting2012}{thesis}{}
       \name{author}{1}{}{%
         {{hash=ff2f1c2d0c27f2e4573cc08f2ad57504}{%
@@ -588,6 +651,60 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708009661
       \endverb
     \endentry
+    \entry{holzinger2021DirectNumericalSimulation}{software}{}
+      \name{author}{2}{}{%
+        {{hash=9474b09ab9890d5cd285abbdac5c6227}{%
+           family={Holzinger},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=efbfa9bbcd5cf2b216b1b34ba90f6dd4}{%
+           family={{TU Darmstadt}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \name{editora}{1}{}{%
+        {{hash=0b9a409a3d28bed0b9d7a8cc870e5991}{%
+           family={{Technical University Of Darmstadt}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Technical University of Darmstadt}%
+      }
+      \strng{namehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{fullhash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{bibnamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authorbibnamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authornamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authorfullhash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{editorabibnamehash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \strng{editoranamehash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \strng{editorafullhash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{editoratype}{collaborator}
+      \field{title}{Direct {{Numerical Simulation}} of Dynamic Droplet Wetting on Superhydrophobic Substrates by Means of a Diffuse-Interface Phase-Field Method Using {{OpenFOAM}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48328/TUDATALIB-473
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\holzinger2021DirectNumericalSimulation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2689
+      \endverb
+      \verb{url}
+      \verb https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2689
+      \endverb
+      \keyw{312-01 Mathematics,312-01 Mathematik,404-03 Fluid Mechanics,404-03 Strömungsmechanik,510,620,diffuse interface model,droplet rebound,droplet wetting,phase-field method,superhydrophobic substrate}
+    \endentry
     \entry{jacqmin1999CalculationTwoPhaseNavier}{article}{}
       \name{author}{1}{}{%
         {{hash=b0030e9a33a075d5004899b13c317193}{%
@@ -602,6 +719,7 @@
       \strng{authorbibnamehash}{b0030e9a33a075d5004899b13c317193}
       \strng{authornamehash}{b0030e9a33a075d5004899b13c317193}
       \strng{authorfullhash}{b0030e9a33a075d5004899b13c317193}
+      \field{extraname}{1}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -633,6 +751,91 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999199963325
+      \endverb
+    \endentry
+    \entry{jacqmin2000ContactlineDynamicsDiffuse}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b0030e9a33a075d5004899b13c317193}{%
+           family={Jacqmin},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{fullhash}{b0030e9a33a075d5004899b13c317193}
+      \strng{bibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorbibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authornamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorfullhash}{b0030e9a33a075d5004899b13c317193}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An investigation is made into the moving contact line dynamics of a Cahn–Hilliard–van der Waals (CHW) diffuse mean-field interface. The interface separates two incompressible viscous fluids and can evolve either through convection or through diffusion driven by chemical potential gradients. The purpose of this paper is to show how the CHW moving contact line compares to the classical sharp interface contact line. It therefore discusses the asymptotics of the CHW contact line velocity and chemical potential fields as the interface thickness ε and the mobility κ both go to zero. The CHW and classical velocity fields have the same outer behaviour but can have very different inner behaviours and physics. In the CHW model, wall–liquid bonds are broken by chemical potential gradients instead of by shear and change of material at the wall is accomplished by diffusion rather than convection. The result is, mathematically at least, that the CHW moving contact line can exist even with no-slip conditions for the velocity. The relevance and realism or lack thereof of this is considered through the course of the paper. The two contacting fluids are assumed to be Newtonian and, to a first approximation, to obey the no-slip condition. The analysis is linear. For simplicity most of the analysis and results are for a 90° contact angle and for the fluids having equal dynamic viscosity μ and mobility κ. There are two regions of flow. To leading order the outer-region velocity field is the same as for sharp interfaces (flow field independent of r ) while the chemical potential behaves like r −ξ , ξ = π/2/max\{θ eq , π − θ eq \}, θ eq being the equilibrium contact angle. An exception to this occurs for θ eq = 90°, when the chemical potential behaves like ln r / r . The diffusive and viscous contact line singularities implied by these outer solutions are resolved in the inner region through chemical diffusion. The length scale of the inner region is about 10√μκ – typically about 0.5–5 nm. Diffusive fluxes in this region are O (1). These counterbalance the effects of the velocity, which, because of the assumed no-slip boundary condition, fluxes material through the interface in a narrow boundary layer next to the wall. The asymptotic analysis is supplemented by both linearized and nonlinear finite difference calculations. These are made at two scales, experimental and nanoscale. The first set is done to show CHW interface behaviour and to test the qualitative applicability of the CHW model and its asymptotic theory to practical computations of experimental scale, nonlinear, low capillary number flows. The nanoscale calculations are carried out with realistic interface thicknesses and diffusivities and with various assumed levels of shear-induced slip. These are discussed in an attempt to evaluate the physical relevance of the CHW diffusive model. The various asymptotic and numerical results together indicate a potential usefullness for the CHW model for calculating and modelling wetting and dewetting flows.}
+      \field{day}{10}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{Contact-Line Dynamics of a Diffuse Fluid Interface}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{402}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{57\bibrangedash 88}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1017/S0022112099006874
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\jacqmin2000ContactlineDynamicsDiffuse.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112099006874/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112099006874/type/journal_article
+      \endverb
+    \endentry
+    \entry{johnw.FreeEnergyNonuniform1958}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b728d15253ea1b20aedce960c88f25c1}{%
+           family={John\bibnamedelima W.},
+           familyi={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Cahn},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f18a6ee388b3805d0930987ebcf5943b}{%
+           family={John\bibnamedelima E.},
+           familyi={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Hillard},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{fullhash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{bibnamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authorbibnamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authornamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authorfullhash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Free {{Energy}} of a {{Nonuniform System}}. {{I}}. {{Interfacial Free Energy}}}
+      \field{volume}{28}
+      \field{year}{1958}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1063/1.1744102
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs
       \endverb
     \endentry
     \entry{lucas1918UeberZeitgesetzKapillaren}{article}{}
@@ -1038,6 +1241,64 @@
       \endverb
       \verb{url}
       \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01762
+      \endverb
+    \endentry
+    \entry{yue2010SharpinterfaceLimitCahn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d1f4433e81c19c34d5a3081f8390f453}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={Pengtao},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc80e7321e1acaee4784082d5b7594ca}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chunfeng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e18b40642b49ddddd9c992fcf654b7c8}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{fullhash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{bibnamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authorbibnamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authornamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authorfullhash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Diffuse-interface models may be used to compute moving contact lines because the Cahn–Hilliard diffusion regularizes the singularity at the contact line. This paper investigates the basic questions underlying this approach. Through scaling arguments and numerical computations, we demonstrate that the Cahn–Hilliard model approaches a sharp-interface limit when the interfacial thickness is reduced below a threshold while other parameters are fixed. In this limit, the contact line has a diffusion length that is related to the slip length in sharp-interface models. Based on the numerical results, we propose a criterion for attaining the sharp-interface limit in computing moving contact lines.}
+      \field{day}{25}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{Sharp-Interface Limit of the {{Cahn}}–{{Hilliard}} Model for Moving Contact Lines}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{645}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{279\bibrangedash 294}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1017/S0022112009992679
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\yue2010SharpinterfaceLimitCahn.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112009992679/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112009992679/type/journal_article
       \endverb
     \endentry
     \entry{zhmud2000DynamicsCapillaryRise}{article}{}
