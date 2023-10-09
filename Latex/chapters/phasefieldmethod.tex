@@ -1,3 +1,23 @@
+\section{Simulating the Wetting Processes}
+Die Simualation einer zwei Phasenströmung kann über mehrere Wege erfolgen. Ein üblicher weg sind die \texttt{Volume-of-Fluid} und die \texttt{Level-Set} Methode. Beide Methoden verwenden ein scharfes interface und beruhen auf der Hydrodynamischen Theorie aus Kapitel \ref{paragraph: hydrodynTheory}. Darüber hinaus sind es \textit{interface capturing} Methoden und benötigen daher keine neue neuberechnung des Rechennetzes über den Zeitraum der Simulation. Andere Methoden, die dem Interface folgen (\textit{interface tracking}), sind auch möglich. Einer der größten nachteile ist es, dass die bewegte Kontatktlinie bei verwendung der Haftbedingung von Modellen abhängig ist\cite{carlsonCapillarityDynamicWetting2012}. 
+Ein weitere häufig verwendete Methode sind \texttt{Molecular Dynamic} Simulationen. Da in diesem Fall Moleküle einzeln Simuliert werden, ist diese Methode nur auf kleine Probleme anwendbar, ohne die Computational costs zu hoch zu treiben. 
+Die in dieser Arbeit verwendete Methode ist die Phasenfeld Methode. Diese metohde modelliert die zwei oder auch mehrphasenströmung über die freie Energie des Systems. Eine genauere Beschreibung dieser Methode erfolgt in Kapitel \ref{chap: PhaseFieldMethod}. \todo[inline]{Elaborate or maybe move entire section to phase field? Or maybe case setup with a reasoning why phasefield? }
+
+
+
+\paragraph{Phase Field Theory}
+Die Phasenfeld theorie verwendet Ansätze beider Modelle unter verwendung der Beschreibung der freien Energie des Systems.\todo{ref chapter PhaseField}
+
+Daher ist es auch notwendig für die Phasenfeldmethode sowohl hydrodynamische Ansätze als auch Ansätze der Molekular Kinetik Theorie zu verwenden \cite{blake2006PhysicsMovingWetting, carlsonCapillarityDynamicWetting2012}.
+
+vof and level setzt
+difference interface tracking and capituring? 
+
+Free energy system 
+
+
+
+
 \todo[inline]{einleitende Worte}
 
 Wie bereits in Kapitel \ref{sec: Wetting_SurfaceTension} beshcrieben, gibt es unterschiedliche Möglichkeiten das Interface zu beschreiben. Hydrodynamische Modelle beschreiben das Interface so, dass am Übergang der Phasen die Stoffwerte springen. Ein Diffuses Interface hingegen, beschreibt die größen anders. \todo{picture of interfaces}
