@@ -404,6 +404,74 @@
       \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\carlsonCapillarityDynamicWetting.pdf
       \endverb
     \endentry
+    \entry{chenCriticalReviewPseudopotential2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=685d97480ebafb5a158e7c3dfdcb69a8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3240d36c785be3f52f4ff59cf04f4ddf}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Qinjun},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=adb1c5c86f346b28bc459744eb0fa326}{%
+           family={Mu},
+           familyi={M\bibinitperiod},
+           given={Yutong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7f9d24f9aec1cf324390f57611276397}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ya-Ling},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=dda3f9b1dad02bc6be04c54c07492545}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Wen-Quan},
+           giveni={W\bibinithyphendelim Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0145314fb6db74c3c705bc6b2c8f435}
+      \strng{fullhash}{2ff3f3aad1f20d3fda62d6b60b8e61ee}
+      \strng{bibnamehash}{d0145314fb6db74c3c705bc6b2c8f435}
+      \strng{authorbibnamehash}{d0145314fb6db74c3c705bc6b2c8f435}
+      \strng{authornamehash}{d0145314fb6db74c3c705bc6b2c8f435}
+      \strng{authorfullhash}{2ff3f3aad1f20d3fda62d6b60b8e61ee}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article presents a critical review of the theory and applications of a multiphase model in the community of the lattice Boltzmann method (LBM), the pseudopotential model proposed by Shan and Chen (1993) [4], which has been successfully applied to a wide range of multiphase flow problems during the past two decades. The first part of the review begins with a description of the LBM and the original pseudopotential model. The distinct features and the limitations of the original model are described in detail. Then various enhancements necessary to improve the pseudopotential model in terms of decreasing the spurious currents, obtaining high density/viscosity ratio, reducing thermodynamic inconsistency, unraveling the coupling between surface tension and equations of state (EOS), and unraveling the coupling between viscosity and surface tension, are reviewed. Then the fluid–solid interactions are presented and schemes to obtain different contact angles are discussed. The final section of this part focuses on the multi-component multiphase pseudopotential model. The second part of this review describes fruitful applications of this model to various multiphase flows. Coupling of this model with other models for more complicated multiple physicochemical processes are also introduced in this part. Ó 2014 Elsevier Ltd. All rights reserved.}
+      \field{issn}{00179310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{shortjournal}{International Journal of Heat and Mass Transfer}
+      \field{shorttitle}{A Critical Review of the Pseudopotential Multiphase Lattice {{Boltzmann}} Model}
+      \field{title}{A Critical Review of the Pseudopotential Multiphase Lattice {{Boltzmann}} Model: {{Methods}} and Applications}
+      \field{urlday}{10}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{76}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{210\bibrangedash 236}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2014.04.032
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\chenCriticalReviewPseudopotential2014.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931014003378
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931014003378
+      \endverb
+    \endentry
     \entry{cox1986DynamicsSpreadingLiquids}{article}{}
       \name{author}{1}{}{%
         {{hash=e8bf3cfbc08ef60fb0232b79866c5269}{%
@@ -449,6 +517,75 @@
       \endverb
       \verb{url}
       \verb http://www.journals.cambridge.org/abstract_S0022112086000332
+      \endverb
+    \endentry
+    \entry{datta2023EarlyStageLiquidInfiltration}{article}{}
+      \name{author}{5}{}{%
+        {{hash=862739fa9b395304cadafdde60752fae}{%
+           family={Datta},
+           familyi={D\bibinitperiod},
+           given={Deeptayan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=301bda2788798ef343161210232e2997}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Abhishek\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f19295c2c8bee05248e05cdbfd48b247}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cfcf62c2547f63a10c983e664222389b}{%
+           family={Chakraborty},
+           familyi={C\bibinitperiod},
+           given={Monojit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=406c0f0a4981325f880318fd5478c5c5}{%
+           family={DasGupta},
+           familyi={D\bibinitperiod},
+           given={Sunando},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{461ad37a6f78dba258bc39262e4e0bc8}
+      \strng{fullhash}{ecca5f4454130337c6568ee48ec13aab}
+      \strng{bibnamehash}{461ad37a6f78dba258bc39262e4e0bc8}
+      \strng{authorbibnamehash}{461ad37a6f78dba258bc39262e4e0bc8}
+      \strng{authornamehash}{461ad37a6f78dba258bc39262e4e0bc8}
+      \strng{authorfullhash}{ecca5f4454130337c6568ee48ec13aab}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Liquid infiltration is one of the commonly adapted flow mechanisms in microscale/nanoscale heat-transfer applications. The theoretical modeling of dynamic infiltration profile in the microscale/nanoscale requires a deep study, because the acting forces are entirely different from those of a large-scale system. Herein, a model equation is developed from the fundamental force balance at the microscale/nanoscale level, to capture the dynamic infiltration flow profile. Molecular kinetic theory (MKT) is used to predict the dynamic contact angle. Molecular dynamics (MD) simulations are performed to study the capillary infiltration in two different geometries. The infiltration length is computed from the simulation results. The model is also evaluated over surfaces having different surface wettability. The generated model provides a better estimation of the infiltration length, compared to the well-established models. The developed model is expected to aid in the designing of microscale/nanoscale devices where liquid infiltration plays a key role.}
+      \field{day}{7}
+      \field{issn}{0743-7463, 1520-5827}
+      \field{journaltitle}{Langmuir}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{9}
+      \field{shortjournal}{Langmuir}
+      \field{title}{Early-{{Stage Liquid Infiltration}} in {{Nanoconfinements}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{39}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3301\bibrangedash 3311}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.langmuir.2c03154
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\datta2023EarlyStageLiquidInfiltration.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.2c03154
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.2c03154
       \endverb
     \endentry
     \entry{delannoy2019DualRoleViscosity}{article}{}
@@ -516,6 +653,65 @@
       \endverb
       \verb{url}
       \verb http://xlink.rsc.org/?DOI=C8SM02485E
+      \endverb
+    \endentry
+    \entry{dimitrov2007CapillaryRiseNanopores}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7d1d34ea3e9fec2de7dde22bb208fe36}{%
+           family={Dimitrov},
+           familyi={D\bibinitperiod},
+           given={D.\bibnamedelimi I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=a704c31d27424910ac7738fed42cc847}{%
+           family={Milchev},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2c30ae80b3977f7b00db06a48b7506bb}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \strng{fullhash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \strng{bibnamehash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \strng{authorbibnamehash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \strng{authornamehash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \strng{authorfullhash}{aceeb632bf4b6059f4d41be09b2186c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{31}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{shorttitle}{Capillary {{Rise}} in {{Nanopores}}}
+      \field{title}{Capillary {{Rise}} in {{Nanopores}}: {{Molecular Dynamics Evidence}} for the {{Lucas-Washburn Equation}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{99}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{054501}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.99.054501
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\dimitrov2007CapillaryRiseNanopores.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.99.054501
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.99.054501
       \endverb
     \endentry
     \entry{dreyer1994CapillaryRiseLiquid}{article}{}
@@ -707,6 +903,75 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708009661
+      \endverb
+    \endentry
+    \entry{hagg2019DirekteNumerischeSimulation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=67fc38dfb76f6499a9cabcf3c9b3e8b6}{%
+           family={Hagg},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editora}{4}{}{%
+        {{hash=13ea387d0d216fb595c37e1a1d9444b6}{%
+           family={Frohnapfel},
+           familyi={F\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod}}}%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=419fe3ac091623dda5376f3ef64fee36}{%
+           family={Eifert},
+           familyi={E\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Karlsruher Institut für Technologie (KIT)}%
+      }
+      \strng{namehash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{fullhash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{bibnamehash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{authorbibnamehash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{authornamehash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{authorfullhash}{67fc38dfb76f6499a9cabcf3c9b3e8b6}
+      \strng{editorabibnamehash}{e57c8992a28ebb05364a1cde312f85ca}
+      \strng{editoranamehash}{e57c8992a28ebb05364a1cde312f85ca}
+      \strng{editorafullhash}{1c4340f1a7af1b6eb3d1b96289220b1a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In dieser Arbeit wird das transiente Benetzungsverhalten von Wasser in komplexen Dichtspaltgeometrien simulativ untersucht. Das Benetzungsverhalten führt zu einem Kapillareffekt, der das Wasser in den Spalt treibt. Für die Darstellung dieses Kapillareffektes spielt die Bewegung der Dreiphasenkontaktlinie eine entscheidende Rolle und ist wegen der Haftbedingung an Wänden nicht trivial lösbar. Aus diesem Grund wird die Phasenfeld-Methode angewendet, die eine Bewegung der Dreiphasenkontaklinie durch Diffusion ermöglicht. Dabei wird der Löser "PhaseFieldFoam“ verwendet, der in einer Kooperation zwischen dem Karlsruher Institut für Technologie und der Technischen Universität Darmstadt als Erweiterung zu OpenFOAM entwickelt wird. Zunächst wird das Eindringverhalten von Wasser in eine Kapillare und einen Spalt zwischen zwei parallelen Platten anhand analytischer Vergleichslösungen validiert. Hierzu wird eine Parameterstudie mit Kontaktwinkel von 15°, 45° und 85° und Kapillardurchmesser/Plattenabstände von 1 mm 0,1 mm und 0,01 mm durchgeführt. Es ergeben sich gute Übereinstimmungen mit der analytischen Lösung, die allerdings stark von der richtigen Wahl des Mobilitätsparameters abhängen. Anschließend werden drei verschiedene komplexe Dichtspaltgeometrien simuliert und miteinander verglichen. Es kann festgestellt werden, dass das Verhalten in komplexen Dichtspaltgeometrien und der so genannte pinning-Effekt phänomenologisch korrekt abgebildet werden. Zuletzt wird ein Dichtspalt simuliert, bei dem der Kontaktwinkel linear entlang der Wand variiert. Es zeigt sich, dass der variable Kontaktwinkel von der Simulation korrekt wiedergegeben wird.}
+      \field{editoratype}{collaborator}
+      \field{langid}{ngerman}
+      \field{title}{Direkte numerische Simulation von transientem Benetzungsverhalten in komplexen Dichtspaltgeometrien unter Verwendung von phaseFieldFoam}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5445/IR/1000145948
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\hagg2019DirekteNumerischeSimulation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://publikationen.bibliothek.kit.edu/1000145948
+      \endverb
+      \verb{url}
+      \verb https://publikationen.bibliothek.kit.edu/1000145948
       \endverb
     \endentry
     \entry{holzinger2021DirectNumericalSimulation}{software}{}
@@ -912,6 +1177,82 @@
       \verb https://www.cambridge.org/core/product/identifier/S0022112099006874/type/journal_article
       \endverb
     \endentry
+    \entry{jamshidi2019SuitabilityPhasefieldAlgebraic}{article}{}
+      \name{author}{7}{}{%
+        {{hash=c3906f42ae1991ed5a4cefe1b66f8078}{%
+           family={Jamshidi},
+           familyi={J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fdcd2c1aa47e4e5d03ffe582f8e1a9fe}{%
+           family={Heimel},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=08c5388b6e2c26a65997a13290c858e2}{%
+           family={Hasert},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=89eb62d21c9a7b2dbf67b6cb00cd59a1}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6f5973f7c6055a2a7771f6caafbfda9a}{%
+           family={Deutschmann},
+           familyi={D\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=96e61e204a8e3a6d5fb3f5aa9c87bcf4}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=52d91c36e262d8ca2cdce4fe22788c21}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{07bb75d4989dcb4bf9eff014cec64b72}
+      \strng{fullhash}{11fc03095ab9f16b85cd459c720f1781}
+      \strng{bibnamehash}{07bb75d4989dcb4bf9eff014cec64b72}
+      \strng{authorbibnamehash}{07bb75d4989dcb4bf9eff014cec64b72}
+      \strng{authornamehash}{07bb75d4989dcb4bf9eff014cec64b72}
+      \strng{authorfullhash}{11fc03095ab9f16b85cd459c720f1781}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00104655}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shortjournal}{Computer Physics Communications}
+      \field{title}{On Suitability of Phase-Field and Algebraic Volume-of-Fluid {{OpenFOAM}}® Solvers for Gas–Liquid Microfluidic Applications}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{236}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{72\bibrangedash 85}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.cpc.2018.10.015
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\jamshidi2019SuitabilityPhasefieldAlgebraic.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0010465518303631
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0010465518303631
+      \endverb
+    \endentry
     \entry{johnw.FreeEnergyNonuniform1958}{article}{}
       \name{author}{2}{}{%
         {{hash=b728d15253ea1b20aedce960c88f25c1}{%
@@ -946,6 +1287,85 @@
       \endverb
       \verb{file}
       \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs
+      \endverb
+    \endentry
+    \entry{lacisNanoscaleShearedDroplet2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=ea715d3069651cd15840fa22086472cd}{%
+           family={Lācis},
+           familyi={L\bibinitperiod},
+           given={Uǧis},
+           giveni={U\bibinitperiod}}}%
+        {{hash=770a209992dda34003cd0519b762a09f}{%
+           family={Pellegrino},
+           familyi={P\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d5f601643e00ebbe552abdae9d92c625}{%
+           family={Sundin},
+           familyi={S\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f4d8825f44bff20e711bcbee0996c6a}{%
+           family={Amberg},
+           familyi={A\bibinitperiod},
+           given={Gustav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=665e58ecda52aceb1a82768ea5b076df}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cddff82b78471ae84b21c2892b99c68b}{%
+           family={Hess},
+           familyi={H\bibinitperiod},
+           given={Berk},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b206eb44e907e148fb23dbcdd71155b5}{%
+           family={Bagheri},
+           familyi={B\bibinitperiod},
+           given={Shervin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b729f4b4e9db52b2b4aa3fc1e5578fa7}
+      \strng{fullhash}{79fbd0723e0ddb0b3b4eabe0b5e08952}
+      \strng{bibnamehash}{b729f4b4e9db52b2b4aa3fc1e5578fa7}
+      \strng{authorbibnamehash}{b729f4b4e9db52b2b4aa3fc1e5578fa7}
+      \strng{authornamehash}{b729f4b4e9db52b2b4aa3fc1e5578fa7}
+      \strng{authorfullhash}{79fbd0723e0ddb0b3b4eabe0b5e08952}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The motion of the three-phase contact line between two immiscible fluids and a solid surface arises in a variety of wetting phenomena and technological applications. One challenge in continuum theory is the effective representation of molecular motion close to the contact line. Here, we characterize the molecular processes of the moving contact line to assess the accuracy of two different continuum two-phase models. Specifically, molecular dynamics simulations of a two-dimensional droplet between two moving plates are used to create reference data for different capillary numbers and contact angles. We use a simple-point-charge/extended water model. This model provides a very small slip and a more realistic representation of the molecular physics than Lennard-Jones models. The Cahn–Hilliard phase-field model and the volume-of-fluid model are calibrated against the drop displacement from molecular dynamics reference data. It is shown that the calibrated continuum models can accurately capture droplet displacement and droplet break-up for different capillary numbers and contact angles. However, we also observe differences between continuum and atomistic simulations in describing the transient and unsteady droplet behaviour, in particular, close to dynamical wetting transitions. The molecular dynamics of the sheared droplet provide insight into the line friction experienced by the advancing and receding contact lines. The presented results will serve as a stepping stone towards developing accurate continuum models for nanoscale hydrodynamics.}
+      \field{day}{10}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{shorttitle}{Nanoscale Sheared Droplet}
+      \field{title}{Nanoscale Sheared Droplet: Volume-of-Fluid, Phase-Field and No-Slip Molecular Dynamics}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{940}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{A10}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/jfm.2022.219
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\lacisNanoscaleShearedDroplet2022.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112022002191/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112022002191/type/journal_article
       \endverb
     \endentry
     \entry{lucas1918UeberZeitgesetzKapillaren}{article}{}
@@ -993,6 +1413,79 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/BF01461107
+      \endverb
+    \endentry
+    \entry{martic2002MolecularDynamicsSimulation}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dc9c3fd7c8378abb67d4aabbd12d67ad}{%
+           family={Martic},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6734271f6327815c3103315b14f20d88}{%
+           family={Gentner},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=226d253f76c94211afff8b3f648edb25}{%
+           family={Seveno},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0c510c57841f64eda887decf98442b36}{%
+           family={Coulon},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=78a9984a704185b4b9695f2724ccfa05}{%
+           family={De\bibnamedelima Coninck},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7d41343151d02ad1e6a4924ccc53eecd}{%
+           family={Blake},
+           familyi={B\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9779f022bd26420128aae6700d7b6f1e}
+      \strng{fullhash}{3df13c834e36db44b0a0fcaaa4ebe7b0}
+      \strng{bibnamehash}{9779f022bd26420128aae6700d7b6f1e}
+      \strng{authorbibnamehash}{9779f022bd26420128aae6700d7b6f1e}
+      \strng{authornamehash}{9779f022bd26420128aae6700d7b6f1e}
+      \strng{authorfullhash}{3df13c834e36db44b0a0fcaaa4ebe7b0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0743-7463, 1520-5827}
+      \field{journaltitle}{Langmuir}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{21}
+      \field{shortjournal}{Langmuir}
+      \field{title}{A {{Molecular Dynamics Simulation}} of {{Capillary Imbibition}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{18}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{7971\bibrangedash 7976}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1021/la020068n
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\martic2002MolecularDynamicsSimulation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/la020068n
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/la020068n
       \endverb
     \endentry
     \entry{mohammadkarim2022ReviewPhysicsMoving}{article}{}

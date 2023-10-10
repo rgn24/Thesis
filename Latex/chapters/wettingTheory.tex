@@ -132,8 +132,8 @@ Darin sind sowohl $n$ als auch $K$ von der Temperatur abhängige Konstanten. 191
     z(t) = \sqrt{\frac{r\sigma\cos\theta_e}{2\eta}t}
 \end{equation}
 Damit entwickelten sie unabhängig voneinander eine Gleichung mit der der Kapillare Aufstieg anhand von Stoffwerten und Messgrößen beschrieben werden kann. Daher entwickelte sie über die Jahre große Popularität. Durch die Vernachlässigung einzelner terme und vereinafachungen im System ist diese Gleichung jedoch nicht immer präzise. Washburn selbst wies darauf hin, dass er, um die vorhersage der Gleichung zu treffen die erfolgten Experimente so aufbauen musste, dass die Kapillare prewetted wurden. 
-Daher wurden für verschiedene Probleme anpassungen an diese Gleichung vorgenommen
-\todo[inline]{Wu2017 \cite{wu2017CapillaryRiseValidity} untersichte mehrere Modelle der Art, dass der dynamische Kontatkwinkel untersucht wurde. }
+Daher wurden für verschiedene Probleme anpassungen an diese Gleichung vorgenommen \cite{dimitrov2007CapillaryRiseNanopores}.Wu et al. \cite{wu2017CapillaryRiseValidity} untersuche mehrere Modelle und verglich sie mit Experimenten. 
+\todo[inline]{Wu2017 \cite{wu2017CapillaryRiseValidity} untersuchte mehrere Modelle der Art, dass der dynamische Kontatkwinkel untersucht wurde. }
 (\todo{cite papers; dimitrov,... check!!}. Darin wird jedoch stets angenommen, dass die Höhe des Meniskus nach $z(t)\sim \sqrt{t}$ anwächst.
 Bosanquet \cite{bosanquet1923LVFlowLiquids} deutete 1923 in seiner Arbeit darauf hin, dass Gleichung \ref{eq: LW-Eq} für $t\xrightarrow{}0$ zu unphysikalischem verhalten führen wird und entwickelte ebenfalls eine Gleichung, die dieses Problem beibehielt, jedoch nun auch die Trägheit mit einbezog und für frühe Zeitpunkte der imbibition eine bessere vorhersage des Aufstiegs geben kann. \todo{cite papers. look it up you had some.}
 Siegel \cite{siegel1961TransientCapillaryRise} untersuchte das Aufstiegsverhalten unter mikrogravitation und stellte ein lineares Wachstum fest. Erreichte dabei jedoch nicht das Lucas-Washburn regime. Zhmud et al. \cite{zhmud2000DynamicsCapillaryRise} wies ebenfalls auf die Probleme für Zeiten nahe $0$ aus Glecihung \ref{eq: LW-Eq} hin und beschrieb einen quadratischen zusammenhang für die zeiten, in denen das Fluid in die Kapillare gezogen wird, gefolgt von dem bekannten Lucas-Washburn Regime.
@@ -164,15 +164,23 @@ Da nun das sich bewegende System betrachtet wird, wird die Gleichung \ref{eq: Ne
 \begin{equation}
     \pi r^{2}\rho z \frac{du}{dt}= 2\pi r\sigma \cos\theta_{m}+\pi r^{2}\rho gz-8\pi \sigma z \dot{z} -2\pi r \sigma \cos \theta_{m}f
 \end{equation}
-Mit den ersten beiden Termen als treibende Kräfte und den letzten beiden als Widerstandskräfte.
+Mit den ersten beiden Termen als treibende Kräfte und den letzten beiden als Widerstandskräfte. Der letzte Term ist hinzugekommen und wirkt als Korrektur für die tatsache, dass der dynamische Kontaktwinkel nicht dem makroskopischen Kontaktwinkel entspricht.
 
-
-Hier folgt nach delanoy die arbeit von ruiz gutierrez. Darin hat er Gleichugn \ref{eq: NewtonDynCapillary} erweitert, um die Abweichung vom statischen kontaktwinkel zu berücksichtigen. Auf unseren Fall Anpassen. (GL 2.7)
-
-
+Im folgenden wurden dimensionslose größen eingeführt und vier Fälle definiert. Jeweils zwei mit großer und klener Laplace Zahl, bzw. großem und kleinen verhältnis der Längenskalen. Mit den verwendeten Größen in dieser Arbeit sollte damit der Fall drei von Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} vorliegen. Damit sagen sie vorher, dass das Quadratische regime nicht auftreten wird und der Aufstieg mit einem linearen Gebiet beginnt und schließlich zum Lucas-Washburn Regime übergeht.
 
 
 
+
+
+
+\todo[inline]{maybe use this eq instead of shorted one?}
 \begin{equation}
     \pi r^2\rho l\frac{\mathrm{d}u}{\mathrm{d}t}=2\pi r\gamma\cos\theta_a+\pi r^2\rho gh-8\pi\mu lu-\frac{3}{2}\pi r^2\rho u^2-2\pi r\gamma\cos\theta_af
 \end{equation}
+
+
+\section{Simulating the Wetting Processes}
+Die Simualation einer zwei Phasenströmung kann über mehrere Wege erfolgen. Ein üblicher weg sind die \texttt{Volume-of-Fluid} und die \texttt{Level-Set} Methode. Beide Methoden verwenden ein scharfes interface und beruhen auf der Hydrodynamischen Theorie aus Kapitel \ref{paragraph: hydrodynTheory}. Darüber hinaus sind es \textit{interface capturing} Methoden und benötigen daher keine neue neuberechnung des Rechennetzes über den Zeitraum der Simulation. Andere Methoden, die dem Interface folgen (\textit{interface tracking}), sind auch möglich. Einer der größten nachteile der genannten Methoden ist es, dass die bewegte Kontatktlinie bei verwendung der Haftbedingung von Modellen abhängig ist\cite{carlsonCapillarityDynamicWetting2012}. Darüber hinaus kann die Berechnung der Oberflächenspnnung ein Problem darstellen. Hier muss die Krümmung der Oberfläche berechnet werden, was zu vergleichsweise hohen numerischen Fehlern führen kann \cite{jamshidi2019SuitabilityPhasefieldAlgebraic,hagg2019DirekteNumerischeSimulation}. 
+Die Lattice-Boltzmann Methode verwendet Kollisionsmodelle, um das Verhalten des Fluids zu beschrieben. Grenzflächenspannungen können durch Modifikationen berücksichtigt werden. Hier gibt es ansätze, die vielversprechend sind und einige auch mit der Phasenfeld Methode vergleichbar sind. Jedoch ist eins der größten Probleme die limitierung der Dichte oder Viskositätsverhältnisse. In dieser Arbeit haben die Fluide stark unterschiedliche Dichten mit einem Verhältnis von $1000$. Die Lattice-Boltzmann Methode ist jedoch nach \cite{chenCriticalReviewPseudopotential2014} für Verhältnisse von $\mathcal{O}(10)$ limitiert und führt ansonsten zu instabilitäten. 
+Ein weitere häufig verwendete Methode sind \texttt{Molecular Dynamic} Simulationen. Da in diesem Fall Moleküle einzeln Simuliert werden, ist diese Methode nur auf Geometrisch und zeitlich kleine Probleme anwendbar, ohne die Computational costs zu hoch zu treiben. Daher werden {Molecular Dynamic} Simulationen oft zum Vergleich herangezogen, oder um nur kleine Probleme zu betrachten (\cite{datta2023EarlyStageLiquidInfiltration,lacisNanoscaleShearedDroplet2022,martic2002MolecularDynamicsSimulation,dimitrov2007CapillaryRiseNanopores})
+Die in dieser Arbeit verwendete Methode ist die Phasenfeld Methode. Diese metohde modelliert die zwei oder auch mehrphasenströmung über die freie Energie des Systems. Eine genauere Beschreibung dieser Methode und bereits durcgeführten Simulationen erfolgt in Kapitel \ref{chap: PhaseFieldMethod}. \todo[inline]{Elaborate or maybe move entire section to phase field? Or maybe case setup with a reasoning why phasefield? }
