@@ -25,19 +25,19 @@ Despite the fact that the wetting of droplets is not considered in this work, it
 
 In the case where the system is in equilibrium, Young \todo{ref} derived an equation relating surface tensions to the contact angle:
 \begin{equation}
-    \sigma_{LV} \cdot \cos\theta_e = \sigma_{SV}-\sigma_{SL}
+    \sigma_{\mathrm{LV}} \cdot \cos\theta_{\mathrm{e}} = \sigma_{\mathrm{SV}}-\sigma_{\mathrm{SL}}
     \label{eq: YoungsEQ}
 \end{equation}
-Where $\sigma_{LV}$ is the surface tension between the liquid and the gas, $\sigma_{SV}$ is from the solid to the gas, and $\sigma_{SL}$ is between the solid and the liquid (see Figure \ref{fig: YoungsLaw_ThreePhaseContactLine}).
+Where $\sigma_{\mathrm{LV}}$ is the surface tension between the liquid and the gas, $\sigma_{\mathrm{SV}}$ is from the solid to the gas, and $\sigma_{\mathrm{SL}}$ is between the solid and the liquid (see Figure \ref{fig: YoungsLaw_ThreePhaseContactLine}).
 \begin{figure}[h]
     \centering
     \includegraphics[width=.9\textwidth]{Pictures/YoungsLaw.pdf}
     \caption{Three Phase Contact Line}
     \label{fig: YoungsLaw_ThreePhaseContactLine}
 \end{figure}
-If $(\sigma_{SV}>\sigma_{SL})$ holds true, a contact angle less than $90°$ follows; otherwise, $90°\leq \theta_e<180°$. In the case where $\sigma_{SV}=\sigma_{SL}+\sigma_{LV}$, complete wetting of the surface occurs \cite{buttPhysicsChemistryInterfaces}.
+If $(\sigma_{\mathrm{SV}}>\sigma_{\mathrm{SL}})$ holds true, a contact angle less than $90^{\circ}$ follows; otherwise, $90^{\circ}\leq \theta_{\mathrm{e}}<180^{\circ}$. In the case where $\sigma_{\mathrm{SV}}=\sigma_{\mathrm{SL}}+\sigma_{\mathrm{LV}}$, complete wetting of the surface occurs \cite{buttPhysicsChemistryInterfaces}.
 
-When a droplet impacts a solid surface, different states can arise depending on the fluid-solid combination. At the point where the interface of the two fluids (droplet and surrounding fluid) meets the solid surface, the contact line is formed (see \ref{fig: YoungsLaw_ThreePhaseContactLine}; red line). Depending on the fluid-fluid-solid combination, a contact angle $\theta_e$ is established, where the suffix $e$ stands for equilibrium. In the case of complete wetting, the fluid spreads over the entire surface (see Figure \ref{fig: WettingTheory_WettingOfSurface} a)). This effect, however, is challenging to reproduce as it can be hindered by surface irregularities \todo{ref; i think it was butt}. As seen in Figure \ref{fig: WettingTheory_WettingOfSurface}(b-d)), states where a droplet forms on the surface are further subdivided. For a contact angle $\theta_e<90°$, it is termed hydrophilic (see \ref{fig: WettingTheory_WettingOfSurface}b)), for $\theta_e>90°$ it's hydrophobic (see \ref{fig: WettingTheory_WettingOfSurface}c)), and for a contact angle $\theta_e>120°$, it's superhydrophobic surfaces (see \ref{fig: WettingTheory_WettingOfSurface}d)). Developing superhydrophobic surfaces is also challenging.
+When a droplet impacts a solid surface, different states can arise depending on the fluid-solid combination. At the point where the interface of the two fluids (droplet and surrounding fluid) meets the solid surface, the contact line is formed (see \ref{fig: YoungsLaw_ThreePhaseContactLine}; red line). Depending on the fluid-fluid-solid combination, a contact angle $\theta_{\mathrm{e}}$ is established, where the suffix $e$ stands for equilibrium. In the case of complete wetting, the fluid spreads over the entire surface (see Figure \ref{fig: WettingTheory_WettingOfSurface} a)). This effect, however, is challenging to reproduce as it can be hindered by surface irregularities \todo{ref; i think it was butt}. As seen in Figure \ref{fig: WettingTheory_WettingOfSurface}(b-d)), states where a droplet forms on the surface are further subdivided. For a contact angle $\theta_{\mathrm{e}}<90^{\circ}$, it is termed hydrophilic (see \ref{fig: WettingTheory_WettingOfSurface}b)), for $\theta_{\mathrm{e}}>90^{\circ}$ it's hydrophobic (see \ref{fig: WettingTheory_WettingOfSurface}c)), and for a contact angle $\theta_{\mathrm{e}}>120^{\circ}$, it's superhydrophobic surfaces (see \ref{fig: WettingTheory_WettingOfSurface}d)). Developing superhydrophobic surfaces is also challenging.
 \begin{figure}[h]
     \centering
     \includegraphics[width=.95\textwidth]{Pictures/DropletsAndWetting.pdf}
@@ -47,46 +47,48 @@ When a droplet impacts a solid surface, different states can arise depending on 
 To curve the surface of the liquid, a pressure difference must exist. In the case of a sphere, Young and Laplace developed a relationship for the pressure difference in terms of the surface tension and radius as:
 \begin{equation}
 \label{eq: YoungLaplaceEQ}
-    P_i - P_o = \Delta P =  \frac{2\sigma}{R}
+    P_{\mathrm{i}} - P_{\mathrm{o}} = \Delta P =  \frac{2\sigma}{R}
 \end{equation}
-With $\Delta P$ being the pressure difference at the interface, $P_i$ as the pressure inside the droplet, $P_o$ the ambient pressure, and $R$ as the radius of the sphere. For a derivation, refer to \cite{buttPhysicsChemistryInterfaces}.
+With $\Delta P$ being the pressure difference at the interface, $P_{\mathrm{i}}$ as the pressure inside the droplet, $P_{\mathrm{o}}$ the ambient pressure, and $R$ as the radius of the sphere. For a derivation, refer to \cite{buttPhysicsChemistryInterfaces}.
 
 
 \subsection{Dynamic Weting}
-Bisher wurden nur Zustände betrachtet, die Systeme im Gleichgewicht betrachten. Üblicherweise ist die Kontaktlinie jedoch in bewegung. Ist die Kontakilinie in Bewegung unterscheidet sich der Kontaktwinkel (dynamischer Kontaktwinkel $\theta_D$) von dem im Gleichgewichtszustand \cite{blake2006PhysicsMovingWetting}. Zur Bescheibung der Kontaktlinien dynamik wird der dynamische Kontaktwinkel, die relative geschwindigkeit der Kontatktlinie und der Gleichgewichtskontatktwinkel benötigt \cite{mohammadkarim2022ReviewPhysicsMoving, blake2006PhysicsMovingWetting, cox1986DynamicsSpreadingLiquids,huh1971HydrodynamicModelSteady,voinovHydrodynamicsWetting1977}.
-Die beschreibung der Kontaktlinie ist jedoch aufgrund der tatsache schwierig, dass sich die Mikroskopische Ebene bis auf die makroskopische Ebene auswikt. 
+So far, only states have been considered that observe systems in equilibrium. Typically, however, the contact line is in motion. When the contact line is moving, the contact angle (dynamic contact angle $\theta_{\mathrm{D}}$) differs from that in the equilibrium state \cite{blake2006PhysicsMovingWetting}. To describe the dynamics of the contact line, the dynamic contact angle, the relative speed of the contact line, and the equilibrium contact angle are required \cite{mohammadkarim2022ReviewPhysicsMoving, blake2006PhysicsMovingWetting, cox1986DynamicsSpreadingLiquids,huh1971HydrodynamicModelSteady,voinovHydrodynamicsWetting1977}. However, describing the contact line is challenging due to the fact that the microscopic level affects the macroscopic level.
 
+In Figure \ref{fig: HDT_MKT_comp}, various views of the contact line are illustrated. The red circle in \textit{a)} points to the area considered in the picture next to it and can be understood as a magnifying glass. If we enlarge the area in \textit{a)}, we see the interpretation of the contact line from the perspective of the hydrodynamic theory, with a microscopic contact angle $\theta_{\mathrm{m}}$ and the dynamic contact angle $\theta_{\mathrm{D}}$ (Figure \ref{fig: HDT_MKT_comp} \textit{b)}). Focusing again on the contact line, we see the interpretation of the molecular kinetic theory (Figure \ref{fig: HDT_MKT_comp} \textit{c)}). The illustrated points are intended to represent molecules in a simplified form.
 
-
-In Abbildung \ref{fig: HDT_MKT_comp} sind verschiedene Ansichten auf die Kontatktlinie illustriert. Der rote Kreis in \textit{a)} weißt auf den betrachteten Bereich im rechts daneben stehenden bild hin und kann als eine Lupe verstanden werden. Vergrößern wir den Bereich in  \textit{a)} sieht man die interpretation der Kontatklinie aus sicht der Hydrodynamischen Theorie. Mit einem mikroskopischen Kontaktwinkel $\theta_m$ und dem dynamischen Kontaktwinkel $\theta_D$ (Abbildung \ref{fig: HDT_MKT_comp} \textit{b)}). Wird wieder auf die Kontatklinie fokussiert, sieht man die interpretation der molekular konetik Theorie (Abbildung \ref{fig: HDT_MKT_comp} \textit{c)}). Die illustrierten Punkte sollen auch hier wieder moleküle in vereinfachter Form darstellen. 
 
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.95\textwidth]{Pictures/ContactAngles_HDT_MKT.pdf}
-    \caption{Hydrodynamic and Molecular Kinetic description of the Contact angle. Abbildung b) entsprocht dem Rot umkreisten Bereich in a), bzw. c) dem aus Bild b).}
+    \caption{Hydrodynamic and Molecular Kinetic description of the Contact angle. Figure b) corresponds to the area circled in red in a), and c) to the area from image b).}
     \label{fig: HDT_MKT_comp}
 \end{figure}
+
 \paragraph{Hydrodynamic Theory}
 \label{paragraph: hydrodynTheory}
-Der Hydrodynamische Ansatz löst die physik der Strömung mit Hilfe der Navier Stokes Gleichungen, bekommt jedoch bei angewandter Haftbedingung an der Kontaktlinie eine Singularität an der Kontaktlinie \cite{huh1971HydrodynamicModelSteady}. Um dieses Problem zum lösen wurde zum einen die Haftbedingung nahe der Wand gelockert oder die Lösung auf molekularer ebene beschnitten\cite{blake2006PhysicsMovingWetting}. In beiden Fällen wird eine kleine capillary number angenommen, was bedeutet, dass weit von der Kontaktlinie entfernt das Interface seine Gleichgewichtsform annimmt. 
-Voinov \cite{voinovHydrodynamicsWetting1977} leitete dennoch eine Beschreibung der Kontaktlinie für einen sich ausbreitenden Tropfen in abhängigkeit der capillary number her. Eine generalisierte Variante von Cox \cite{cox1986DynamicsSpreadingLiquids} mit einigen korrekturtermen entwickelt\cite{carlsonCapillarityDynamicWetting2012,blake2006PhysicsMovingWetting}. So wird der dynamische Kontaktwinkel für $\theta_D \leq 3/4 \pi$ mit 
+The hydrodynamic approach solves the physics of the flow using the Navier-Stokes equations but encounters a singularity at the contact line when a sticking condition is applied \cite{huh1971HydrodynamicModelSteady}. To address this issue, either the sticking condition near the wall was relaxed or the solution was truncated at the molecular level \cite{blake2006PhysicsMovingWetting}. In both cases, a small capillary number is assumed, which means that far from the contact line, the interface assumes its equilibrium shape.
+
+Voinov \cite{voinovHydrodynamicsWetting1977} derived a description of the contact line for a spreading droplet depending on the capillary number. A generalized version was developed by Cox \cite{cox1986DynamicsSpreadingLiquids} with some correction terms \cite{carlsonCapillarityDynamicWetting2012,blake2006PhysicsMovingWetting}. Thus, the dynamic contact angle for $\theta_{\mathrm{D}} \leq 3/4 \pi$ is given by
 \begin{equation}
     \label{eq: Cox-Voinov}
     \theta_D^3-\theta_m^3= 9 Ca \ln\left(\frac{L}{L_m}\right) = 9 \frac{\mu u}{\sigma}\ln\left(\frac{L}{L_m}\right)
 \end{equation}
-Mit $L$ als makroskopische Weglänge und $L_m$ als mikroskopische Weglänge. Für die annahme, dass das Interface weit entfernd seine Gleichgewichtsform annimmt, wird $\theta_m = \theta_e$. Voinov selbst erkannte jedoch bereits an, dass auch $\theta_m$ anbängig von der Geschwindigkeit sein könnte\cite{voinovHydrodynamicsWetting1977,blake2006PhysicsMovingWetting}.\todo{cite lacis} 
+With $L$ as the macroscopic path length and $L_{\mathrm{m}}$ as the microscopic path length. Assuming that the interface assumes its equilibrium shape far away, $\theta_{\mathrm{m}} = \theta_{\mathrm{e}}$. However, Voinov himself already pointed out that $\theta_{\mathrm{m}}$ could also depend on the speed \cite{voinovHydrodynamicsWetting1977,blake2006PhysicsMovingWetting}.\todo{cite lacis}
 
 
-\paragraph{Molekular Kinetic Theory}
-Das Molekular Kinetik Modell beschreibt die Bewegung der Kontaktlinie mit einer statistischen Beschreibung der Molekularbewegung an der Kontaktlinie \cite{blake1969KineticsDisplacement}. 
-Im gegensatz zum hydrodynamischen Modell beeinflussen die molekularen prozesse an der Kontatktlinie die der großen skalen. In dieser Betrachtung springen die Moleküle an der Kontaktlinie vor und zurück an adsorptionsstellen auf dem festen Untergrund. Die Geschwindigkeit der Kontaktlinie wird ermittelt, indem die differenz des vor und zurück springens multipliziert mit einer Sprungweite $\lambda$ multipliziert wird. Damit folgt die Beschreibung
+
+\paragraph{Molecular Kinetic Theory}
+The Molecular Kinetic Model describes the movement of the contact line with a statistical description of the molecular movement at the contact line \cite{blake1969KineticsDisplacement}. 
+In contrast to the hydrodynamic model, the molecular processes at the contact line influence those of the larger scales. In this view, the molecules at the contact line jump back and forth to adsorption sites on the solid substrate. The speed of the contact line is determined by multiplying the difference between the forward and backward jumps by a jump distance $\lambda$. This results in the description
 \begin{equation}
-    u=2\lambda\kappa_{0}\sinh\left(\frac{\sigma\left(\cos\theta_{e}-\cos\theta_{D}\right)}{2nk_{B}T}\right).
+    u=2\lambda\kappa_{0}\sinh\left(\frac{\sigma\left(\cos\theta_{\mathrm{e}}-\cos\theta_{\mathrm{D}}\right)}{2nk_{\mathrm{B}}T}\right).
 \end{equation}
-Darin ist $n$ die Anzahl der adsorptionsstellen pro flächeneinheit, $k_0$ eine charakteristische Frequenz, $k_b$ die Boltzmann Konstante und $T$ die Temperatur.
-Ist das system im Gleichgewicht, ist das vor und zurück springen im Gleichgewicht und die Kontatktlinie kommt zum stehen \cite{carlson2011DissipationRapidDynamic,blake2006PhysicsMovingWetting}. Ein Problem dieser Betrachtung ist es jedoch, dass dieses Modell eher qualitativ und rechenintensiv ist \cite{mohammadkarim2022ReviewPhysicsMoving}.
+Where $n$ is the number of adsorption sites per unit area, $k_0$ is a characteristic frequency, $k_{\mathrm{B}}$ is the Boltzmann constant, and $T$ is the temperature.
+If the system is in equilibrium, the forward and backward jumping is balanced, and the contact line comes to a standstill \cite{carlson2011DissipationRapidDynamic,blake2006PhysicsMovingWetting}. However, a problem with this view is that this model is more qualitative and computationally intensive \cite{mohammadkarim2022ReviewPhysicsMoving}.
+
 
 
 
@@ -95,92 +97,105 @@ Ist das system im Gleichgewicht, ist das vor und zurück springen im Gleichgewic
 
 
 \subsection{Capillary Rise}
-Eine Kapillare ist ein sehr dünnes Rohr in denen durch Oberflächeneffekte eine Flüssigkeit ohne äußere Krafteinwirkung auf oder absteigt. In \ref{fig: classicCapillary} ist eine Kapillare mit bereits aufgestiegener Flüssigkeitssäule dargestellt. Darin sind ebenfall die bereits bekannten Oberflächenspannungen an ihren jeweiligen stellen markiert, sowie die wesentlichen Geometrischen parameter, wie Durchmesser ($2R$) oder höhe des entstandenen Meniskus $z$. Ebenfalls ist der resultierende Kontaktwinkel nach erreichen des Gleichgewichts gezeigt $\theta_e$. Das System in dieser Darstellung unterliegt auch Schwerkräften. 
+A capillary is a very thin tube in which, due to surface effects, a liquid rises or falls without external force. In \ref{fig: classicCapillary}, a capillary with an already risen liquid column is shown. The well-known surface tensions are also marked at their respective locations, as well as the essential geometric parameters, such as diameter ($2R$) or height of the resulting meniscus $z$. The resulting contact angle after reaching equilibrium, $\theta_{\mathrm{e}}$, is also shown. The system in this representation is also subject to gravitational forces.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.95\textwidth]{Pictures/classicCapillary.pdf}
-    \caption{schematiche Darstellung einer Kapillare in einer Flüssigkeit nachdem diese in die Kapillare eingedrungen ist}
+    \caption{Schematic representation of a capillary in a liquid after it has penetrated the capillary.}
     \label{fig: classicCapillary}
 \end{figure}
-In dieser Arbeit wird ein solches System verwendet. Dabei gelten edoch weitere Bedingungen. Es wird angenommen, dass das System isobar, isotherm und die Flüssigkeit Newtonsch ist. Weiter gilt, dass während die Wassersäule in der Kapillare aufsteigt eine Poiseuille Strömung vorliegt und kein Phasenwechsel stattfindet. Weiter wird angenommen, dass die Viskosität der Gasphase vernachlässigbar ist. Mit diesen Annahmen und Randbedingungen kann die Newtondynamik in einer Kapillare als Gleichgewicht zwischen den Trägheitskräften zur Summe der Kapillaren Kräften, der Viskosen Kräfte und Hydrostatischen Kräfte \cite{fricke2023AnalyticalStudyCapillary}
+
+In this work, such a system is used. However, further conditions apply. It is assumed that the system is isobaric, isothermal, and the liquid is Newtonian. Furthermore, it is assumed that while the water column rises in the capillary, a Poiseuille flow is present and no phase change occurs. It is also assumed that the viscosity of the gas phase is negligible. With these assumptions and boundary conditions, the Newtonian dynamics in a capillary can be described as a balance between the inertial forces and the sum of the capillary forces, viscous forces, and hydrostatic forces \cite{fricke2023AnalyticalStudyCapillary}:
+
 \begin{equation}
 \label{eq: NewtonBalanceForcesOnly}
-    \frac{d}{dt}M(z,\dot{z}) = F_w - F_{\eta} - F_g
-\end{equation}
-Mit $M(z,\dot{z}) = \pi r^2 \rho z \dot{z}$ als das Moment, $F_g = \pi r^2 \rho g z$ als Gewichtskraft und $F_{\eta}$ als viskosen Widerstand, der sich aus der Annahme der mittleren Geschwindigkeit und vorliegenden Poiseuille Strömung zu $F_{\eta}=8\pi\eta z \dot{z}$ ergibt. Mit $\dot{z}$ als mittlere Geschwindigkeit. Die Kapillaren Kräfte folgen aus der vorherigen Beschreibung der Oberflächenspannung und der Änderung der Oberfläche des Meniskus bei änderung der aktuellen höhe zu:
-\begin{equation}
-    F_W=\sigma \frac{dA}{dz} = \sigma 2\pi r
-\end{equation}
-Die Oberflächenspannung $\sigma$ ist hierbei der zuwachs der Oberflächenenergie durch das Benetzen der festen Wand der Kapillare. Damit gilt $\sigma = \sigma_{SV}- \sigma_{SL}$. Diese Beschreibung ist bereits aus der Young Gleichung (\ref{eq: YoungsEQ}) bekannt. Damit folgt nach einsetzen für die Kapillaren Kräfte
-\begin{equation}
-    F_W = \sigma_{LV} \cdot \cos \theta_e 2\pi r.
-\end{equation}
-Damit folgt weiter für Gleichung \ref{eq: NewtonBalanceForcesOnly} nach einsetzen \cite{fricke2023AnalyticalStudyCapillary}
-\begin{equation}
-\label{eq: NewtonDynCapillary}
-    \pi r^2 \rho \frac{d}{dt} (z \dot{z}) = \sigma_{LV} \cdot \cos \theta_e 2\pi r-8\pi\eta z \dot{z}-\pi r^2 \rho g z.
+    \frac{d}{dt}M(z,\dot{z}) = F_{\mathrm{w}} - F_{\eta} - F_{\mathrm{g}}
 \end{equation}
 
-Erste Beschreibungen von Bell und Cameron \cite{bell1906FlowLiquidsCapillary} haben die Aufstiegsdynamik nicht anhand von Gleichung \ref{eq: NewtonDynCapillary} beschrieben. Sie entwickelten anhand von Experimenten die Aufstiegsdynaik nach 
+With $M(z,\dot{z}) = \pi r^2 \rho z \dot{z}$ as the moment, $F_{\mathrm{g}} = \pi r^2 \rho g z$ as the gravitational force, and $F_{\eta}$ as the viscous resistance, which results from the assumption of the average velocity and the existing Poiseuille flow to $F_{\eta}=8\pi\eta z \dot{z}$. With $\dot{z}$ as the average velocity. The capillary forces result from the previous description of the surface tension and the change in the surface of the meniscus with a change in the current height:
+
+\begin{equation}
+    F_{\mathrm{w}}=\sigma \frac{dA}{dz} = \sigma 2\pi r
+\end{equation}
+
+The surface tension $\sigma$ here is the increase in surface energy due to the wetting of the solid wall of the capillary. Thus, $\sigma = \sigma_{\mathrm{SV}}- \sigma_{\mathrm{SL}}$. This description is already known from the Young equation (\ref{eq: YoungsEQ}). Thus, after inserting for the capillary forces:
+
+\begin{equation}
+    F_W = \sigma_{\mathrm{LV}} \cdot \cos \theta_{\mathrm{e}} 2\pi r.
+\end{equation}
+
+Thus, for equation \ref{eq: NewtonBalanceForcesOnly} after insertion \cite{fricke2023AnalyticalStudyCapillary}:
+
+\begin{equation}
+\label{eq: NewtonDynCapillary}
+    \pi r^2 \rho \frac{d}{dt} (z \dot{z}) = \sigma_{\mathrm{LV}} \cdot \cos \theta_{\mathrm{e}} 2\pi r-8\pi\eta z \dot{z}-\pi r^2 \rho g z.
+\end{equation}
+
+Early descriptions by Bell and Cameron \cite{bell1906FlowLiquidsCapillary} did not describe the rise dynamics based on equation \ref{eq: NewtonDynCapillary}. They developed the rise dynamics from experiments according to:
+
 \begin{equation}
     z(t)^n = K\cdot t.
 \end{equation}
-Darin sind sowohl $n$ als auch $K$ von der Temperatur abhängige Konstanten. 1918 entwickelte Lucas \cite{lucas1918UeberZeitgesetzKapillaren} und 1921 Washburn \cite{washburn1921DynamicsCapillaryFlow} unter vernachlässigung der Trägheits- und Gravitationsterme die Lucas Washburn Gleichung wie folgt:
+
+Both $n$ and $K$ are temperature-dependent constants. In 1918, Lucas \cite{lucas1918UeberZeitgesetzKapillaren} and in 1921, Washburn \cite{washburn1921DynamicsCapillaryFlow} derived the Lucas Washburn equation by neglecting the inertial and gravitational terms:
+
 \begin{equation}
 \label{eq: LW-Eq}
-    z(t) = \sqrt{\frac{r\sigma\cos\theta_e}{2\eta}t}
+    z(t) = \sqrt{\frac{r\sigma\cos\theta_{\mathrm{e}}}{2\eta}t}
 \end{equation}
-Damit entwickelten sie unabhängig voneinander eine Gleichung mit der der Kapillare Aufstieg anhand von Stoffwerten und Messgrößen beschrieben werden kann. Daher entwickelte sie über die Jahre große Popularität. Durch die Vernachlässigung einzelner terme und vereinafachungen im System ist diese Gleichung jedoch nicht immer präzise. Washburn selbst wies darauf hin, dass er, um die vorhersage der Gleichung zu treffen die erfolgten Experimente so aufbauen musste, dass die Kapillare prewetted wurden. 
-Daher wurden für verschiedene Probleme anpassungen an diese Gleichung vorgenommen \cite{dimitrov2007CapillaryRiseNanopores}.Wu et al. \cite{wu2017CapillaryRiseValidity} untersuche mehrere Modelle und verglich sie mit Experimenten. 
-\todo[inline]{Wu2017 \cite{wu2017CapillaryRiseValidity} untersuchte mehrere Modelle der Art, dass der dynamische Kontatkwinkel untersucht wurde. }
-(\todo{cite papers; dimitrov,... check!!}. Darin wird jedoch stets angenommen, dass die Höhe des Meniskus nach $z(t)\sim \sqrt{t}$ anwächst.
-Bosanquet \cite{bosanquet1923LVFlowLiquids} deutete 1923 in seiner Arbeit darauf hin, dass Gleichung \ref{eq: LW-Eq} für $t\xrightarrow{}0$ zu unphysikalischem verhalten führen wird und entwickelte ebenfalls eine Gleichung, die dieses Problem beibehielt, jedoch nun auch die Trägheit mit einbezog und für frühe Zeitpunkte der imbibition eine bessere vorhersage des Aufstiegs geben kann. \todo{cite papers. look it up you had some.}
-Siegel \cite{siegel1961TransientCapillaryRise} untersuchte das Aufstiegsverhalten unter mikrogravitation und stellte ein lineares Wachstum fest. Erreichte dabei jedoch nicht das Lucas-Washburn regime. Zhmud et al. \cite{zhmud2000DynamicsCapillaryRise} wies ebenfalls auf die Probleme für Zeiten nahe $0$ aus Glecihung \ref{eq: LW-Eq} hin und beschrieb einen quadratischen zusammenhang für die zeiten, in denen das Fluid in die Kapillare gezogen wird, gefolgt von dem bekannten Lucas-Washburn Regime.
-Dreyer et al. \cite{dreyer1994CapillaryRiseLiquid} untersuchte parallele Platten unter mikrogravitation und unterteile den Aufstieg des Meniskus in drei Regionen. Angefangen mit einem quadratischen Waschstum, gefolgt von einer linearen Region und abschließend dem Lucas-Washburn Wachstum. Quéré \cite{quere1997InertialCapillarity} zeigte ein lineares wachstum zu beginn indem er annahm, dass in diesem Fall nur die Trägheit eine Rolle spielt. Stange \cite{stange2003CapillaryDrivenFlow} bestätigte die drei Regionen von Dreyer et al. \cite{dreyer1994CapillaryRiseLiquid} und leitete dimensionslose Gleichungen her, um Übergangszeiten zu entwickeln. 
-Fries et al. \cite{fries2008TransitionInertialViscous} teilte das Wachstumsgebiet in Bereiche ein, in denen unterschiedliche Kräfte wirken. Zu Beginn dominiert die Trägheit, gefolgt von einem übergangsgebiet in dem die viskosen kräfte übernehmen, bis sie schließlich dominieren. Auch sie entwickelten dimensionslose Zeitpunkte an denen der Übergang stattfindet. 
-An dem Punkt, an dem sich die viskose Reibung und die auswirkungen von Trägheit oder dynamischen Kontaktwinkel gleichen, wurde von Quéré \cite{quere1997InertialCapillarity} und Fries et al. \cite{fries2008TransitionInertialViscous} die charakteristische Eindringlänge
+
+With this, they independently developed an equation with which the capillary rise can be described based on material values and measurements. Therefore, it gained popularity over the years. Due to the neglect of individual terms and simplifications in the system, however, this equation is not always precise. Washburn himself pointed out that to meet the prediction of the equation, he had to set up the experiments in such a way that the capillary was prewetted. Therefore, adjustments to this equation were made for various problems \cite{dimitrov2007CapillaryRiseNanopores}. Wu et al. \cite{wu2017CapillaryRiseValidity} examined several models and compared them with experiments. In these, however, it is always assumed that the height of the meniscus increases according to $z(t)\sim \sqrt{t}$ as well.
+
+Bosanquet \cite{bosanquet1923LVFlowLiquids} hinted in his 1923 paper that equation \ref{eq: LW-Eq} would lead to unphysical behavior for $t\xrightarrow{}0$ and also developed an equation that retained this problem but now also included inertia and can give a better prediction of the rise for early times of imbibition. \todo{cite papers. look it up you had some.}
+
+Siegel \cite{siegel1961TransientCapillaryRise} studied the rise behavior under microgravity and found a linear growth. However, he did not reach the Lucas-Washburn regime. Zhmud et al. \cite{zhmud2000DynamicsCapillaryRise} also pointed out the problems for times near $0$ from equation \ref{eq: LW-Eq} and described a quadratic relationship for the times when the fluid is drawn into the capillary, followed by the known Lucas-Washburn regime.
+
+Dreyer et al. \cite{dreyer1994CapillaryRiseLiquid} studied parallel plates under microgravity and divided the rise of the meniscus into three regions. Starting with a quadratic growth, followed by a linear region, and finally the Lucas-Washburn growth. Quéré \cite{quere1997InertialCapillarity} showed a linear growth at the beginning by assuming that in this case only inertia plays a role. Stange \cite{stange2003CapillaryDrivenFlow} confirmed the three regions of Dreyer et al. \cite{dreyer1994CapillaryRiseLiquid} and derived dimensionless equations to develop transition times.
+
+Fries et al. \cite{fries2008TransitionInertialViscous} divided the growth area into areas where different forces act. In the beginning, inertia dominates, followed by a transition area where the viscous forces take over until they finally dominate. They also developed dimensionless times at which the transition takes place.
+
+At the point where the viscous friction and the effects of inertia or dynamic contact angle are equal, Quéré \cite{quere1997InertialCapillarity} and Fries et al. \cite{fries2008TransitionInertialViscous} defined the characteristic penetration length:
 \begin{equation}
     \label{eq: charLength}
-    l_c \propto r \sqrt{\frac{r\rho \sigma}{\mu^2}}
+    l_{\mathrm{c}} \propto r \sqrt{\frac{r\rho \sigma}{\mu^2}}
 \end{equation}
-definiert. 
-
-
-
-Dellanoy et al. \cite{delannoy2019DualRoleViscosity} fokusierte sich auf frühe Zeitpunkte und untersuchte viskose Fluide und bestätigte den Einfluss des prewettings der Kapillare, wie schon Washburn \cite{washburn1921DynamicsCapillaryFlow} und zeigte auch eine Abweichtung vom Lucas-Washburn regime zu frühen Zeitpunkten. Sie führten diese Abweichung auf lokale viskose dissipation in der Wedge Region zurück, statt auf eine Globale dissipation, wie sie von Lucas und Washburn angenommen wurde. Bezogen auf den dynamischen Kontaktwinkel zeigten sie, dass sich die charakteristische Eindringlänge (vgl. Gleichung \ref{eq: charLength}) nach 
+Dellanoy et al. \cite{delannoy2019DualRoleViscosity} focused on early times and studied viscous fluids, confirming the influence of pre-wetting the capillary, as already mentioned by Washburn \cite{washburn1921DynamicsCapillaryFlow}. They also showed a deviation from the Lucas-Washburn regime at early times. They attributed this deviation to local viscous dissipation in the wedge region, rather than a global dissipation as assumed by Lucas and Washburn. Regarding the dynamic contact angle, they showed that the characteristic penetration length (cf. Equation \ref{eq: charLength}) is calculated as:
 \begin{equation}
-    l_c \propto r \ln\left(\frac{r}{l_m}\right)
+    l_{\mathrm{c}} \propto r \ln\left(\frac{r}{l_{\mathrm{m}}}\right)
 \end{equation}
-berechnet. Mit $l_m$ als mikroskopische Länge, die die Singularität der Kontaktlinie ausgleicht \cite{cox1986DynamicsSpreadingLiquids}. Weiter nahmen sie an, dass sobadl $l_c$ erreicht ist, der Übergang zum Lucas-Washburn Regime erfolgt.
-Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} Wiedersprechen in ihrer Arbeit dieser aussage und zeigen, dass dieser Übergang länger verläuft. Dies Argumentieren sie damit, dass die auswirkungen von trägheit und dynamischen Kontaktwinkel nicht exponentiell abklingen. 
-Dafür erweitern sie Gleichung \ref{eq: NewtonDynCapillary} für problme mit bewegendem Interface, indem sie 
+
+With $l_m$ being the microscopic length that compensates for the singularity of the contact line \cite{cox1986DynamicsSpreadingLiquids}. They further assumed that once $l_c$ is reached, the transition to the Lucas-Washburn regime occurs.
+
+Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} contradicted this statement in their work, showing that this transition takes longer. They argue that the effects of inertia and dynamic contact angle do not decay exponentially. 
+
+To account for this, they expanded Equation \ref{eq: NewtonDynCapillary} for problems with a moving interface by introducing:
 \begin{equation}
-    f(\dot{z}) \equiv \frac{\cos\theta_{m}-\cos\theta_D(\dot{z})}{\cos\theta_m} 
+    f(\dot{z}) \equiv \frac{\cos\theta_{\mathrm{m}}-\cos\theta_D(\dot{z})}{\cos\theta_{\mathrm{m}}} 
 \end{equation}
-einführen. Mit der Annahme, dass für $u>0$ aus Gleichung \ref{eq: Cox-Voinov} $\theta_D > \theta_m$ gilt, verschwindet diese Funktion für $\theta_D \rightarrow \theta_m$. 
-Da nun das sich bewegende System betrachtet wird, wird die Gleichung \ref{eq: NewtonDynCapillary} für den in dieser Arbeit betrachteten Fall zu:
+With the assumption that for $u>0$ from Equation \ref{eq: Cox-Voinov}, $\theta_{\mathrm{D}} > \theta_{\mathrm{m}}$ holds true, this function disappears for $\theta_{\mathrm{D}} \rightarrow \theta_{\mathrm{m}}$. 
 
+Now, considering the moving system, Equation \ref{eq: NewtonDynCapillary} for the case studied in this work becomes:
 \begin{equation}
-    \pi r^{2}\rho z \frac{du}{dt}= 2\pi r\sigma \cos\theta_{m}+\pi r^{2}\rho gz-8\pi \sigma z \dot{z} -2\pi r \sigma \cos \theta_{m}f
+    \pi r^{2}\rho z \frac{du}{dt}= 2\pi r\sigma \cos\theta_{\mathrm{m}}+\pi r^{2}\rho gz-8\pi \sigma z \dot{z} -2\pi r \sigma \cos \theta_{\mathrm{m}}f
 \end{equation}
-Mit den ersten beiden Termen als treibende Kräfte und den letzten beiden als Widerstandskräfte. Der letzte Term ist hinzugekommen und wirkt als Korrektur für die tatsache, dass der dynamische Kontaktwinkel nicht dem makroskopischen Kontaktwinkel entspricht.
+With the first two terms as driving forces and the last two as resistance forces. The last term has been added and acts as a correction for the fact that the dynamic contact angle does not correspond to the macroscopic contact angle.
 
-Im folgenden wurden dimensionslose größen eingeführt und vier Fälle definiert. Jeweils zwei mit großer und klener Laplace Zahl, bzw. großem und kleinen verhältnis der Längenskalen. Mit den verwendeten Größen in dieser Arbeit sollte damit der Fall drei von Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} vorliegen. Damit sagen sie vorher, dass das Quadratische regime nicht auftreten wird und der Aufstieg mit einem linearen Gebiet beginnt und schließlich zum Lucas-Washburn Regime übergeht.
-
-
-
-
+Subsequently, dimensionless quantities were introduced, and four cases were defined. Two each with a large and small Laplace number, or a large and small ratio of length scales. With the quantities used in this work, case three from Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} should apply. They predict that the quadratic regime will not occur, and the rise will begin with a linear region, eventually transitioning to the Lucas-Washburn regime.
 
 
 \todo[inline]{maybe use this eq instead of shorted one?}
 \begin{equation}
-    \pi r^2\rho l\frac{\mathrm{d}u}{\mathrm{d}t}=2\pi r\gamma\cos\theta_a+\pi r^2\rho gh-8\pi\mu lu-\frac{3}{2}\pi r^2\rho u^2-2\pi r\gamma\cos\theta_af
+    \pi r^2\rho l\frac{\mathrm{d}u}{\mathrm{d}t}=2\pi r\gamma\cos\theta_{\mathrm{a}}+\pi r^2\rho gh-8\pi\mu lu-\frac{3}{2}\pi r^2\rho u^2-2\pi r\gamma\cos\theta_{\mathrm{a}}f
 \end{equation}
 
 
 \section{Simulating the Wetting Processes}
-Die Simualation einer zwei Phasenströmung kann über mehrere Wege erfolgen. Ein üblicher weg sind die \texttt{Volume-of-Fluid} und die \texttt{Level-Set} Methode. Beide Methoden verwenden ein scharfes interface und beruhen auf der Hydrodynamischen Theorie aus Kapitel \ref{paragraph: hydrodynTheory}. Darüber hinaus sind es \textit{interface capturing} Methoden und benötigen daher keine neue neuberechnung des Rechennetzes über den Zeitraum der Simulation. Andere Methoden, die dem Interface folgen (\textit{interface tracking}), sind auch möglich. Einer der größten nachteile der genannten Methoden ist es, dass die bewegte Kontatktlinie bei verwendung der Haftbedingung von Modellen abhängig ist\cite{carlsonCapillarityDynamicWetting2012}. Darüber hinaus kann die Berechnung der Oberflächenspnnung ein Problem darstellen. Hier muss die Krümmung der Oberfläche berechnet werden, was zu vergleichsweise hohen numerischen Fehlern führen kann \cite{jamshidi2019SuitabilityPhasefieldAlgebraic,hagg2019DirekteNumerischeSimulation}. 
-Die Lattice-Boltzmann Methode verwendet Kollisionsmodelle, um das Verhalten des Fluids zu beschrieben. Grenzflächenspannungen können durch Modifikationen berücksichtigt werden. Hier gibt es ansätze, die vielversprechend sind und einige auch mit der Phasenfeld Methode vergleichbar sind. Jedoch ist eins der größten Probleme die limitierung der Dichte oder Viskositätsverhältnisse. In dieser Arbeit haben die Fluide stark unterschiedliche Dichten mit einem Verhältnis von $1000$. Die Lattice-Boltzmann Methode ist jedoch nach \cite{chenCriticalReviewPseudopotential2014} für Verhältnisse von $\mathcal{O}(10)$ limitiert und führt ansonsten zu instabilitäten. 
-Ein weitere häufig verwendete Methode sind \texttt{Molecular Dynamic} Simulationen. Da in diesem Fall Moleküle einzeln Simuliert werden, ist diese Methode nur auf Geometrisch und zeitlich kleine Probleme anwendbar, ohne die Computational costs zu hoch zu treiben. Daher werden {Molecular Dynamic} Simulationen oft zum Vergleich herangezogen, oder um nur kleine Probleme zu betrachten (\cite{datta2023EarlyStageLiquidInfiltration,lacisNanoscaleShearedDroplet2022,martic2002MolecularDynamicsSimulation,dimitrov2007CapillaryRiseNanopores})
-Die in dieser Arbeit verwendete Methode ist die Phasenfeld Methode. Diese metohde modelliert die zwei oder auch mehrphasenströmung über die freie Energie des Systems. Eine genauere Beschreibung dieser Methode und bereits durcgeführten Simulationen erfolgt in Kapitel \ref{chap: PhaseFieldMethod}. \todo[inline]{Elaborate or maybe move entire section to phase field? Or maybe case setup with a reasoning why phasefield? }
+Simulating a two-phase flow can be achieved through several methods. Common approaches include the \texttt{Volume-of-Fluid} and the \texttt{Level-Set} methods. Both methods use a sharp interface and are based on the Hydrodynamic Theory from Chapter \ref{paragraph: hydrodynTheory}. Moreover, they are \textit{interface capturing} methods, so they don't require recalculating the computational grid over the simulation period. Other methods that follow the interface (\textit{interface tracking}) are also possible. One of the major drawbacks of these methods is that the moving contact line, when using the adhesion condition, depends on models \cite{carlsonCapillarityDynamicWetting2012}. Additionally, calculating the surface tension can pose a challenge. This requires computing the curvature of the surface, which can lead to relatively high numerical errors \cite{jamshidi2019SuitabilityPhasefieldAlgebraic,hagg2019DirekteNumerischeSimulation}.
+
+The Lattice-Boltzmann Method uses collision models to describe fluid behavior. Surface tensions can be considered through modifications. There are approaches that are promising and some are comparable to the phase-field method. However, one of the biggest challenges is the limitation of density or viscosity ratios. In this work, the fluids have significantly different densities with a ratio of $1000$. According to \cite{chenCriticalReviewPseudopotential2014}, the Lattice-Boltzmann Method is limited to ratios of $\mathcal{O}(10)$ and can lead to instabilities otherwise.
+
+Another frequently used method is \texttt{Molecular Dynamic} simulations. Since individual molecules are simulated in this case, this method is only applicable to geometrically and temporally small problems without driving computational costs too high. Therefore, \texttt{Molecular Dynamic} simulations are often used for comparison or to study only small problems (\cite{datta2023EarlyStageLiquidInfiltration,lacisNanoscaleShearedDroplet2022,martic2002MolecularDynamicsSimulation,dimitrov2007CapillaryRiseNanopores}).
+
+The method used in this work is the \texttt{phase-field} method. This method models two or even multi-phase flow through the system's free energy. A more detailed description of this method and the simulations already carried out is provided in Chapter \ref{chap: PhaseFieldMethod}. \todo[inline]{Elaborate or maybe move the entire section to phase field? Or perhaps case setup with a reasoning why phase field?}
+

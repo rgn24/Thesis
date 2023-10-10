@@ -714,6 +714,64 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.99.054501
       \endverb
     \endentry
+    \entry{ding2007DiffuseInterfaceModel}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4f99a1e6682c330d736a54b96da51a5c}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Hang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3bcbfd8a9307ba8e3248952315f0bbf5}{%
+           family={Spelt},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima D.M.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=76ba5cc029b48bd77fdaf706c4440bb9}{%
+           family={Shu},
+           familyi={S\bibinitperiod},
+           given={Chang},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee74f82bc4826735332c43a9f3c43aca}
+      \strng{fullhash}{ee74f82bc4826735332c43a9f3c43aca}
+      \strng{bibnamehash}{ee74f82bc4826735332c43a9f3c43aca}
+      \strng{authorbibnamehash}{ee74f82bc4826735332c43a9f3c43aca}
+      \strng{authornamehash}{ee74f82bc4826735332c43a9f3c43aca}
+      \strng{authorfullhash}{ee74f82bc4826735332c43a9f3c43aca}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate the applicability of an incompressible diffuse interface model for two-phase incompressible fluid flows with large viscosity and density contrasts. Diffuse-interface models have been used previously primarily for densitymatched fluids, and it remains unclear to what extent such models can be used for fluids of different density, thereby potentially limiting the application of these models. In this paper, the convective Cahn–Hilliard equation and the condition that the velocity field is divergence-free are derived from the conservation law of mass of binary mixtures in a straightforward way, for fluids with large density and viscosity ratios. Differences in the equations of motion with a previously derived quasi-incompressible model are shown to result from the respective assumptions made regarding the relationship between the diffuse fluxes of two species. The convergence properties of the model are investigated for cases with large density ratio. Quantitative comparisons are made with results from previous studies to validate the model and its numerical implementation. Tests show that the variation in volume during the computation is of the order of machine accuracy, which is consistent with our use of a conservative discretization scheme (finite volume methods) for the Cahn–Hilliard equation. Results of the method are compared with previous work for the change in topology of rising bubbles and Rayleigh–Taylor instability. Additional results are presented for head-on droplet collision and the onset of droplet entrainment in stratified flows.}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Computational Physics}
+      \field{title}{Diffuse Interface Model for Incompressible Two-Phase Flows with Large Density Ratios}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{226}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2078\bibrangedash 2095}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2007.06.028
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\ding2007DiffuseInterfaceModel.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999107002793
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999107002793
+      \endverb
+    \endentry
     \entry{dreyer1994CapillaryRiseLiquid}{article}{}
       \name{author}{3}{}{%
         {{hash=74a3d911a6838b63589248c21f84797b}{%
@@ -1973,6 +2031,114 @@
       \endverb
       \verb{url}
       \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01762
+      \endverb
+    \endentry
+    \entry{yue2011CanDiffuseinterfaceModels}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e49f5d6541e42ef975ecdc35a21f351}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c20acfe6249a8c626b470a7e1634ed06}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9c1ac23534abf09f6a37f52186a2140}
+      \strng{fullhash}{a9c1ac23534abf09f6a37f52186a2140}
+      \strng{bibnamehash}{a9c1ac23534abf09f6a37f52186a2140}
+      \strng{authorbibnamehash}{a9c1ac23534abf09f6a37f52186a2140}
+      \strng{authornamehash}{a9c1ac23534abf09f6a37f52186a2140}
+      \strng{authorfullhash}{a9c1ac23534abf09f6a37f52186a2140}
+      \field{extraname}{1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The three-phase contact line is a long-standing problem in the physics and hydrodynamics of interfaces. The traditional sharpinterface Navier-Stokes formulation encounters a non-integrable stress singularity, which is commonly avoided by introducing slip at the contact line. In recent years, diffuse-interface models have emerged as an alternative method. They are attractive in regularizing the singularity in a more rational manner, and in the meantime supplying a means for describing the interfacial motion on the large scale. Although a number of groups have carried out diffuse-interface computations of moving contact lines, a closer inspection shows that some fundamental questions remain to be answered. For example, how can a sharp-interface limit be realized to produce a solution that is independent of the interfacial thickness? How to determine model parameters so as to match a specific experiment? Finally, is it possible to make quantitatively accurate predictions of the moving contact line using diffuse-interface models? Using the Cahn-Hilliard model as an example, we describe these issues and suggest solutions.}
+      \field{issn}{1951-6355, 1951-6401}
+      \field{journaltitle}{The European Physical Journal Special Topics}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{Eur. Phys. J. Spec. Top.}
+      \field{title}{Can Diffuse-Interface Models Quantitatively Describe Moving Contact Lines?}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{197}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{37\bibrangedash 46}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1140/epjst/e2011-01434-y
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\yue2011CanDiffuseinterfaceModels.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1140/epjst/e2011-01434-y
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1140/epjst/e2011-01434-y
+      \endverb
+    \endentry
+    \entry{yue2011WallEnergyRelaxation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d1f4433e81c19c34d5a3081f8390f453}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={Pengtao},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e18b40642b49ddddd9c992fcf654b7c8}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6eb517eb39f3305a31e557e36634f1c}
+      \strng{fullhash}{f6eb517eb39f3305a31e557e36634f1c}
+      \strng{bibnamehash}{f6eb517eb39f3305a31e557e36634f1c}
+      \strng{authorbibnamehash}{f6eb517eb39f3305a31e557e36634f1c}
+      \strng{authornamehash}{f6eb517eb39f3305a31e557e36634f1c}
+      \strng{authorfullhash}{f6eb517eb39f3305a31e557e36634f1c}
+      \field{extraname}{2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Cahn–Hilliard model uses diffusion between fluid components to regularize the stress singularity at a moving contact line. In addition, it represents the dynamics of the near-wall layer by the relaxation of a wall energy. The first part of the paper elucidates the role of the wall relaxation in a flowing system, with two main results. First, we show that wall energy relaxation produces a dynamic contact angle that deviates from the static one, and derive an analytical formula for the deviation. Second, we demonstrate that wall relaxation competes with Cahn–Hilliard diffusion in defining the apparent contact angle, the former tending to “rotate” the interface at the contact line while the latter to “bend” it in the bulk. Thus, varying the two in coordination may compensate each other to produce the same macroscopic solution that is insensitive to the microscopic dynamics of the contact line. The second part of the paper exploits this competition to develop a computational strategy for simulating realistic flows with microscopic slip length at a reduced cost. This consists in computing a moving contact line with a diffusion length larger than the real slip length, but using the wall relaxation to correct the solution to that corresponding to the small slip length. We derive an analytical criterion for the required amount of wall relaxation, and validate it by numerical results on dynamic wetting in capillary tubes and drop spreading.}
+      \field{day}{1}
+      \field{issn}{1070-6631, 1089-7666}
+      \field{journaltitle}{Physics of Fluids}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Wall Energy Relaxation in the {{Cahn}}–{{Hilliard}} Model for Moving Contact Lines}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{23}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{012106}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.3541806
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\yue2011WallEnergyRelaxation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/pof/article/23/1/012106/937545/Wall-energy-relaxation-in-the-Cahn-Hilliard-model
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/pof/article/23/1/012106/937545/Wall-energy-relaxation-in-the-Cahn-Hilliard-model
       \endverb
     \endentry
     \entry{yue2010SharpinterfaceLimitCahn}{article}{}
