@@ -1,0 +1,1607 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bell1906FlowLiquidsCapillary}{article}{}
+      \name{author}{2}{}{%
+        {{hash=80d9175531f33485c5585ea51fe41d00}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c241d0c1cd10aad4e7e1aef636f6d8fc}{%
+           family={Cameron},
+           familyi={C\bibinitperiod},
+           given={F.\bibnamedelimi K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4be251ed2035981c868a0de23e8120f1}
+      \strng{fullhash}{4be251ed2035981c868a0de23e8120f1}
+      \strng{bibnamehash}{4be251ed2035981c868a0de23e8120f1}
+      \strng{authorbibnamehash}{4be251ed2035981c868a0de23e8120f1}
+      \strng{authornamehash}{4be251ed2035981c868a0de23e8120f1}
+      \strng{authorfullhash}{4be251ed2035981c868a0de23e8120f1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0092-7325, 1541-5740}
+      \field{journaltitle}{The Journal of Physical Chemistry}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{8}
+      \field{shortjournal}{J. Phys. Chem.}
+      \field{title}{The {{Flow}} of {{Liquids}} through {{Capillary Spaces}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{10}
+      \field{year}{1906}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{658\bibrangedash 674}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1021/j150080a005
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\bell1906FlowLiquidsCapillary.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/abs/10.1021/j150080a005
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/abs/10.1021/j150080a005
+      \endverb
+    \endentry
+    \entry{blake1969KineticsDisplacement}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7d41343151d02ad1e6a4924ccc53eecd}{%
+           family={Blake},
+           familyi={B\bibinitperiod},
+           given={T.D},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0cac13b7758fb9b5ffc230a076b2e734}{%
+           family={Haynes},
+           familyi={H\bibinitperiod},
+           given={J.M},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \strng{fullhash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \strng{bibnamehash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \strng{authorbibnamehash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \strng{authornamehash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \strng{authorfullhash}{a1c964f9849d9949c8e2e75cc8b7ea7c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{Kinetics of Displacement}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{30}
+      \field{year}{1969}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{421\bibrangedash 423}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1016/0021-9797(69)90411-1
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\blake1969KineticsDisplacement.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0021979769904111
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0021979769904111
+      \endverb
+    \endentry
+    \entry{blake2006PhysicsMovingWetting}{article}{}
+      \name{author}{1}{}{%
+        {{hash=03593673a54bfcd2a550b90fe89c5f33}{%
+           family={Blake},
+           familyi={B\bibinitperiod},
+           given={Terence\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{03593673a54bfcd2a550b90fe89c5f33}
+      \strng{fullhash}{03593673a54bfcd2a550b90fe89c5f33}
+      \strng{bibnamehash}{03593673a54bfcd2a550b90fe89c5f33}
+      \strng{authorbibnamehash}{03593673a54bfcd2a550b90fe89c5f33}
+      \strng{authornamehash}{03593673a54bfcd2a550b90fe89c5f33}
+      \strng{authorfullhash}{03593673a54bfcd2a550b90fe89c5f33}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scientists tend to think in terms of their most familiar models. It is not accidental that the earliest descriptions of the moving wetting line and its associated dynamic contact angle were in terms of displaced equilibria (chemists), friction (physicists) and viscous bending of the liquid–vapour interface (engineers and mathematicians). Each of these approaches has progressed since its inception, but, while each reflects a different facet of the underlying physical mechanism, and each offers at least a semi-empirical route to its description, none is complete. There is, as yet, no fully agreed treatment that is consistent with all three viewpoints and provides an effective basis for prediction—though at least one new hydrodynamic approach has emerged that goes some way in this direction. This paper seeks to offer a status report: to briefly review each of the current approaches, to illustrate their successes and limitations as revealed by experiment and simulation, and to suggest ways in which the different aspects of wetting dynamics might be investigated in the future.}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{The Physics of Moving Wetting Lines}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{299}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.jcis.2006.03.051
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\blake2006PhysicsMovingWetting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979706002463
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979706002463
+      \endverb
+    \endentry
+    \entry{bosanquet1923LVFlowLiquids}{article}{}
+      \name{author}{1}{}{%
+        {{hash=317bfbec0c75efa4f553d286ada7a2d5}{%
+           family={Bosanquet},
+           familyi={B\bibinitperiod},
+           given={C.H.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \strng{fullhash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \strng{bibnamehash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \strng{authorbibnamehash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \strng{authornamehash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \strng{authorfullhash}{317bfbec0c75efa4f553d286ada7a2d5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-5982, 1941-5990}
+      \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{267}
+      \field{shortjournal}{The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}
+      \field{title}{{{LV}}. {{{\emph{On}}}}{\emph{ the Flow of Liquids into Capillary Tubes}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{45}
+      \field{year}{1923}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{525\bibrangedash 531}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1080/14786442308634144
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\bosanquet1923LVFlowLiquids.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442308634144
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442308634144
+      \endverb
+    \endentry
+    \entry{buttPhysicsChemistryInterfaces}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2731b858a00639318cb57f3e8febfba1}{%
+           family={Butt},
+           familyi={B\bibinitperiod},
+           given={Hans-Jürgen},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=eaa0d86af92147cd00bdeb1fdaf0e5d5}{%
+           family={Graf},
+           familyi={G\bibinitperiod},
+           given={Karlheinz},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c0422fbe181b014e75854ff09aa18bcf}{%
+           family={Kappl},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c7213b7a0b97d6f802414455c59e807}
+      \strng{fullhash}{9c7213b7a0b97d6f802414455c59e807}
+      \strng{bibnamehash}{9c7213b7a0b97d6f802414455c59e807}
+      \strng{authorbibnamehash}{9c7213b7a0b97d6f802414455c59e807}
+      \strng{authornamehash}{9c7213b7a0b97d6f802414455c59e807}
+      \strng{authorfullhash}{9c7213b7a0b97d6f802414455c59e807}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Physics and {{Chemistry}} of {{Interfaces}}}
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\buttPhysicsChemistryInterfaces.pdf
+      \endverb
+    \endentry
+    \entry{cai2015NumericalSimulationWetting}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4dfaacfeac6953db34581372ec8ba607}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57745d9509625ddbbcfbf69f96ff467d}{%
+           family={Deutschmann},
+           familyi={D\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{fullhash}{893238832afac2b5b2f6b2fc13511ab6}
+      \strng{bibnamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authorbibnamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authornamehash}{8c3ec085e90ca249e1d8853f16722aa7}
+      \strng{authorfullhash}{893238832afac2b5b2f6b2fc13511ab6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phase-field method coupled with the Navier-Stokes equations is a rather new approach for scale-resolving numerical simulation of interfacial two-phase flows. The intention is to implement it as finite-volume method in the open source library for computational continuum mechanics OpenFOAMâ and make it freely available. An overview on the governing equations is given and the numerical method is shortly discussed. The focus is on application and validation of the code for some fundamental wetting phenomena, namely the capillary rise in a narrow channel and the spreading of a droplet on a flat surface, which is chemically homogeneous or regularly patterned. The numerical results on static meshes agree well with analytical solutions and experimental/numerical results from literature. Also, first 3D finite-volume simulations with adaptive mesh refinement near the interface are presented as a key element to achieve CPU-time efficient simulations.}
+      \field{issn}{0930-7516, 1521-4125}
+      \field{journaltitle}{Chemical Engineering \& Technology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Chem Eng \&amp; Technol}
+      \field{title}{Numerical {{Simulation}} of {{Wetting Phenomena}} with a {{Phase}}‐{{Field Method Using OpenFOAM}}®}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{38}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1985\bibrangedash 1992}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/ceat.201500089
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\cai2015NumericalSimulationWetting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/ceat.201500089
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/ceat.201500089
+      \endverb
+    \endentry
+    \entry{carlson2011DissipationRapidDynamic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b3f1c97948629e12a417f30ccfc227e9}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0b5cd33c88b359131c6faa66a9e8af91}{%
+           family={Do-Quang},
+           familyi={D\bibinithyphendelim Q\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f34278d46c00b66d5b57a1957463e8d6}{%
+           family={Amberg},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9b453c982fba289ae4842e348014f54}
+      \strng{fullhash}{f9b453c982fba289ae4842e348014f54}
+      \strng{bibnamehash}{f9b453c982fba289ae4842e348014f54}
+      \strng{authorbibnamehash}{f9b453c982fba289ae4842e348014f54}
+      \strng{authornamehash}{f9b453c982fba289ae4842e348014f54}
+      \strng{authorfullhash}{f9b453c982fba289ae4842e348014f54}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we present a modelling approach for rapid dynamic wetting based on the phase field theory. We show that in order to model this accurately, it is important to allow for a non-equilibrium wetting boundary condition. Using a condition of this type, we obtain a direct match with experimental results reported in the literature for rapid spreading of liquid droplets on dry surfaces. By extracting the dissipation of energy and the rate of change of kinetic energy in the flow simulation, we identify a new wetting regime during the rapid phase of spreading. This is characterized by the main dissipation to be due to a re-organization of molecules at the contact line, in a diffusive or active process. This regime serves as an addition to the other wetting regimes that have previously been reported in the literature.}
+      \field{day}{10}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{Dissipation in Rapid Dynamic Wetting}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{682}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{213\bibrangedash 240}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1017/jfm.2011.211
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\carlson2011DissipationRapidDynamic.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112011002114/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112011002114/type/journal_article
+      \endverb
+    \endentry
+    \entry{carlsonCapillarityDynamicWetting2012}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ff2f1c2d0c27f2e4573cc08f2ad57504}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {KTH Royal Institute of Technology}%
+      }
+      \strng{namehash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \strng{fullhash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \strng{bibnamehash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \strng{authorbibnamehash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \strng{authornamehash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \strng{authorfullhash}{ff2f1c2d0c27f2e4573cc08f2ad57504}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this thesis capillary dominated two–phase flow is studied by means of numerical simulations and experiments. The theoretical basis for the simulations consists of a phase field model, which is derived from the system’s thermodynamics, and coupled with the Navier Stokes equations. Two types of interfacial flow are investigated, droplet dynamics in a bifurcating channel and spontaneous capillary driven spreading of drops.}
+      \field{langid}{english}
+      \field{title}{Capillarity and Dynamic Wetting}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\carlsonCapillarityDynamicWetting.pdf
+      \endverb
+    \endentry
+    \entry{cox1986DynamicsSpreadingLiquids}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e8bf3cfbc08ef60fb0232b79866c5269}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \strng{fullhash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \strng{bibnamehash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \strng{authorbibnamehash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \strng{authornamehash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \strng{authorfullhash}{e8bf3cfbc08ef60fb0232b79866c5269}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{issue}{-1}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{The Dynamics of the Spreading of Liquids on a Solid Surface. {{Part}} 1. {{Viscous}} Flow}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{168}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{169}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1017/S0022112086000332
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\cox1986DynamicsSpreadingLiquids.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.journals.cambridge.org/abstract_S0022112086000332
+      \endverb
+      \verb{url}
+      \verb http://www.journals.cambridge.org/abstract_S0022112086000332
+      \endverb
+    \endentry
+    \entry{delannoy2019DualRoleViscosity}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5b0400a6bf9e416c187cd96f19ccf79f}{%
+           family={Delannoy},
+           familyi={D\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a0f58a1ac47eb67be51ea5ac2e60f7a0}{%
+           family={Lafon},
+           familyi={L\bibinitperiod},
+           given={Suzanne},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b462c3c0f401204811e4ad9ca95c9131}{%
+           family={Koga},
+           familyi={K\bibinitperiod},
+           given={Yukina},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7330eb7ec731ebc598edde84eba3f836}{%
+           family={Reyssat},
+           familyi={R\bibinitperiod},
+           given={Étienne},
+           giveni={É\bibinitperiod}}}%
+        {{hash=ea9cd2185429c5a8f881b908356ea31d}{%
+           family={Quéré},
+           familyi={Q\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{480f5580ea3f523bdc739d6cba9906a8}
+      \strng{fullhash}{fdb769fec2146ba51bc472ba305b6d8d}
+      \strng{bibnamehash}{480f5580ea3f523bdc739d6cba9906a8}
+      \strng{authorbibnamehash}{480f5580ea3f523bdc739d6cba9906a8}
+      \strng{authornamehash}{480f5580ea3f523bdc739d6cba9906a8}
+      \strng{authorfullhash}{fdb769fec2146ba51bc472ba305b6d8d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At short time, the rise of a viscous meniscus in a capillary tube is opposed by viscous dissipation at the contact line, which leads to a progression linear in time instead of the classical Washburn dynamics only observed later, when the liquid is high enough. , The spontaneous rise of a wetting liquid in a capillary tube is classically described by Washburn's law: the meniscus height increases as the square root of time, a law singular for short times, where the velocity diverges. We focus here on the early dynamics of the rise of viscous liquids, and report an initial regime of constant velocity contrasting with Washburn's prediction. This is explained by considering the contact line friction at the liquid front, and confirmed by the influence of prewetting films on the tube walls, whose presence is found to speed up the rise and more generally to provide an ideal framework for quantifying the friction at contact lines.}
+      \field{issn}{1744-683X, 1744-6848}
+      \field{journaltitle}{Soft Matter}
+      \field{langid}{english}
+      \field{number}{13}
+      \field{shortjournal}{Soft Matter}
+      \field{title}{The Dual Role of Viscosity in Capillary Rise}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2757\bibrangedash 2761}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1039/C8SM02485E
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\delannoy2019DualRoleViscosity.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://xlink.rsc.org/?DOI=C8SM02485E
+      \endverb
+      \verb{url}
+      \verb http://xlink.rsc.org/?DOI=C8SM02485E
+      \endverb
+    \endentry
+    \entry{dreyer1994CapillaryRiseLiquid}{article}{}
+      \name{author}{3}{}{%
+        {{hash=74a3d911a6838b63589248c21f84797b}{%
+           family={Dreyer},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0384e837f8f01b95f0b3f2267d2eed86}{%
+           family={Delgado},
+           familyi={D\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7eee1c0aff708791ab5f844e520aa8d}{%
+           family={Path},
+           familyi={P\bibinitperiod},
+           given={Hans-Joseph},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{43df21e904c98401de3028d761a8f983}
+      \strng{fullhash}{43df21e904c98401de3028d761a8f983}
+      \strng{bibnamehash}{43df21e904c98401de3028d761a8f983}
+      \strng{authorbibnamehash}{43df21e904c98401de3028d761a8f983}
+      \strng{authornamehash}{43df21e904c98401de3028d761a8f983}
+      \strng{authorfullhash}{43df21e904c98401de3028d761a8f983}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{Capillary {{Rise}} of {{Liquid}} between {{Parallel Plates}} under {{Microgravity}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{163}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{158\bibrangedash 168}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1006/jcis.1994.1092
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\dreyer1994CapillaryRiseLiquid.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979784710927
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979784710927
+      \endverb
+    \endentry
+    \entry{fricke2023AnalyticalStudyCapillary}{article}{}
+      \name{author}{6}{}{%
+        {{hash=cb668a9cd49fe2bdae56ef16820486ac}{%
+           family={Fricke},
+           familyi={F\bibinitperiod},
+           given={Mathis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a8cd898f2f63e482f03bb342adf31b1d}{%
+           family={Ouro-Koura},
+           familyi={O\bibinithyphendelim K\bibinitperiod},
+           given={El\bibnamedelima Assad},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4dbceaa7a465d0b0ce4c7082909099cc}{%
+           family={Raju},
+           familyi={R\bibinitperiod},
+           given={Suraj},
+           giveni={S\bibinitperiod}}}%
+        {{useprefix=true,hash=3f7e4d96f426b3f5b16b15ca5097c68a}{%
+           family={Klitzing},
+           familyi={K\bibinitperiod},
+           given={Regine},
+           giveni={R\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=5792fc49d7c4f01e4d2137eb4e5f15ab}{%
+           family={De\bibnamedelima Coninck},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3f3de62d1383b738ac4933acc854adde}{%
+           family={Bothe},
+           familyi={B\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5e22c480752b5cf6a7b60aeedcfaecf}
+      \strng{fullhash}{9af9e1a612f2d86ed59b9416f1391832}
+      \strng{bibnamehash}{c5e22c480752b5cf6a7b60aeedcfaecf}
+      \strng{authorbibnamehash}{c5e22c480752b5cf6a7b60aeedcfaecf}
+      \strng{authornamehash}{c5e22c480752b5cf6a7b60aeedcfaecf}
+      \strng{authorfullhash}{9af9e1a612f2d86ed59b9416f1391832}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The rise of a liquid column inside a thin capillary against the action of gravity is a prototypical example of a dynamic wetting process and plays an important role for applications but also for fundamental research in the area of multiphase fluid dynamics. Since the pioneering work by Lucas and Washburn, many research articles have been published which aim at a simplified description of the capillary rise dynamics using complexity-reduced models formulated as ordinary differential equations. Despite the fact that these models are based on profound simplifications, they may still be able to describe the essential physical mechanisms and their interplay. In this study, we focus on the phenomenon of oscillations of the liquid column. The latter has been observed experimentally for liquids with sufficiently small viscosity leading to comparably small viscous dissipation. Back in 1999, Qu´er´e et al. formulated a condition for the appearance of rise height oscillations for an ODE model introduced by Bosanquet in 1923. This model has later been extended to include further dissipative mechanisms. In this work, we extend the mathematical analysis to a larger class of models including additional channels of dissipation. We show that Qu´er´e’s critical condition is generalized to Ω + β {$<$} 2, where Ω was introduced earlier and β is an additional non-dimensional parameter describing, e.g., contact line friction. A quantitative prediction of the oscillation dynamics is achieved from a linearization of the governing equations. We apply the theory to experimental data by Qu´er´e et al. and, in particular, reveal the oscillatory behavior of dynamics for the nearly critically damped case of ethanol.}
+      \field{eprintclass}{physics}
+      \field{eprinttype}{arxiv}
+      \field{issn}{01672789}
+      \field{journaltitle}{Physica D: Nonlinear Phenomena}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{Physica D: Nonlinear Phenomena}
+      \field{shorttitle}{An Analytical Study of Capillary Rise Dynamics}
+      \field{title}{An Analytical Study of Capillary Rise Dynamics: {{Critical}} Conditions and Hidden Oscillations}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{455}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{133895}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physd.2023.133895
+      \endverb
+      \verb{eprint}
+      \verb 2305.05939
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\fricke2023AnalyticalStudyCapillary.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.05939
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.05939
+      \endverb
+      \keyw{Physics - Fluid Dynamics}
+    \endentry
+    \entry{fries2008TransitionInertialViscous}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4218d54ceb838883e17532ef0e160f8e}{%
+           family={Fries},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1b648e1b3053b7b2f3343e243444abd1}{%
+           family={Dreyer},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{fullhash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{bibnamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authorbibnamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authornamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authorfullhash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate the initial moments of capillary rise of liquids in a tube. In this period both inertia and viscous flow losses balance the pressure generated by the meniscus curvature (capillary pressure). It is known that the very first stage is purely dominated by inertial forces, where subsequently the influence of viscosity increases (visco-inertial flow). Finally the effect of inertia vanishes and the flow becomes purely viscous. In this study we derive the times and meniscus heights at which the transition between the time periods occur. This is done in an attempt to provide a method to determine a priori which terms of the momentum balance are relevant for a given problem. Analytic solutions known from previous literature are discussed and the time intervals of their validity compared. The predicted transition times and the calculated heights show good agreement with experimental results from literature. The results are also discussed in dimensionless form and the limitations of the calculations are pointed out.}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{The Transition from Inertial to Viscous Flow in Capillary Rise}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{327}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{125\bibrangedash 128}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.jcis.2008.08.018
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\fries2008TransitionInertialViscous.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708009661
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708009661
+      \endverb
+    \endentry
+    \entry{holzinger2021DirectNumericalSimulation}{software}{}
+      \name{author}{2}{}{%
+        {{hash=9474b09ab9890d5cd285abbdac5c6227}{%
+           family={Holzinger},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=efbfa9bbcd5cf2b216b1b34ba90f6dd4}{%
+           family={{TU Darmstadt}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \name{editora}{1}{}{%
+        {{hash=0b9a409a3d28bed0b9d7a8cc870e5991}{%
+           family={{Technical University Of Darmstadt}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Technical University of Darmstadt}%
+      }
+      \strng{namehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{fullhash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{bibnamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authorbibnamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authornamehash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{authorfullhash}{c976f9f1bdedb0b6adb6243e47d7239b}
+      \strng{editorabibnamehash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \strng{editoranamehash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \strng{editorafullhash}{0b9a409a3d28bed0b9d7a8cc870e5991}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{editoratype}{collaborator}
+      \field{title}{Direct {{Numerical Simulation}} of Dynamic Droplet Wetting on Superhydrophobic Substrates by Means of a Diffuse-Interface Phase-Field Method Using {{OpenFOAM}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48328/TUDATALIB-473
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\holzinger2021DirectNumericalSimulation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2689
+      \endverb
+      \verb{url}
+      \verb https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2689
+      \endverb
+      \keyw{312-01 Mathematics,312-01 Mathematik,404-03 Fluid Mechanics,404-03 Strömungsmechanik,510,620,diffuse interface model,droplet rebound,droplet wetting,phase-field method,superhydrophobic substrate}
+    \endentry
+    \entry{huh1971HydrodynamicModelSteady}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e7e74f0203a6f4f88a1b763ff434ae6}{%
+           family={Huh},
+           familyi={H\bibinitperiod},
+           given={Chun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4f83892fd062dca2c73ed815f4a1879b}{%
+           family={Scriven},
+           familyi={S\bibinitperiod},
+           given={L.E},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{608344210505fe49242d7292cf11464b}
+      \strng{fullhash}{608344210505fe49242d7292cf11464b}
+      \strng{bibnamehash}{608344210505fe49242d7292cf11464b}
+      \strng{authorbibnamehash}{608344210505fe49242d7292cf11464b}
+      \strng{authornamehash}{608344210505fe49242d7292cf11464b}
+      \strng{authorfullhash}{608344210505fe49242d7292cf11464b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{Hydrodynamic Model of Steady Movement of a Solid/Liquid/Fluid Contact Line}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{35}
+      \field{year}{1971}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{85\bibrangedash 101}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/0021-9797(71)90188-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\huh1971HydrodynamicModelSteady.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0021979771901883
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0021979771901883
+      \endverb
+    \endentry
+    \entry{jacqmin1999CalculationTwoPhaseNavier}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b0030e9a33a075d5004899b13c317193}{%
+           family={Jacqmin},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{fullhash}{b0030e9a33a075d5004899b13c317193}
+      \strng{bibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorbibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authornamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorfullhash}{b0030e9a33a075d5004899b13c317193}
+      \field{extraname}{1}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Computational Physics}
+      \field{title}{Calculation of {{Two-Phase Navier}}–{{Stokes Flows Using Phase-Field Modeling}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{155}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{96\bibrangedash 127}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1006/jcph.1999.6332
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\jacqmin1999CalculationTwoPhaseNavier.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999199963325
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021999199963325
+      \endverb
+    \endentry
+    \entry{jacqmin2000ContactlineDynamicsDiffuse}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b0030e9a33a075d5004899b13c317193}{%
+           family={Jacqmin},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{fullhash}{b0030e9a33a075d5004899b13c317193}
+      \strng{bibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorbibnamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authornamehash}{b0030e9a33a075d5004899b13c317193}
+      \strng{authorfullhash}{b0030e9a33a075d5004899b13c317193}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An investigation is made into the moving contact line dynamics of a Cahn–Hilliard–van der Waals (CHW) diffuse mean-field interface. The interface separates two incompressible viscous fluids and can evolve either through convection or through diffusion driven by chemical potential gradients. The purpose of this paper is to show how the CHW moving contact line compares to the classical sharp interface contact line. It therefore discusses the asymptotics of the CHW contact line velocity and chemical potential fields as the interface thickness ε and the mobility κ both go to zero. The CHW and classical velocity fields have the same outer behaviour but can have very different inner behaviours and physics. In the CHW model, wall–liquid bonds are broken by chemical potential gradients instead of by shear and change of material at the wall is accomplished by diffusion rather than convection. The result is, mathematically at least, that the CHW moving contact line can exist even with no-slip conditions for the velocity. The relevance and realism or lack thereof of this is considered through the course of the paper. The two contacting fluids are assumed to be Newtonian and, to a first approximation, to obey the no-slip condition. The analysis is linear. For simplicity most of the analysis and results are for a 90° contact angle and for the fluids having equal dynamic viscosity μ and mobility κ. There are two regions of flow. To leading order the outer-region velocity field is the same as for sharp interfaces (flow field independent of r ) while the chemical potential behaves like r −ξ , ξ = π/2/max\{θ eq , π − θ eq \}, θ eq being the equilibrium contact angle. An exception to this occurs for θ eq = 90°, when the chemical potential behaves like ln r / r . The diffusive and viscous contact line singularities implied by these outer solutions are resolved in the inner region through chemical diffusion. The length scale of the inner region is about 10√μκ – typically about 0.5–5 nm. Diffusive fluxes in this region are O (1). These counterbalance the effects of the velocity, which, because of the assumed no-slip boundary condition, fluxes material through the interface in a narrow boundary layer next to the wall. The asymptotic analysis is supplemented by both linearized and nonlinear finite difference calculations. These are made at two scales, experimental and nanoscale. The first set is done to show CHW interface behaviour and to test the qualitative applicability of the CHW model and its asymptotic theory to practical computations of experimental scale, nonlinear, low capillary number flows. The nanoscale calculations are carried out with realistic interface thicknesses and diffusivities and with various assumed levels of shear-induced slip. These are discussed in an attempt to evaluate the physical relevance of the CHW diffusive model. The various asymptotic and numerical results together indicate a potential usefullness for the CHW model for calculating and modelling wetting and dewetting flows.}
+      \field{day}{10}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{Contact-Line Dynamics of a Diffuse Fluid Interface}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{402}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{57\bibrangedash 88}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1017/S0022112099006874
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\jacqmin2000ContactlineDynamicsDiffuse.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112099006874/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112099006874/type/journal_article
+      \endverb
+    \endentry
+    \entry{johnw.FreeEnergyNonuniform1958}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b728d15253ea1b20aedce960c88f25c1}{%
+           family={John\bibnamedelima W.},
+           familyi={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Cahn},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f18a6ee388b3805d0930987ebcf5943b}{%
+           family={John\bibnamedelima E.},
+           familyi={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Hillard},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{fullhash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{bibnamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authorbibnamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authornamehash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \strng{authorfullhash}{4bb95cddb5245cbd8e38f99a60c2ddc7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Free {{Energy}} of a {{Nonuniform System}}. {{I}}. {{Interfacial Free Energy}}}
+      \field{volume}{28}
+      \field{year}{1958}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1063/1.1744102
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs
+      \endverb
+    \endentry
+    \entry{lucas1918UeberZeitgesetzKapillaren}{article}{}
+      \name{author}{1}{}{%
+        {{hash=96fb01c00b40a5fa4e3039ea0c455d10}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \strng{fullhash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \strng{bibnamehash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \strng{authorbibnamehash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \strng{authornamehash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \strng{authorfullhash}{96fb01c00b40a5fa4e3039ea0c455d10}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0303-402X, 1435-1536}
+      \field{journaltitle}{Kolloid-Zeitschrift}
+      \field{langid}{ngerman}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Kolloid-Zeitschrift}
+      \field{title}{Ueber das Zeitgesetz des kapillaren Aufstiegs von Flüssigkeiten}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{23}
+      \field{year}{1918}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 22}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/BF01461107
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\lucas1918UeberZeitgesetzKapillaren.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF01461107
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF01461107
+      \endverb
+    \endentry
+    \entry{mohammadkarim2022ReviewPhysicsMoving}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d98f36c7f59625c6c4849eb84386a91d}{%
+           family={Mohammad\bibnamedelima Karim},
+           familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d98f36c7f59625c6c4849eb84386a91d}
+      \strng{fullhash}{d98f36c7f59625c6c4849eb84386a91d}
+      \strng{bibnamehash}{d98f36c7f59625c6c4849eb84386a91d}
+      \strng{authorbibnamehash}{d98f36c7f59625c6c4849eb84386a91d}
+      \strng{authornamehash}{d98f36c7f59625c6c4849eb84386a91d}
+      \strng{authorfullhash}{d98f36c7f59625c6c4849eb84386a91d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite several decades long research on moving contact line dynamics due to its remarkable role in interfacial science and technological fields, there is still a significant lack of comprehensive knowledge about the true nature of the contact line. The moving contact line is much more complex than just a geometric flow condition. Given the role of moving contact line physics in numerous emerging advanced technologies including bioprinting, tissue engineering, pharmaceutical industry, smart functional coatings, flexible electronics, and healthcare, it is needed for scientific community to direct their focus in advancement on better understanding of interfacial science and physics of moving contact line. Therefore, this review primarily concentrates on the current physical theories which describe the moving contact line dynamics. Moreover, numerous potential and ongoing applications of moving contact line dynamics linked to the interfacial science are thoroughly discussed. Finally, this review presents the future perspectives related to the current challenges in moving contact line dynamics.}
+      \field{day}{28}
+      \field{issn}{0021-8979, 1089-7550}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{A Review of Physics of Moving Contact Line Dynamics Models and Its Applications in Interfacial Science}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{132}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{080701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0102028
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\mohammadkarim2022ReviewPhysicsMoving.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jap/article/132/8/080701/2837259/A-review-of-physics-of-moving-contact-line
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jap/article/132/8/080701/2837259/A-review-of-physics-of-moving-contact-line
+      \endverb
+    \endentry
+    \entry{quere1997InertialCapillarity}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b80132b594f6ef7c79243287d179c46c}{%
+           family={Quéré},
+           familyi={Q\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b80132b594f6ef7c79243287d179c46c}
+      \strng{fullhash}{b80132b594f6ef7c79243287d179c46c}
+      \strng{bibnamehash}{b80132b594f6ef7c79243287d179c46c}
+      \strng{authorbibnamehash}{b80132b594f6ef7c79243287d179c46c}
+      \strng{authornamehash}{b80132b594f6ef7c79243287d179c46c}
+      \strng{authorfullhash}{b80132b594f6ef7c79243287d179c46c}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present new results on an old problem (capillary rise). A small tube is put in contact with a liquid of low viscosity. It is found that 1) the early stage of the rise is described by a linear law for the position of the meniscus vs. time; 2) oscillations around the equilibrium occur if the liquid viscosity is low enough. A simple analytical model allows us to understand these behaviours.}
+      \field{day}{1}
+      \field{issn}{0295-5075, 1286-4854}
+      \field{journaltitle}{Europhysics Letters (EPL)}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{5}
+      \field{shortjournal}{Europhys. Lett.}
+      \field{title}{Inertial Capillarity}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{39}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{533\bibrangedash 538}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1209/epl/i1997-00389-2
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\quere1997InertialCapillarity.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i1997-00389-2
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i1997-00389-2
+      \endverb
+    \endentry
+    \entry{ruiz-gutierrez2022LongCrossoverDynamics}{article}{}
+      \name{author}{8}{}{%
+        {{hash=55a250b2df83e9d1d1b8ce991b51d5d5}{%
+           family={Ruiz-Gutiérrez},
+           familyi={R\bibinithyphendelim G\bibinitperiod},
+           given={Élfego},
+           giveni={É\bibinitperiod}}}%
+        {{hash=788346a5b96e8d9a7b3766fbbcd63720}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=474594874ebd803e97197e6858045d57}{%
+           family={Lévêque},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8109e3fc0d2a8a5a1ab8f4009e8ebef7}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Célestin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc8c69b1a4b1108b956bc3f8edc6d836}{%
+           family={Pagonabarraga},
+           familyi={P\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2de03721fc0181ddc22451cf74f6e6bc}{%
+           family={Wells},
+           familyi={W\bibinitperiod},
+           given={Gary\bibnamedelima G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dc6ff3203c701394cc1bf8756079c202}{%
+           family={Hernández-Machado},
+           familyi={H\bibinithyphendelim M\bibinitperiod},
+           given={Aurora},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df8e1f9b019e0d1ac11b285aaf2009ed}{%
+           family={Ledesma-Aguilar},
+           familyi={L\bibinithyphendelim A\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a45cef5aac53f5868ba446fbd9832496}
+      \strng{fullhash}{86e4eff6dc2c4fccba0c6e826c8d56d5}
+      \strng{bibnamehash}{a45cef5aac53f5868ba446fbd9832496}
+      \strng{authorbibnamehash}{a45cef5aac53f5868ba446fbd9832496}
+      \strng{authornamehash}{a45cef5aac53f5868ba446fbd9832496}
+      \strng{authorfullhash}{86e4eff6dc2c4fccba0c6e826c8d56d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Spontaneous capillary imbibition is a classical problem in interfacial fluid dynamics with a broad range of applications, from microfluidics to agriculture. Here we study the duration of the cross-over between an initial linear growth of the imbibition front to the diffusive-like growth limit of Washburn’s law. We show that local-resistance sources, such as the inertial resistance and the friction caused by the advancing meniscus, always limit the motion of an imbibing front. Both effects give rise to a cross-over of the growth exponent between the linear and the diffusive-like regimes. We show how this cross-over is much longer than previously thought – even longer than the time it takes the liquid to fill the porous medium. Such slowly slowing-down dynamics is likely to cause similar long cross-over phenomena in processes governed by wetting.}
+      \field{day}{25}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{The Long Cross-over Dynamics of Capillary Imbibition}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{939}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{A39}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/jfm.2022.248
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\ruiz-gutierrez2022LongCrossoverDynamics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112022002488/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112022002488/type/journal_article
+      \endverb
+    \endentry
+    \entry{siegel1961TransientCapillaryRise}{article}{}
+      \name{author}{1}{}{%
+        {{hash=499d33350d1f0f4257078f0e1a0c5632}{%
+           family={Siegel},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{499d33350d1f0f4257078f0e1a0c5632}
+      \strng{fullhash}{499d33350d1f0f4257078f0e1a0c5632}
+      \strng{bibnamehash}{499d33350d1f0f4257078f0e1a0c5632}
+      \strng{authorbibnamehash}{499d33350d1f0f4257078f0e1a0c5632}
+      \strng{authornamehash}{499d33350d1f0f4257078f0e1a0c5632}
+      \strng{authorfullhash}{499d33350d1f0f4257078f0e1a0c5632}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Experimental information is given on the transient “capillary” rise of water into vertical tubes subjected to reduced and zero-gravity fields. The tubes ranged in internal diameter from 0.075 to 1.295 in. The response in a low-gravity environment is of interest in studying the behavior of liquid systems for space vehicles. An approximate analysis is presented to aid in the interpretation of the data and predict the transient rise. Photographs are given which illustrate the behavior in short tubes where the water is able to move beyond the top of the tube during part of the zero-gravity period.}
+      \field{day}{1}
+      \field{issn}{0021-8936, 1528-9036}
+      \field{journaltitle}{Journal of Applied Mechanics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Transient {{Capillary Rise}} in {{Reduced}} and {{Zero-Gravity Fields}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{1961}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{165\bibrangedash 170}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1115/1.3641647
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\siegel1961TransientCapillaryRise.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://asmedigitalcollection.asme.org/appliedmechanics/article/28/2/165/385908/Transient-Capillary-Rise-in-Reduced-and
+      \endverb
+      \verb{url}
+      \verb https://asmedigitalcollection.asme.org/appliedmechanics/article/28/2/165/385908/Transient-Capillary-Rise-in-Reduced-and
+      \endverb
+    \endentry
+    \entry{stange2003CapillaryDrivenFlow}{article}{}
+      \name{author}{3}{}{%
+        {{hash=93589f138f2034ce71fc40b3f9980528}{%
+           family={Stange},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c3992b0eaa324216f51d726e6e3119ec}{%
+           family={Dreyer},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=8ca03a282092892db1bd63dfdbbfb3e6}{%
+           family={Rath},
+           familyi={R\bibinitperiod},
+           given={Hans\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \strng{fullhash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \strng{bibnamehash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \strng{authorbibnamehash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \strng{authornamehash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \strng{authorfullhash}{a11246f982e977bbc0cbb6c54cf7f5e1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Capillary-driven flow of a perfectly wetting liquid into circular cylindrical tubes is studied. Based on an analysis of previous approaches, a comprehensive theoretical model is presented which is not limited to certain special cases. This model considers the meniscus reorientation, the dynamic contact angle as well as inertia, convective, and viscous losses inside the tube and the reservoir. The capillary-driven flow is divided into three successive phases where first inertia then convective losses and finally viscous forces counteract the driving capillary force. This leads to an initial meniscus height increase proportional to the square of time followed by a linear dependence and finally the Lucas–Washburn behavior where the meniscus height is proportional to the square root of time. The three phases are separated by two characteristic transition times which are determined by the Ohnesorge number and the inertia of the liquid. Experiments were carried out under microgravity condition in a carefully chosen range of Ohnesorge numbers and initial liquid heights to cover the complete process from the initial meniscus development to the final Lucas–Washburn behavior. Good agreement of experimental and theoretical data is found throughout the complete range of experiment parameters. The existence of all three flow regimes predicted by the theory is verified by the experiments.}
+      \field{day}{1}
+      \field{issn}{1070-6631, 1089-7666}
+      \field{journaltitle}{Physics of Fluids}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Capillary Driven Flow in Circular Cylindrical Tubes}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{15}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2587\bibrangedash 2601}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1063/1.1596913
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\stange2003CapillaryDrivenFlow.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/pof/article/15/9/2587/450889/Capillary-driven-flow-in-circular-cylindrical
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/pof/article/15/9/2587/450889/Capillary-driven-flow-in-circular-cylindrical
+      \endverb
+    \endentry
+    \entry{vanderwaals1979ThermodynamicTheoryCapillarity}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ee353283c9fe964cb517cf86340d1041}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Waals},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee353283c9fe964cb517cf86340d1041}
+      \strng{fullhash}{ee353283c9fe964cb517cf86340d1041}
+      \strng{bibnamehash}{ee353283c9fe964cb517cf86340d1041}
+      \strng{authorbibnamehash}{ee353283c9fe964cb517cf86340d1041}
+      \strng{authornamehash}{ee353283c9fe964cb517cf86340d1041}
+      \strng{authorfullhash}{ee353283c9fe964cb517cf86340d1041}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-4715, 1572-9613}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{J Stat Phys}
+      \field{title}{The Thermodynamic Theory of Capillarity under the Hypothesis of a Continuous Variation of Density}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{20}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{200\bibrangedash 244}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1007/BF01011514
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\vanderwaals1979ThermodynamicTheoryCapillarity.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF01011514
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF01011514
+      \endverb
+    \endentry
+    \entry{voinovHydrodynamicsWetting1977}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7ef5eb06c8370c20178e43e962d3f653}{%
+           family={Voinov},
+           familyi={V\bibinitperiod},
+           given={O.\bibnamedelimi V.},
+           giveni={O\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ef5eb06c8370c20178e43e962d3f653}
+      \strng{fullhash}{7ef5eb06c8370c20178e43e962d3f653}
+      \strng{bibnamehash}{7ef5eb06c8370c20178e43e962d3f653}
+      \strng{authorbibnamehash}{7ef5eb06c8370c20178e43e962d3f653}
+      \strng{authornamehash}{7ef5eb06c8370c20178e43e962d3f653}
+      \strng{authorfullhash}{7ef5eb06c8370c20178e43e962d3f653}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0015-4628, 1573-8507}
+      \field{journaltitle}{Fluid Dynamics}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shortjournal}{Fluid Dyn}
+      \field{title}{Hydrodynamics of Wetting}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{1977}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{714\bibrangedash 721}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/BF01012963
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF01012963
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF01012963
+      \endverb
+    \endentry
+    \entry{washburn1921DynamicsCapillaryFlow}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0790791c7311b907e00b98f71a6063cd}{%
+           family={Washburn},
+           familyi={W\bibinitperiod},
+           given={Edward\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{0790791c7311b907e00b98f71a6063cd}
+      \strng{fullhash}{0790791c7311b907e00b98f71a6063cd}
+      \strng{bibnamehash}{0790791c7311b907e00b98f71a6063cd}
+      \strng{authorbibnamehash}{0790791c7311b907e00b98f71a6063cd}
+      \strng{authornamehash}{0790791c7311b907e00b98f71a6063cd}
+      \strng{authorfullhash}{0790791c7311b907e00b98f71a6063cd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0031-899X}
+      \field{journaltitle}{Physical Review}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev.}
+      \field{title}{The {{Dynamics}} of {{Capillary Flow}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{17}
+      \field{year}{1921}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{273\bibrangedash 283}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1103/PhysRev.17.273
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\washburn1921DynamicsCapillaryFlow.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.17.273
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.17.273
+      \endverb
+    \endentry
+    \entry{wu2017CapillaryRiseValidity}{article}{}
+      \name{author}{3}{}{%
+        {{hash=857c68c0481edd4596ffc70491b4f939}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Pingkeng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=777a05c3ea0ddefda57ea026587def13}{%
+           family={Nikolov},
+           familyi={N\bibinitperiod},
+           given={Alex\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3688a161d50c0b20f52e731d987dba45}{%
+           family={Wasan},
+           familyi={W\bibinitperiod},
+           given={Darsh\bibnamedelima T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \strng{fullhash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \strng{bibnamehash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \strng{authorbibnamehash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \strng{authornamehash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \strng{authorfullhash}{166a0c4e06a0a645c23cedbd43e16b00}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The classical Lucas−Washburn−Rideal (LWR) equation, using the equilibrium contact angle, predicts a faster capillary rise process than experiments in many cases. The major contributor to the faster prediction is believed to be the velocity dependent dynamic contact angle. In this work, we investigated the dynamic contact angle models for their ability to correct the dynamic contact angle effect in the capillary rise process. We conducted capillary rise experiments of various wetting liquids in borosilicate glass capillaries and compared the model predictions with our experimental data. The results show that the LWR equations modified by the molecular kinetic theory and hydrodynamic model provide good predictions on the capillary rise of all the testing liquids with fitting parameters, while the one modified by Joos’ empirical equation works for specific liquids, such as silicone oils. The LWR equation modified by molecular self-layering model predicts well the capillary rise of carbon tetrachloride, octamethylcyclotetrasiloxane, and n-alkanes with the molecular diameter or measured solvation force data. The molecular self-layering model modified LWR equation also has good predictions on the capillary rise of silicone oils covering a wide range of bulk viscosities with the same key parameter W(0), which results from the molecular self-layering. The advantage of the molecular self-layering model over the other models reveals the importance of the layered molecularly thin wetting film ahead of the main meniscus in the energy dissipation associated with dynamic contact angle. The analysis of the capillary rise of silicone oils with a wide range of bulk viscosities provides new insights into the capillary dynamics of polymer melts.}
+      \field{day}{15}
+      \field{issn}{0743-7463, 1520-5827}
+      \field{journaltitle}{Langmuir}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{32}
+      \field{shortjournal}{Langmuir}
+      \field{shorttitle}{Capillary {{Rise}}}
+      \field{title}{Capillary {{Rise}}: {{Validity}} of the {{Dynamic Contact Angle Models}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{33}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{7862\bibrangedash 7872}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.langmuir.7b01762
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\wu2017CapillaryRiseValidity.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01762
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01762
+      \endverb
+    \endentry
+    \entry{yue2010SharpinterfaceLimitCahn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d1f4433e81c19c34d5a3081f8390f453}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={Pengtao},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc80e7321e1acaee4784082d5b7594ca}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chunfeng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e18b40642b49ddddd9c992fcf654b7c8}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{fullhash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{bibnamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authorbibnamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authornamehash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \strng{authorfullhash}{86302e81d2962aaf5cd8dc56d32bacd0}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Diffuse-interface models may be used to compute moving contact lines because the Cahn–Hilliard diffusion regularizes the singularity at the contact line. This paper investigates the basic questions underlying this approach. Through scaling arguments and numerical computations, we demonstrate that the Cahn–Hilliard model approaches a sharp-interface limit when the interfacial thickness is reduced below a threshold while other parameters are fixed. In this limit, the contact line has a diffusion length that is related to the slip length in sharp-interface models. Based on the numerical results, we propose a criterion for attaining the sharp-interface limit in computing moving contact lines.}
+      \field{day}{25}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{Sharp-Interface Limit of the {{Cahn}}–{{Hilliard}} Model for Moving Contact Lines}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{645}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{279\bibrangedash 294}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1017/S0022112009992679
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\yue2010SharpinterfaceLimitCahn.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112009992679/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0022112009992679/type/journal_article
+      \endverb
+    \endentry
+    \entry{zhmud2000DynamicsCapillaryRise}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6aa08b1416b9057e4cacbdacc8e729a2}{%
+           family={Zhmud},
+           familyi={Z\bibinitperiod},
+           given={B.V.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7c992a7d16b71f10fab78705face1fba}{%
+           family={Tiberg},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9c9061e7a3c721f3b5c0b642ae9806bb}{%
+           family={Hallstensson},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \strng{fullhash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \strng{bibnamehash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \strng{authorbibnamehash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \strng{authornamehash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \strng{authorfullhash}{b8e45eedf8adcac3ff5c468f59a070fc}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{Dynamics of {{Capillary Rise}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{228}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{263\bibrangedash 269}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1006/jcis.2000.6951
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\zhmud2000DynamicsCapillaryRise.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979700969510
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979700969510
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{bosanquet_lv_1923}
+  \missing{lucas_ueber_1918}
+  \missing{quere_inertial_1997}
+  \missing{washburn_dynamics_1921}
+\endrefsection
+\endinput
+
