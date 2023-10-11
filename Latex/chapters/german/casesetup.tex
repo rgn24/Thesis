@@ -13,19 +13,16 @@ Wie zu erkennen, handelt es sich um eine Kapillare mit lediglich $6nm$ Durchmess
     \label{fig: Capillary Geometry}
 \end{figure}
 
-Die Diskretisierung der Geometrie wurde so gewählt, dass die Elemente eine Kantenlänge von $0.2nm$ haben. In Radialer Richtung hat eine Wedge nur ein Element. 
+Die Diskretisierung der Geometrie wurde so gewählt, dass die Elemente eine Kantenlänge von $0.2nm$ haben. In Radialer Richtung hat eine Wedge nur ein Element. Zur erstellung der \texttt{blockMeshDict}-datei, wurde ein python skript erstellt, welches anhand des Kapillardurchmessers und länge eine Datei mit den in Abbildung \ref{fig: Capillary Geometry} dargestellten Benennungen der Oberflächen erstellt. 
 
 \section{Randbedingunen}
 In Abbildung \ref{fig: Capillary Geometry} sind neben der Geometrie auch die Flächen, die mit Randbedingungen versehen wurden benannt. Die Flächen \texttt{front} und \texttt{back} sind sich gegenüberliegende Flächen der Wedge und müssen dementsprechende Ranbedinungen erhalten. Die \texttt{wall} Flächen sind nicht durchdringbare Oberflächen und \texttt{top}, bzw. \texttt{bottom} Oberflächen durch die ein Fluss zugelassen wird.
-Im folgeden werden die Randbedingungen für die oberflächen für die untersiedlich durcgeführten Simulationen einzeln gezeigt.
-\paragraph{wall}
-wie ebenfalls schon erwähnt werden sowohl Simulationen mit als auch ohne die Gleichgewichtsrandbedingung durchgeführt. Generell sind die Randbedingungen für beide Fälle gleich. An einer stelle unterscheiden sie sich jedoch voneinander. 
-Im Falle der Gleichgewichtsrandbedingung gelten für die Wand die folgenden Randbedingungen
+Die wesentlichen Randbedingunen an der Wand sind in Tabelle \ref{tab: BoundaryConditions_wall} aufgelistet. 
 
 \begin{table}[h]
     \centering
         \caption{relevant boundary conditions wall}
-        \label{tab: BoandaryConditions_wall}
+        \label{tab: BoundaryConditions_wall}
         \begin{tabular}{lll}
             Parameter & Value \\ \hline
             orderparameter $C$ & \texttt{equilibriumPhaseContactAngle}     \\
@@ -36,3 +33,25 @@ Im Falle der Gleichgewichtsrandbedingung gelten für die Wand die folgenden Rand
         \end{tabular}
 \end{table}
 Für den Ordnungsparameter $C$ wird die Gleichgewichtsrandbedingung angenommen und der Gleichgewichtskontaktwinkel für jede der drei Simulationen mit dieser Geometrie mit $15^{\circ}$, $45^{\circ}$ bzw. $75^{\circ}$ angegeben. Der Gradient des chemischen potentials an der Wand wird als null gesetzt, genauso wie die Geschwindigkeit der Wand. Die Ranbedingung für den Druck wird mit \texttt{fixedFluxPressure} so gewählt, dass der Druckgradient so angepasst wird, das der Massenfluss am Rand mit der vorgegebenen Geschwindigkeit an der Wand übereinstimmt. 
+
+\section{Materialeigenschaften}
+Für die Simulation werden unter anderem Wasser und Luft bei $25^{\circ}$ Celsius als Medium angenommen. Damit folgen die in Tabelle \ref{tab:physicalProperties_CaseSetup} dargestellten Materialeigenschaften. 
+\begin{table}[h]
+    \centering
+    \caption{Physical properties}
+    \label{tab:physicalProperties_CaseSetup}
+    \begin{tabular}{lll}
+    fluid & density ($\frac{kg}{m^3}$) & kinematic viscosity $\frac{m^2}{s}$ \\ \hline
+    water & $1000$                     & $1.00E-06$                          \\
+    air   & $1$                        & $1.00E-05$                          \\ 
+    \end{tabular}
+    \end{table}
+
+
+\section{Simulationsparameter}
+
+\subsection{function objects}
+
+
+\section{Auswertungsmethoden}
+Zur Auswertung der Simulation wurde unter anderem die Anwendung \texttt{paraview} verwendet. Alle bilder der Simulation wurden damit erzeugt. Die Auswertung und darstellung abgeleiteter oder berechneter Größen in Diagrammen wurden hingegen mit der python bibliothek \texttt{Matplotlib} erzeugt. Dazu wurde ein skript erstellt, das die Ergebnisse der function obsjects sammelt und gegebenenfalls Berechnungen damit vornimmt. 
