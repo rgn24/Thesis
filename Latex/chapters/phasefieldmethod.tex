@@ -22,94 +22,91 @@ Free energy system
 Wie bereits in Kapitel \ref{sec: Wetting_SurfaceTension} beshcrieben, gibt es unterschiedliche Möglichkeiten das Interface zu beschreiben. Hydrodynamische Modelle beschreiben das Interface so, dass am Übergang der Phasen die Stoffwerte springen. Ein Diffuses Interface hingegen, beschreibt die größen anders. \todo{picture of interfaces}
 
 \section{Phase Field Method in the Spirit of Cahn and Hillard}
-Die Phasenfeld Methode geht zurück auf die Idee von van der Waals \cite{vanderwaals1979ThermodynamicTheoryCapillarity}, der das Interface zwischen zwei nicht mischbaren Fluiden aus Sicht der Thermodynamik beschrieben hat. Darin gehen die Material Eigenschaften kontinuierlich innerhalb einer dünnen Schicht ineinander über. Innerhalb dieser Schicht existieren beide Phasen. 
-Darauf aufbauend haben Cahn und Hillard \cite{johnw.FreeEnergyNonuniform1958} eine Beschreibung der freien Energie in einem Volumen mit ungleicher Zusammensetzung in Abhängigkeit eines Ordnungsparameters $C$ für Zeitabhängige Probleme abgeleitet. In geschlossener Form lautet diese
+The phase field method traces back to the idea of van der Waals \cite{vanderwaals1979ThermodynamicTheoryCapillarity}, who described the interface between two immiscible fluids from a thermodynamic perspective. In this description, the material properties transition continuously within a thin layer. Within this layer, both phases coexist.
+
+Building on this, Cahn and Hillard \cite{johnw.FreeEnergyNonuniform1958} derived a description of the free energy in a volume with non-uniform composition as a function of an order parameter $C$ for time-dependent problems. In its closed form, it reads
 \begin{equation}
 \label{eq: CahnHillard}
     \partial C + \textbf{u} \cdot \nabla C = \nabla \cdot \left(\kappa \nabla \phi(C)\right).
 \end{equation}
-Darin ist $\textbf{u}$ die Geschwindigkeit, $\kappa$ ein Diffusionskoeffizient, meist mobility genannt, und $\phi$ ein chemisches Potential. Der ordnungsparameter gibt an welche phase vorliegt und liegt für ein zwei phasen system zwischen $-1$ und $1$. Die Mobilität kann mit der Péclet Zahl in Verbindung gebracht werden, die eine Verhältnis der advektiven zu diffusiven flüssen mit einer charakteristischen Weglänge ($L_{char}$) und Geschwindigkeit ($u_{char}$), sowie einem Charakterischen chemischen Potential abbildet\cite{cai2015NumericalSimulationWetting,holzinger2021DirectNumericalSimulation}. 
-Das chemische Potential ist als Ableitung der freien Helmholz Energie bezüglich des Ordungsparameters definiert \cite{johnw.FreeEnergyNonuniform1958}. Im behandelten System kann setzt sich die gesamte freie Energie aus der Mischungsenergie und der interfacial density energy zusammen. Nach \cite{yue2010SharpinterfaceLimitCahn} ist die freie Energie des Systems durch zwei Einflüsse gegeben; definiert über das Volumen $\Omega$ und die Oberfläche $\partial\Omega$ \todo{check!!!}
+Here, $\textbf{u}$ is the velocity, $\kappa$ is a diffusion coefficient, often referred to as mobility, and $\phi$ is a chemical potential. The order parameter indicates which phase is present and ranges between $-1$ and $1$ for a two-phase system. The mobility can be related to the Péclet number, which represents the ratio of advective to diffusive fluxes with a characteristic path length ($L_{char}$) and velocity ($u_{char}$), as well as a characteristic chemical potential \cite{cai2015NumericalSimulationWetting,holzinger2021DirectNumericalSimulation}.
+
+The chemical potential is defined as the derivative of the Helmholtz free energy with respect to the order parameter \cite{johnw.FreeEnergyNonuniform1958}. In the system under consideration, the total free energy consists of the mixing energy and the interfacial density energy. According to \cite{yue2010SharpinterfaceLimitCahn}, the system's free energy is influenced by two factors; defined over the volume $\Omega$ and the surface $\partial\Omega$ \todo{check!!!}
 \begin{equation}
     F(C, \nabla C) = \int_{\Omega} f_{\mathrm{mix}} (C, \nabla C) d\textbf{x}+ \int_{\partial\Omega}f_\mathrm{w}(C) dS
 \end{equation}
-Darin ist das erste integral das der mischungsenergiedichte $f_{mix}$ und das zweite der Wand $f_w$.
+Here, the first integral represents the mixing energy density $f_{mix}$, and the second represents the wall energy $f_w$.
+
 
 \subsection{Mixing Energy}
-Cahn und Hillard haben eine mischungsenergie ($f_{mix}$) definiert, die vom Ordnungsparameter und seinem Gradienten abhängt:
+Cahn and Hillard defined a mixing energy ($f_{\text{mix}}$) that depends on the order parameter and its gradient:
 \begin{equation}
     F(C, \nabla C) = \int_{\Omega} f_{\mathrm{mix}} (C, \nabla C) d\textbf{x} = \int_{\Omega}\left(\frac{\lambda}{\epsilon^2}\Psi(C)+\frac{\lambda}{2}\vert\nabla C\vert^2\right)d\textbf{x}
 \end{equation}\todo{check if right function}
-Die integration der Mischungsenergie über den Bereich ergibt die freie Helmholz Energie des Fluidsystems und besteht aus zwei Summanden. Der erste Term trennt die Phasen voneinander ab, während der zweite Term die Phasen mischt. $\lambda$ ist ein mischungsenergie Parameter, $\epsilon$ ein maß für die Dicke des Interfaces\todo{check if already mentioned} und $\Psi$ ein Potential. Das Potential wird nach Ginzburg und Landau\todo{cite} so gewählt, dass es zwei Minima an den stellen $-1$ und $1$ hat und ist gegeben mit 
+The integration of the mixing energy over the domain yields the Helmholtz free energy of the fluid system and consists of two terms. The first term separates the phases from each other, while the second term mixes the phases. $\lambda$ is a mixing energy parameter, $\epsilon$ a measure for the thickness of the interface\todo{check if already mentioned}, and $\Psi$ a potential. The potential is chosen according to Ginzburg and Landau\todo{cite} so that it has two minima at positions $-1$ and $1$ and is given by 
 \begin{equation}
     \Psi(C)= \frac{1}{4}\left(C^2-1\right)^2.
 \end{equation}
-Daraus folgt die folgende Darstellung für das chemische Potential 
+This leads to the following representation for the chemical potential 
 \begin{equation}
     \label{eq: chempotentialMIXING_pahseFieldMethod}
     \Phi(C):= \frac{\partial F(C)}{\partial C} = \frac{\lambda}{\epsilon^2}\Psi'(C)-\lambda\nabla^2C.
 \end{equation}
 
-
-\subsection{Diffusive Interaface}
-Das Cahn Hillard Modell kann Systeme mit mehreren Fluiden beschreiben. In dieser Arbeit wird jedoch nur ein binäres Fluidsystem betrachtet. 
+\subsection{Diffusive Interface}
+The Cahn-Hillard model can describe systems with multiple fluids. However, only a binary fluid system is considered in this work.
 \begin{figure}[h]
     \centering
     \includegraphics[width=.95\textwidth]{Pictures/DiffusiveInterface.pdf}
-    \caption{Schematische Darstellung eines Diffusiven Interfaces}
+    \caption{Schematic representation of a diffusive interface}
     \label{fig: DiffusiveInteraface}
 \end{figure}
-In Abbildung \ref{fig: DiffusiveInteraface} ist die Kontakilinie eines Diffusiven interfaces dargestellt. Der Graue bereich ist der transitionsbereich des Ordnungsparameters und damit der Stoffgrößen. Innerhalb dieses Bereichs koexistieren beide Fluide mit ihren jeweiligen Dichten und viskositäten. Im Gleichgewichtszustand kann das Profil von $C$ normal zum Interface ermittelt werden, in dem die freie Energie (Gleichung \ref{eq: chempotentialMIXING_pahseFieldMethod})minimiert wird \cite{cai2015NumericalSimulationWetting}. Dies führt dann zu einer Beschreibung des Ordnungsparameters normal zum Interface mit
+Figure \ref{fig: DiffusiveInteraface} shows the contact line of a diffusive interface. The gray area is the transition area of the order parameter and thus the material quantities. Within this area, both fluids coexist with their respective densities and viscosities. In the equilibrium state, the profile of $C$ normal to the interface can be determined by minimizing the free energy (Equation \ref{eq: chempotentialMIXING_pahseFieldMethod}) \cite{cai2015NumericalSimulationWetting}. This then leads to a description of the order parameter normal to the interface with
 \begin{equation}
     \label{eq: InterfactialNormalDirProfile}
     C(n) = \tanh\left(\frac{n}{\sqrt{2}\epsilon}\right).
 \end{equation}
-Darin ist $n$ die normale auf dem Interface. Im gleichgewicht bleibt die Dicke des diffusen Interfaces gleich in einem Bereich von $3/\sqrt{2}\epsilon$ gilt für den Ordnungsparameter $-0.9\leq C\leq0.9$. Ebenfalls im Falle des Gleichgewichts, gleicht die Oberflächenspannung dem integral der freien energiedichte am Interface, woraus eine Beschreibung für die Oberflächenspannung abgeleitet werden kann \cite{jacqmin2000ContactlineDynamicsDiffuse}. 
+Here, $n$ is the normal to the interface. In equilibrium, the thickness of the diffuse interface remains constant in a range of $3/\sqrt{2}\epsilon$ and for the order parameter $-0.9\leq C\leq0.9$. Also in the case of equilibrium, the surface tension equals the integral of the free energy density at the interface, from which a description for the surface tension can be derived \cite{jacqmin2000ContactlineDynamicsDiffuse}.
 \begin{equation}
 \label{eq: surfacetensionEqui}
     \sigma = \int_{-\infty}^{\infty}\lambda\left( \frac{dC}{dn}  \right)^{2}= \frac{2\sqrt{2}}{3} \frac{\lambda}{\epsilon}
 \end{equation}
 
-
-
-
-
 \subsection{Wall Energy}
-
-
-
-
-
-
-Jaqcmin \cite{jacqmin1999CalculationTwoPhaseNavier} postulierte eine Wandenergie der Form
+Jaqcmin \cite{jacqmin1999CalculationTwoPhaseNavier} postulated a wall energy of the form
 \begin{equation}
     F_{\mathrm{w}}=\int \sigma g(C)dA, 
 \end{equation}
-womit die Wandenergie nur noch eine Funktion abhängig von der Fluidzusammensetzung direkt an der Wand abhängig ist. Die resultierende natürliche Phasenfeld Randbedingung mit lokalem thermischen Gleichgewicht ist gegeben mit
+where the wall energy is now only a function dependent on the fluid composition directly at the wall. The resulting natural phase field boundary condition with local thermal equilibrium is given by
 \begin{equation}
     \label{eq: BCfWall}
     \lambda \frac{\partial C}{\partial n_{\partial \Omega}} + f'_{\mathrm{w}}(C) =0.
 \end{equation}
-Mit $n_{\partial \Omega}$ als normalenrichtung auf der Wand (vgl. \ref{fig: DiffusiveInteraface}).
-Die normalenrichtung zum interface kann mit der wandnormale und wand tangentiale Richtung auf der Wand beschrieben werden. 
+With $n_{\partial \Omega}$ as the normal direction on the wall (cf. \ref{fig: DiffusiveInteraface}).
+The normal direction to the interface can be described with the wall normal and wall tangential direction on the wall. 
 \begin{equation}
     \label{eq: InterfaceNormal}
     n=n_{\partial\Omega}\cos{(\theta_{\mathrm{e}})}+\tau_{\partial\Omega}\sin{(\theta_{\mathrm{e}})}.
 \end{equation}
-Anschließend kann für den ersten Term aus Gleichung \ref{eq: BCfWall} mit den Gleichungen \ref{eq: InterfaceNormal}, \ref{eq: InterfactialNormalDirProfile} und \ref{eq: surfacetensionEqui} wie folgt erstellt werden
+Subsequently, for the first term from Equation \ref{eq: BCfWall} with Equations \ref{eq: InterfaceNormal}, \ref{eq: InterfactialNormalDirProfile}, and \ref{eq: surfacetensionEqui}, the following can be established
 \begin{equation}
     \lambda\frac{\partial C}{\partial n_{\partial\Omega}} =\underbrace{\frac{3}{4}\sigma\left(1-C^2\right)\cos\theta_{\mathrm{e}}}_{=:-f'_\mathrm{w}(C)}.
 \end{equation}
-Daraus lässt sich eine Funktion für die Wandenergiedichte nach Integration ableiten\cite{jacqmin2000ContactlineDynamicsDiffuse}\cite{holzinger2021DirectNumericalSimulation}.
+From this, a function for the wall energy density can be derived after integration \cite{jacqmin2000ContactlineDynamicsDiffuse}\cite{holzinger2021DirectNumericalSimulation}.
 \begin{equation}
     f_{\mathrm{w}}(C)=-\sigma \cos\theta_e \frac{C(3-C^2)}{4} + \frac{\sigma_{S_L}+ \sigma_{S_V}}{2}
 \end{equation}
-Ist nur eine der Phasen anwesend, gibt diese Gleichung auch nur die jeweilige Oberflächenspannung zurück. Yue et al. \cite{yue2011WallEnergyRelaxation} weißt jedoch darauf hin, dass diese Beschreibung der Wandenergie für Gleichgewichtskontaktwinkel nahe $0^{\circ}$ oder $180^{\circ}$ nur schwer zu reproduzieren ist und das Modell nicht in der Lage ist precursor films zu handhaben. 
+When only one of the phases is present, this equation only returns the respective surface tension. However, Yue et al. \cite{yue2011WallEnergyRelaxation} point out that this description of wall energy for equilibrium contact angles close to $0^{\circ}$ or $180^{\circ}$ is difficult to reproduce, and the model is not capable of handling precursor films.
 
-
+\paragraph{Non Equilibrium Boundary Condition}
+In aller Regel wird die Gleichgewichts Randbedingung verwendet (Gleichung \ref{eq: BCfWall}) und vernachlässigen dabei ungleichgewichte nahe der Wand. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} entwickelte und Yue et al. \cite{yue2011WallEnergyRelaxation} bzw. Qian et al. \cite{qian2006VariationalApproachMoving} studierten eine generalisierte Variante von Gleichung \ref{eq: BCfWall}.
+\begin{equation}
+    \frac{\partial C}{\partial t} + \mathbf{u}_{\mathrm{w}}\cdot \nabla C = -\Gamma_{\mathrm{w}} \underbrace{\left(\lambda \frac{\partial C}{\partial n_{\partial \Omega}}+f'_{\mathrm{w}(C)}\right)}_{=:\phi_{\mathrm{w}}}
+\end{equation}
+Mit $\Gamma_{\mathrm{w}}$ als einer neu eingeführten Konstante, genannt \textit{wall relxation parameter}. Die Geschwindigkeit der Wand ist durch $\mathbf{u}_{\mathrm{w}}$ gegeben. Nach Qian et al. \cite{qian2006VariationalApproachMoving} folgt für $\Gamma_{\mathrm{w}}\rightarrow 0$ und $\kappa\rightarrow 0$ das sharp interface limit mit dominanter advektion. Für den gegenteiligen Fall folgt eine dominante Diffusion. Der wall relxation parameter ist ein paramter ist für die Simulation eine Einstellgröße und sollte as phänomenologischer parameter verstanden werden. Dieser parameter hängt sowohl vom Fluid system als auch von der Fluid wand Kombination ab\cite{jacqmin2000ContactlineDynamicsDiffuse}.
 
 \section{Cahn-Hillard Navier Stokes Equations}
-Die gekoppelten Cahn-Hillard Navier Stokes Gleichungen sind gegeben mit
+The coupled Cahn-Hillard Navier Stokes equations are given by
 \begin{align}
     \partial_t C + \nabla \cdot \left( C \mathbf{u} \right) &= -\nabla \cdot \mathbf{J} \\
     \nabla \cdot \mathbf{u} &= 0 \\
@@ -117,8 +114,11 @@ Die gekoppelten Cahn-Hillard Navier Stokes Gleichungen sind gegeben mit
     \partial_t(\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u}\mathbf{u})&= -\nabla \tilde{p} + \nabla \mathbf{\tau} - \nabla \cdot(\mathbf{u}\mathbf{J})-\phi\nabla C + \mathbf{f}_{\mathrm{b}}
 \end{align}
 
-Darin ist $\tilde{p}$ ein modifizierter Druck, der aus dem Korteweg tensor entsteht, um die Kapillarität zu berücksichtigen. Die Annahme eines Newtonschen Fluids gilt $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ mit $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ als Deformationstensor. Weiter ist die Dichte $\rho$ und viskosität $\mu$ volumetrisch gemittelt mit 
+Wherein, $\tilde{p}$ is a modified pressure that arises from the Korteweg tensor to account for capillarity. Assuming a Newtonian fluid, $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ with $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ as the deformation tensor. Furthermore, the density $\rho$ and viscosity $\mu$ are volumetrically averaged with 
 \begin{equation}
     \rho = \frac{1 + C}{2} \rho_1 +\frac{1 + C}{2} \rho_2.
 \end{equation} 
-Darin sind die suffixe $1$ und $2$ Markierungen für die jeweiligen Phasen. Die Viskosität wird analog berechnet. Der Term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ ist notwendig, um die thermische consistenz zu gewährleisten \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ ist der phase-field flux und nach Landau und Lifshitz \todo{cite} gilt $\mathbf{J} = -M\nabla \phi$ 
+Here, the suffixes $1$ and $2$ are markers for the respective phases. The viscosity is calculated analogously. The term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ is necessary to ensure thermal consistency \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ is the phase-field flux and, according to Landau and Lifshitz \todo{cite}, $\mathbf{J} = -M\nabla \phi$.
+
+
+\subsection{Boundary Conditions}

@@ -253,6 +253,81 @@
       \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\buttPhysicsChemistryInterfaces.pdf
       \endverb
     \endentry
+    \entry{cai2021LucasWashburnEquationBased}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4cdb751eb5f9b23bfbbb4205fa46b103}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Jianchao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=230fa675c396eb61a4f6b33dac5dc522}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Tingxu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=17a4aa461407e31cdf3a7022173711b9}{%
+           family={Kou},
+           familyi={K\bibinitperiod},
+           given={Jisheng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0dd3f78d9c820dfe0a59629b15303e84}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Shuangmei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8ba41b59bfabc9a319f4654fe689483d}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Junfeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f98ba089f724038f9170ef03e054d807}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Qingbang},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{50ecd9ae86ec05d05cebc8d831a740dc}
+      \strng{fullhash}{f1ac2082472bf6824aef1785a2d5973b}
+      \strng{bibnamehash}{50ecd9ae86ec05d05cebc8d831a740dc}
+      \strng{authorbibnamehash}{50ecd9ae86ec05d05cebc8d831a740dc}
+      \strng{authornamehash}{50ecd9ae86ec05d05cebc8d831a740dc}
+      \strng{authorfullhash}{f1ac2082472bf6824aef1785a2d5973b}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fluid flow in porous systems driven by capillary pressure is one of the most ubiquitous phenomena in nature and industry, including petroleum and hydraulic engineering as well as material and life sciences. The classical Lucas−Washburn (LW) equation and its modified forms were developed and have been applied extensively to elucidate the fundamental mechanisms underlying the basic statics and dynamics of the capillary-driven flow in porous systems. The LW equation assumes that fluids are incompressible Newton ones and that capillary channels all have the same radii. This kind of hypothesis is not true for many natural situations, however, where porous systems comprise complicated pore and capillary channel structures at microscales. The LW equation therefore often leads to inaccurate capillary imbibition predictions in such situations. Numerous studies have been conducted in recent years to develop and assess the modifications and extensions of the LW equation in various porous systems. Significant progresses in computational techniques have also been attained to further improve our understanding of imbibition dynamics. A state-of-the-art review is therefore needed to summarize the recent significant models and numerical simulation techniques as well as to discuss key ongoing research topics arising from various new engineering practices. The theoretical basis of the LW equation is first introduced in this review and recent progress in mathematical models is then summarized to demonstrate the modifications and extensions of this equation to various microchannels and porous media. These include capillary tubes with nonuniform and noncircular cross sections, discrete fractures, and capillary tubes that are not straight as well as heterogeneous porous media. Numerical studies on the LW equation are also reviewed, and comments on future works and research directions for LW-based capillary-driven flows in porous systems are listed.}
+      \field{day}{9}
+      \field{issn}{0743-7463, 1520-5827}
+      \field{journaltitle}{Langmuir}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{5}
+      \field{shortjournal}{Langmuir}
+      \field{title}{Lucas–{{Washburn Equation-Based Modeling}} of {{Capillary-Driven Flow}} in {{Porous Systems}}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{37}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1623\bibrangedash 1636}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1021/acs.langmuir.0c03134
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\cai2021LucasWashburnEquationBased.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.0c03134
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.0c03134
+      \endverb
+    \endentry
     \entry{cai2015NumericalSimulationWetting}{article}{}
       \name{author}{4}{}{%
         {{hash=4dfaacfeac6953db34581372ec8ba607}{%
@@ -282,6 +357,7 @@
       \strng{authorbibnamehash}{8c3ec085e90ca249e1d8853f16722aa7}
       \strng{authornamehash}{8c3ec085e90ca249e1d8853f16722aa7}
       \strng{authorfullhash}{893238832afac2b5b2f6b2fc13511ab6}
+      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -470,6 +546,59 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931014003378
+      \endverb
+    \endentry
+    \entry{chen2023InvestigatingValidityBosanquet}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d1418e476dde2dc0e076fbb973ce6d33}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=bd33ef2037227a51a0788b938a6677c3}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jianping},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \strng{fullhash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \strng{bibnamehash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \strng{authorbibnamehash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \strng{authornamehash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \strng{authorfullhash}{67ebbb90fe3f586f8853ae4adfa0c94c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The self-diffusion of fluids in nanotubes generally consists of both molecule–molecule and molecule–wall interactions, which can be quantitatively described by the Knudsen mechanism and the molecular mechanism, respectively. Combining these two effects, the Bosanquet equation is generally used to predict the self-diffusivities of molecules in one-dimensional nanopores. In this work, equilibrium molecular dynamics simulations were employed to investigate the validity of the equation in predicting the self-diffusivities of fluids inside carbon, boron nitride, and silicon carbide nanotubes with diameters from ∼1.0 to 4.3 nm. Our results indicate that although the Bosanquet equation can predict the self-diffusivities of H2, Ar, CH4, CO2, C2H6, and C3H8 in carbon nanotubes in the same order of magnitude, the accuracy of these predictions is generally rather poor. At high and moderate loadings, the large deviation mainly results from the limited accuracy of the simplistic free path model, which tends to neglect the intermolecular forces of fluid molecules. However, at low loadings, the failure of the Bosanquet equation can be traced to the failure of the Knudsen model, which largely underestimates the diffusivity in nanotubes due to the smoothness of the tube wall. Furthermore, the Bosanquet equation fails to predict the self-diffusivities of H2O in confinement since the presence of hydrogen bonding violates the mean free path theory. It is suggested that further modification of this extrapolation should take into account the intermolecular forces of fluid molecules as well as the smoothness of the tube wall.}
+      \field{day}{1}
+      \field{issn}{2158-3226}
+      \field{journaltitle}{AIP Advances}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Investigating the Validity of the {{Bosanquet}} Equation for Predicting the Self-Diffusivities of Fluids inside Nanotubes Using Equilibrium Molecular Dynamics Simulations}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{025338}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0137310
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\chen2023InvestigatingValidityBosanquet.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/adv/article/13/2/025338/2877685/Investigating-the-validity-of-the-Bosanquet
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/adv/article/13/2/025338/2877685/Investigating-the-validity-of-the-Bosanquet
       \endverb
     \endentry
     \entry{cox1986DynamicsSpreadingLiquids}{article}{}
@@ -910,6 +1039,60 @@
       \endverb
       \keyw{Physics - Fluid Dynamics}
     \endentry
+    \entry{fries2008AnalyticSolutionCapillary}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4218d54ceb838883e17532ef0e160f8e}{%
+           family={Fries},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1b648e1b3053b7b2f3343e243444abd1}{%
+           family={Dreyer},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{fullhash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{bibnamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authorbibnamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authornamehash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \strng{authorfullhash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We derive an analytic solution for the capillary rise of liquids in a cylindrical tube or a porous medium in terms of height h as a function of time t. The implicit t (h) solution by Washburn is the basis for these calculations and the Lambert W function is used for its mathematical rearrangement. The original equation is derived out of the 1D momentum conservation equation and features viscous and gravity terms. Thus our h(t) solution, as it includes the gravity term (hydrostatic pressure), enables the calculation of the liquid rise behavior for longer times than the classical Lucas–Washburn equation. Based on the new equation several parameters like the steady state time and the validity of the Lucas–Washburn equation are examined. The results are also discussed in dimensionless form.}
+      \field{issn}{00219797}
+      \field{journaltitle}{Journal of Colloid and Interface Science}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Colloid and Interface Science}
+      \field{title}{An Analytic Solution of Capillary Rise Restrained by Gravity}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{320}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{259\bibrangedash 263}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.jcis.2008.01.009
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\fries2008AnalyticSolutionCapillary.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708000520
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979708000520
+      \endverb
+    \endentry
     \entry{fries2008TransitionInertialViscous}{article}{}
       \name{author}{2}{}{%
         {{hash=4218d54ceb838883e17532ef0e160f8e}{%
@@ -929,6 +1112,7 @@
       \strng{authorbibnamehash}{504e5d7030f29b912d04f7e2e05c89bf}
       \strng{authornamehash}{504e5d7030f29b912d04f7e2e05c89bf}
       \strng{authorfullhash}{504e5d7030f29b912d04f7e2e05c89bf}
+      \field{extraname}{2}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -1030,6 +1214,59 @@
       \endverb
       \verb{url}
       \verb https://publikationen.bibliothek.kit.edu/1000145948
+      \endverb
+    \endentry
+    \entry{heiranian2022ModifiedLucasWashburnTheory}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0a82c9fc741282e82b94085a1db106de}{%
+           family={Heiranian},
+           familyi={H\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5e280c2b106b1ac27a856537f8529da5}{%
+           family={Aluru},
+           familyi={A\bibinitperiod},
+           given={Narayana\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \strng{fullhash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \strng{bibnamehash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \strng{authorbibnamehash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \strng{authornamehash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \strng{authorfullhash}{68d1d4cfacc8bab9942d510099a46a4f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{issn}{2470-0045, 2470-0053}
+      \field{journaltitle}{Physical Review E}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Modified {{Lucas-Washburn}} Theory for Fluid Filling in Nanotubes}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{105}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{055105}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.105.055105
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\heiranian2022ModifiedLucasWashburnTheory.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.105.055105
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.105.055105
       \endverb
     \endentry
     \entry{holzinger2021DirectNumericalSimulation}{software}{}
@@ -1592,6 +1829,62 @@
       \endverb
       \verb{url}
       \verb https://pubs.aip.org/jap/article/132/8/080701/2837259/A-review-of-physics-of-moving-contact-line
+      \endverb
+    \endentry
+    \entry{qian2006VariationalApproachMoving}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eb8626699288df112eb065bb938d0c26}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Tiezheng},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c5e2d377d517e68ff71dcd7445997cb0}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao-Ping},
+           giveni={X\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=65cf6c4aea55814b58c09b35edfb16ac}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \strng{fullhash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \strng{bibnamehash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \strng{authorbibnamehash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \strng{authornamehash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \strng{authorfullhash}{b51f7f2f8c8340e8bb7a78308290a51f}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-1120, 1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{shortjournal}{J. Fluid Mech.}
+      \field{title}{A Variational Approach to Moving Contact Line Hydrodynamics}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{564}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{333}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1017/S0022112006001935
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\qian2006VariationalApproachMoving.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.journals.cambridge.org/abstract_S0022112006001935
+      \endverb
+      \verb{url}
+      \verb http://www.journals.cambridge.org/abstract_S0022112006001935
       \endverb
     \endentry
     \entry{quere1997InertialCapillarity}{article}{}
