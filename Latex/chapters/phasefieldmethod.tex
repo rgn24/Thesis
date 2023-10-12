@@ -104,6 +104,7 @@ With equations \ref{eq: BCfWall} and \ref{eq: wallfreeenergydensity} and the def
 \end{equation}
 
 \paragraph{Non Equilibrium Boundary Condition}
+\label{sec: nonEquiBC}
 In aller Regel wird die Gleichgewichts Randbedingung verwendet (Gleichung \ref{eq: BCfWall}) und vernachlässigen dabei ungleichgewichte nahe der Wand. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} entwickelte und Yue et al. \cite{yue2011WallEnergyRelaxation} bzw. Qian et al. \cite{qian2006VariationalApproachMoving} studierten eine generalisierte Variante von Gleichung \ref{eq: BCfWall}.
 \begin{equation}
     \frac{\partial C}{\partial t} + \mathbf{u}_{\mathrm{w}}\cdot \nabla C = -\Gamma_{\mathrm{w}} \underbrace{\left(\lambda \frac{\partial C}{\partial n_{\partial \Omega}}+f'_{\mathrm{w}(C)}\right)}_{=:\phi_{\mathrm{w}}}
@@ -127,6 +128,6 @@ Assuming a Newtonian fluid, $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ with $
 \begin{equation}
     \rho = \frac{1 + C}{2} \rho_1 +\frac{1 + C}{2} \rho_2.
 \end{equation} 
-Here, the suffixes $1$ and $2$ are markers for the respective phases. The viscosity is calculated analogously. The term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ is necessary to ensure thermal consistency \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ is the phase-field flux and, according to Landau and Lifshitz \todo{cite}, $\mathbf{J} = -M\nabla \phi$.
+Here, the suffixes $1$ and $2$ are markers for the respective phases. The viscosity is calculated analogously. The term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ is necessary to ensure thermal consistency \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ is the phase-field flux and, according to Landau and Lifshitz \todo{cite}, $\mathbf{J} = -\kappa \nabla \phi$ and therefore the phase-field system is driven by the gradient of the local chemical potential. 
 
 

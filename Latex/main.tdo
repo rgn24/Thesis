@@ -25,4 +25,6 @@
 \contentsline {todo}{cite}{18}{section*.34}%
 \contentsline {todo}{cite}{21}{section*.37}%
 \contentsline {todo}{ref}{22}{section*.38}%
-\contentsline {todo}{The Position of the meniskus was exported with paraview in the decomposed state. The position was then extracted with a python script.Probe data was preprocessed as well and several computations for eval of simulations. Plots were generated with matplotlib?; Start of real results with an overview when what where. Maybe work with normalized data? }{28}{section*.41}%
+\contentsline {todo}{CHECK}{24}{section*.39}%
+\contentsline {todo}{The Position of the meniskus was exported with paraview in the decomposed state. The position was then extracted with a python script.Probe data was preprocessed as well and several computations for eval of simulations. Plots were generated with matplotlib?; Start of real results with an overview when what where. Maybe work with normalized data? }{28}{section*.40}%
+\contentsline {todo}{describe as in actual figure later}{28}{section*.41}%
