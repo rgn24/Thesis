@@ -14,17 +14,15 @@
 \contentsline {todo}{ref}{8}{section*.17}%
 \contentsline {todo}{rework}{8}{section*.18}%
 \contentsline {todo}{possibly ref to corresponding chapters here.}{8}{section*.19}%
-\contentsline {todo}{ref}{9}{section*.20}%
-\contentsline {todo}{cite lacis}{11}{section*.23}%
-\contentsline {todo}{maybe use this eq instead of shorted one?}{15}{section*.26}%
-\contentsline {todo}{Elaborate or maybe move the entire section to phase field? Or perhaps case setup with a reasoning why phase field?}{16}{section*.27}%
-\contentsline {todo}{ref chapter PhaseField}{17}{section*.30}%
-\contentsline {todo}{einleitende Worte}{17}{section*.31}%
-\contentsline {todo}{picture of interfaces}{17}{section*.32}%
-\contentsline {todo}{check!!!}{18}{section*.33}%
-\contentsline {todo}{check if right function}{18}{section*.34}%
-\contentsline {todo}{check if already mentioned}{18}{section*.35}%
-\contentsline {todo}{cite}{18}{section*.36}%
-\contentsline {todo}{cite}{21}{section*.39}%
-\contentsline {todo}{bodziony2023, Cai2015, woerner2021, Samkhaniani2021, holtzinger, marianna?, hagg?(sogar mit wedge und amr)}{25}{section*.42}%
-\contentsline {todo}{The Position of the meniskus was exported with paraview in the decomposed state. The position was then extracted with a python script.Probe data was preprocessed as well and several computations for eval of simulations. Plots were generated with matplotlib?; Start of real results with an overview when what where. Maybe work with normalized data? }{26}{section*.43}%
+\contentsline {todo}{maybe use this eq instead of shorted one?}{15}{section*.24}%
+\contentsline {todo}{Elaborate or maybe move the entire section to phase field? Or perhaps case setup with a reasoning why phase field?}{16}{section*.25}%
+\contentsline {todo}{ref chapter PhaseField}{17}{section*.28}%
+\contentsline {todo}{einleitende Worte}{17}{section*.29}%
+\contentsline {todo}{picture of interfaces}{17}{section*.30}%
+\contentsline {todo}{check!!!}{18}{section*.31}%
+\contentsline {todo}{check if right function}{18}{section*.32}%
+\contentsline {todo}{check if already mentioned}{18}{section*.33}%
+\contentsline {todo}{cite}{18}{section*.34}%
+\contentsline {todo}{cite}{21}{section*.37}%
+\contentsline {todo}{ref}{22}{section*.38}%
+\contentsline {todo}{The Position of the meniskus was exported with paraview in the decomposed state. The position was then extracted with a python script.Probe data was preprocessed as well and several computations for eval of simulations. Plots were generated with matplotlib?; Start of real results with an overview when what where. Maybe work with normalized data? }{28}{section*.41}%

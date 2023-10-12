@@ -19,6 +19,83 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{bagheriInterfacialRelaxationCrucial2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=048865a3cc21ce93ed48767aa34968cf}{%
+           family={Bagheri},
+           familyi={B\bibinitperiod},
+           given={Milad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9d7fad399268ab5337fcae3dbe47a5cc}{%
+           family={Stumpf},
+           familyi={S\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c110d268fb48aa0b849c80fecab96aef}{%
+           family={Roisman},
+           familyi={R\bibinitperiod},
+           given={Ilia\bibnamedelima V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=94777ba5c1fc5df05fdcee7f5dff16fc}{%
+           family={Tropea},
+           familyi={T\bibinitperiod},
+           given={Cameron},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b285fc1b41a7ae1d36437621613f5411}{%
+           family={Hussong},
+           familyi={H\bibinitperiod},
+           given={Jeanette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4546d6abb19a2d3fd4fb081d28afe394}
+      \strng{fullhash}{eef3aea21cfded5550573316e5a419d1}
+      \strng{bibnamehash}{4546d6abb19a2d3fd4fb081d28afe394}
+      \strng{authorbibnamehash}{4546d6abb19a2d3fd4fb081d28afe394}
+      \strng{authornamehash}{4546d6abb19a2d3fd4fb081d28afe394}
+      \strng{authorfullhash}{eef3aea21cfded5550573316e5a419d1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Capturing the relaxation of a capillary interface towards its equilibrium profile is pivotal for accurate simulations of two-phase flow at high dynamics using the phase-field method. The present contribution suggests a methodological extension of the phase-field method necessary to cope which such highly dynamic two-phase flows. For validation, we use high quality time-resolved experimental data on drop impact on a thin liquid film and associated crown formation dynamics under conditions where the entire process stays axisymmetric. Such experimental data are missing in literature and provided by this contribution. Hereby, we suggest a challenging yet axisymmetric benchmark, which is especially useful for the advancement of numerical methods for two-phase flows at high dynamics.}
+      \field{issn}{0142727X}
+      \field{journaltitle}{International Journal of Heat and Fluid Flow}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shortjournal}{International Journal of Heat and Fluid Flow}
+      \field{title}{Interfacial Relaxation – {{Crucial}} for Phase-Field Methods to Capture Low to High Energy Drop-Film Impacts}
+      \field{urlday}{10}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{94}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{108943}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ijheatfluidflow.2022.108943
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\bagheriInterfacialRelaxationCrucial2022.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0142727X22000182
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0142727X22000182
+      \endverb
+    \endentry
     \entry{bell1906FlowLiquidsCapillary}{article}{}
       \name{author}{2}{}{%
         {{hash=80d9175531f33485c5585ea51fe41d00}{%
@@ -170,6 +247,65 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0021979706002463
+      \endverb
+    \endentry
+    \entry{bodziony2023StressfulWayDroplets}{article}{}
+      \name{author}{3}{}{%
+        {{hash=adfd860c472e38eafe80a3b84659dd53}{%
+           family={Bodziony},
+           familyi={B\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \strng{fullhash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \strng{bibnamehash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \strng{authorbibnamehash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \strng{authornamehash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \strng{authorfullhash}{6d354f5c1395fd2b4a18c4311b8d4c59}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Droplets wetting and moving on fibers are omnipresent in both nature and industry. However, little is known on the local stresses the fiber substrates experiences and, in turn, the local forces acting on those droplets while moving on vertical fiber strands. This work is concerned with disclosing the influence of droplet volume, viscosity, and chemical substrate heterogeneity on droplet motion. For this purpose, we pursue a computational simulation campaign by means of direct numerical simulations resolving all relevant spatial and temporal scales. On the basis of local simulation data, we evaluate and analyze effective viscous dissipation rates as well as viscous and capillary forces. We also assess the validity of an assumption, which is frequently used in correlations for droplets moving on single-fiber strands—neglecting the capillary force. Our computational analysis allows to falsify/verify this assumption for different scenarios and reveals that such correlations have to be applied with care, particularly when it comes to chemical heterogeneity of the fiber substrates.}
+      \field{day}{1}
+      \field{issn}{1070-6631, 1089-7666}
+      \field{journaltitle}{Physics of Fluids}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{The Stressful Way of Droplets along Single-Fiber Strands}
+      \field{title}{The Stressful Way of Droplets along Single-Fiber Strands: {{A}} Computational Analysis}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{012110}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0131032
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\bodziony2023StressfulWayDroplets.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/pof/article/35/1/012110/2866965/The-stressful-way-of-droplets-along-single-fiber
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/pof/article/35/1/012110/2866965/The-stressful-way-of-droplets-along-single-fiber
       \endverb
     \endentry
     \entry{bosanquet1923LVFlowLiquids}{article}{}
@@ -2019,6 +2155,77 @@
       \verb https://www.cambridge.org/core/product/identifier/S0022112022002488/type/journal_article
       \endverb
     \endentry
+    \entry{samkhaniani2021BouncingDropImpingement}{article}{}
+      \name{author}{6}{}{%
+        {{hash=f42c0f5bae802b5d0b4d81c9665f6f2c}{%
+           family={Samkhaniani},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a2c6ebb2411d0855f75ad3f5438786ea}{%
+           family={Stroh},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=af2e6869d56716228df7bb15a75c896c}{%
+           family={Holzinger},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96e61e204a8e3a6d5fb3f5aa9c87bcf4}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2db1bc8bef6b4fd8c96fca4a273947ba}{%
+           family={Frohnapfel},
+           familyi={F\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=52d91c36e262d8ca2cdce4fe22788c21}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{96f930cd0ec76d1730096e5e3fbd9e89}
+      \strng{fullhash}{b61ed8b3b891d5b0b21d9e28d810f7a4}
+      \strng{bibnamehash}{96f930cd0ec76d1730096e5e3fbd9e89}
+      \strng{authorbibnamehash}{96f930cd0ec76d1730096e5e3fbd9e89}
+      \strng{authornamehash}{96f930cd0ec76d1730096e5e3fbd9e89}
+      \strng{authorfullhash}{b61ed8b3b891d5b0b21d9e28d810f7a4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00179310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{International Journal of Heat and Mass Transfer}
+      \field{title}{Bouncing Drop Impingement on Heated Hydrophobic Surfaces}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{180}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{121777}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2021.121777
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\samkhaniani2021BouncingDropImpingement.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931021008826
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931021008826
+      \endverb
+    \endentry
     \entry{siegel1961TransientCapillaryRise}{article}{}
       \name{author}{1}{}{%
         {{hash=499d33350d1f0f4257078f0e1a0c5632}{%
@@ -2266,6 +2473,87 @@
       \verb https://link.aps.org/doi/10.1103/PhysRev.17.273
       \endverb
     \endentry
+    \entry{worner2021SpreadingReboundDynamics}{article}{}
+      \name{author}{8}{}{%
+        {{hash=18f21ccebc47ff5d8273b8161c9318e2}{%
+           family={Wörner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f14e2734d91fd75d3d0806152fcec70}{%
+           family={Samkhaniani},
+           familyi={S\bibinitperiod},
+           given={Nima},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4dfaacfeac6953db34581372ec8ba607}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ad139e2b82f029ad19d974325e50413e}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yanchen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ac5f4bc593e5479cb0dc2ca82925c2c2}{%
+           family={Majumdar},
+           familyi={M\bibinitperiod},
+           given={Arijit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ab4897c96af93c263b0decbb16915bf8}{%
+           family={Marschall},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+        {{hash=13ea387d0d216fb595c37e1a1d9444b6}{%
+           family={Frohnapfel},
+           familyi={F\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod}}}%
+        {{hash=57745d9509625ddbbcfbf69f96ff467d}{%
+           family={Deutschmann},
+           familyi={D\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{981aba016cddf3dd4c50c9fb4bfcfb49}
+      \strng{fullhash}{f4b0936dd4df94b4a403eedcaaf74034}
+      \strng{bibnamehash}{981aba016cddf3dd4c50c9fb4bfcfb49}
+      \strng{authorbibnamehash}{981aba016cddf3dd4c50c9fb4bfcfb49}
+      \strng{authornamehash}{981aba016cddf3dd4c50c9fb4bfcfb49}
+      \strng{authorfullhash}{f4b0936dd4df94b4a403eedcaaf74034}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0307904X}
+      \field{journaltitle}{Applied Mathematical Modelling}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shortjournal}{Applied Mathematical Modelling}
+      \field{title}{Spreading and Rebound Dynamics of Sub-Millimetre Urea-Water-Solution Droplets Impinging on Substrates of Varying Wettability}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{95}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{53\bibrangedash 73}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.apm.2021.01.038
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\worner2021SpreadingReboundDynamics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0307904X2100055X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0307904X2100055X
+      \endverb
+    \endentry
     \entry{wu2017CapillaryRiseValidity}{article}{}
       \name{author}{3}{}{%
         {{hash=857c68c0481edd4596ffc70491b4f939}{%
@@ -2324,6 +2612,78 @@
       \endverb
       \verb{url}
       \verb https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01762
+      \endverb
+    \endentry
+    \entry{yinDirectNumericalSimulation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6d9cf07fb1b08a156e9b41da3685649f}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Mariana\bibnamedelima Ye},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \strng{fullhash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \strng{bibnamehash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \strng{authorbibnamehash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \strng{authornamehash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \strng{authorfullhash}{6d9cf07fb1b08a156e9b41da3685649f}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Direct {{Numerical Simulation}} of Droplets Moving on an Inclined Surface by a Diffuse-Interface Phase-Field Method Using {{OpenFOAM}}}
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\yinDirectNumericalSimulation.pdf
+      \endverb
+    \endentry
+    \entry{youngIIIEssayCohesion1805}{article}{}
+      \name{author}{1}{}{%
+        {{hash=303e5b1e86249ca165ef0f41a60f2671}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{303e5b1e86249ca165ef0f41a60f2671}
+      \strng{fullhash}{303e5b1e86249ca165ef0f41a60f2671}
+      \strng{bibnamehash}{303e5b1e86249ca165ef0f41a60f2671}
+      \strng{authorbibnamehash}{303e5b1e86249ca165ef0f41a60f2671}
+      \strng{authornamehash}{303e5b1e86249ca165ef0f41a60f2671}
+      \strng{authorfullhash}{303e5b1e86249ca165ef0f41a60f2671}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It has already been asserted, by Mr. Monge and others, that the phenomena of capillary tubes are referable to the cohesive attraction of the superficial particles only of the fluids em­ployed, and that the surfaces must consequently be formed into curves of the nature of lintearias, which are supposed to be the results of a uniform tension of a surface, resisting the pressure of a fluid, either uniform, or varying according to a given law. Segner, who appears to have been the first that maintained a similar opinion, has shown in what manner the principle may be deduced from the doctrine of attraction, but his demonstration is complicated, and not perfectly satisfactory; and in applying the law to the forms of drops, he has neglected to consider the very material effects of the double curvature, which is evidently the cause of the want of a perfect coinci­dence of some of his experiments with his theory. Since the time of Segner, little has been done in investigating accurately and in detail the various consequences of the principle. It will perhaps be most agreeable to the experimental phi­losopher, although less consistent with the strict course of logical argument, to proceed in the first place to the comparison of this theory with the phenomena, and to inquire afterwards for its foundation in the ultimate properties of matter. But it is necessary to premise one observation, which appears to be new, and which is equally consistent with theory and with experiment; that is, that for each combination of a solid and a fluid, there is an appropriate angle of contact between the surfaces of the fluid, exposed to the air, and to the solid. This angle, for glass and water, and in all cases where a solid is perfectly wetted by a fluid, is evanescent: for glass and mer­cury, it is about 140°, in common temperatures, and when the mercury is moderately clean.}
+      \field{day}{31}
+      \field{issn}{0261-0523, 2053-9223}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society of London}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{Phil. Trans. R. Soc.}
+      \field{title}{{{III}}. {{An}} Essay on the Cohesion of Fluids}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{95}
+      \field{year}{1805}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{65\bibrangedash 87}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1098/rstl.1805.0005
+      \endverb
+      \verb{file}
+      \verb C:\Users\janmk\Meine Ablage\Obsidian\Thesis\PDFs\IIIEssayCohesion1805.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rstl.1805.0005
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rstl.1805.0005
       \endverb
     \endentry
     \entry{yue2011CanDiffuseinterfaceModels}{article}{}

@@ -1,10 +1,11 @@
-Die Geometrie und einige Stoffeigenschaften sind durch die in \ref{chap: wettingTheory} definierten vereinfachungen und Annahmen bereits vorgegeben. Im folgen wird zu beginn die Geometrie der Kapillare vorgestellt, gefolgt von den Materialeigenschaften und verwendeter Randbedingunen. Da mehrere Untersuchungen unternommen wurden, erfolgt in Kapitel eine Übersicht über die durchgeführten Simulationen und dessen Initialiserung. 
+Die Geometrie und einige Stoffeigenschaften sind durch die in \ref{chap: wettingTheory} definierten vereinfachungen und Annahmen bereits vorgegeben. Im folgen wird zu beginn die Geometrie der Kapillare vorgestellt, gefolgt von den Materialeigenschaften und verwendeter Randbedingunen. Da mehrere Untersuchungen unternommen wurden, erfolgt in Kapitel \todo{ref} eine Übersicht über die durchgeführten Simulationen und dessen Initialiserung. 
 
 
-Wie bereits in Kapitel \ref{chap: Introduction} geschrieben, erfolgen die Simulationen mit dem solver \texttt{phaseFieldFoam}. Dieser wurde bereits mehrfach Validiert, worauf in Kapitel \ref{chap: Validation} genauer eingegangen wird.
-\section{Geometry}
-Die Geometrie der Kapillare wird so angenommen, dass sie wie in Abbildung \ref{fig: Capillary Geometry} zu sehen ein Reservoir mit Wasser hat, welches durch Oberflächeneffekte in die Kapillare strömt. Durch die Annahme, dass sich ein Teil des Wassers bereits in der Kapillare befindet, wird in der Simulieren Geometrie lediglich die Randbedingung so gesetzt, dass das Wasser in diesem Reservoir nachströmen kann. Die Dimensionen der Kapillare ergeben sich daraus, dass die Simulation der Kapillare perspektivisch auch mit experimenten verglichen werden soll. Daher wurden auch weitere, komplexere Geometrien simuliert, die jedoch nciht Teil dieser Arbeit sind. 
+Wie bereits in Kapitel \ref{chap: Introduction} geschrieben, erfolgen die Simulationen mit dem solver \texttt{phaseFieldFoam}. Dieser wurde bereits mehrfach Validiert, worauf in Kapitel \ref{chap: Validation} genauer eingegangen wird. 
+\section{Geometry and Discretization}
+Die Geometrie der Kapillare wird so angenommen, dass sie wie in Abbildung \ref{fig: Capillary Geometry} zu sehen, ein Reservoir mit Wasser hat, welches durch Oberflächeneffekte in die Kapillare strömt. Durch die Annahme, dass sich ein Teil des Wassers bereits in der Kapillare befindet, wird in der Simulieren Geometrie lediglich die Randbedingung so gesetzt, dass das Wasser in diesem Reservoir nachströmen kann und das Reservoir nicht mit modelliert und diskretisiert werden muss. Die Dimensionen der Kapillare ergeben sich daraus, dass die Simulation der Kapillare perspektivisch auch mit experimenten verglichen werden soll. Daher wurden auch weitere, komplexere Geometrien simuliert, die jedoch nicht Teil dieser Arbeit sind. 
 Wie zu erkennen, handelt es sich um eine Kapillare mit lediglich $6nm$ Durchmesser. Eine Simulation so kleiner Kapillare wurde soweit bekannt bisher nicht mit der Phasenfeld methode Simuliert.
+
 
 \begin{figure}[h]
     \centering
@@ -12,8 +13,8 @@ Wie zu erkennen, handelt es sich um eine Kapillare mit lediglich $6nm$ Durchmess
     \caption{Schematic of used Capillary}
     \label{fig: Capillary Geometry}
 \end{figure}
-
-Die Diskretisierung der Geometrie wurde so gewählt, dass die Elemente eine Kantenlänge von $0.2nm$ haben. In Radialer Richtung hat eine Wedge nur ein Element. Zur erstellung der \texttt{blockMeshDict}-datei, wurde ein python skript erstellt, welches anhand des Kapillardurchmessers und länge eine Datei mit den in Abbildung \ref{fig: Capillary Geometry} dargestellten Benennungen der Oberflächen erstellt. 
+Wie bereits im Bild angedeutet wird nicht die gesamte Kapillare simuliert, sondern lediglich ein segment der Kapillare, \textit{wedge} genannt. Dabei wird angenommen, dass die Strömung in der Kapillare achsensymmetrisch ist, was die Simulation dahingehend stark vereinfacht, dass zur Diskretisierung weniger Elemente benötigt werden, da in diesem Fall nur ein $5^{\circ}$ großes Segment der Kapillare simuliert wird. Eine notwendige Bedingung zur Simulation der Wedge ist es, dass diese nur ein Element in radialer Richtung haben darf. 
+Die Diskretisierung der Geometrie wurde so gewählt, dass die Elemente eine Kantenlänge von $0.2nm$ haben. Zur erstellung der \texttt{blockMeshDict}-datei, wurde ein python skript erstellt, welches anhand des Kapillardurchmessers und länge eine Datei mit den in Abbildung \ref{fig: Capillary Geometry} dargestellten Benennungen der Oberflächen erstellt. 
 
 \section{Randbedingunen}
 In Abbildung \ref{fig: Capillary Geometry} sind neben der Geometrie auch die Flächen, die mit Randbedingungen versehen wurden benannt. Die Flächen \texttt{front} und \texttt{back} sind sich gegenüberliegende Flächen der Wedge und müssen dementsprechende Ranbedinungen erhalten. Die \texttt{wall} Flächen sind nicht durchdringbare Oberflächen und \texttt{top}, bzw. \texttt{bottom} Oberflächen durch die ein Fluss zugelassen wird.
@@ -33,6 +34,7 @@ Die wesentlichen Randbedingunen an der Wand sind in Tabelle \ref{tab: BoundaryCo
         \end{tabular}
 \end{table}
 Für den Ordnungsparameter $C$ wird die Gleichgewichtsrandbedingung angenommen und der Gleichgewichtskontaktwinkel für jede der drei Simulationen mit dieser Geometrie mit $15^{\circ}$, $45^{\circ}$ bzw. $75^{\circ}$ angegeben. Der Gradient des chemischen potentials an der Wand wird als null gesetzt, genauso wie die Geschwindigkeit der Wand. Die Ranbedingung für den Druck wird mit \texttt{fixedFluxPressure} so gewählt, dass der Druckgradient so angepasst wird, das der Massenfluss am Rand mit der vorgegebenen Geschwindigkeit an der Wand übereinstimmt. 
+Am ein, bzw. Auslass der Kapillare gilt ebenfalls eine \texttt{zeroGradient} Randbedingungn und ein Druck von $0$ Pa.
 
 \section{Materialeigenschaften}
 Für die Simulation werden unter anderem Wasser und Luft bei $25^{\circ}$ Celsius als Medium angenommen. Damit folgen die in Tabelle \ref{tab:physicalProperties_CaseSetup} dargestellten Materialeigenschaften. 
@@ -41,15 +43,21 @@ Für die Simulation werden unter anderem Wasser und Luft bei $25^{\circ}$ Celsiu
     \caption{Physical properties}
     \label{tab:physicalProperties_CaseSetup}
     \begin{tabular}{lll}
-    fluid & density ($\frac{kg}{m^3}$) & kinematic viscosity $\frac{m^2}{s}$ \\ \hline
+    fluid & density $\frac{kg}{m^3}$ & kinematic viscosity $\frac{m^2}{s}$ \\ \hline
     water & $1000$                     & $1.00E-06$                          \\
     air   & $1$                        & $1.00E-05$                          \\ 
     \end{tabular}
     \end{table}
-
+Die Oberflächenspannung für ein Wasser-Luft interface für $25^{\circ}$ Celsius ist mit \(0.072 N/m\) gegeben. The interface thickness \( \epsilon \) was chosen to be approximately \(1.7 nm\) \cite{bagheriInterfacialRelaxationCrucial2022}, corresponding to the physical interface thickness.
 
 \section{Simulationsparameter}
-
+Die viskositätsmodell der Simulation wird mit der \texttt{blended}-Methode durchgeführt. Dabei werden die Modelle \texttt{arithmetic} und \texttt{harmonic} über einen blending-factor gemischt. The mobility ($\kappa$) is a factor in the phase-field simulation that is difficult to determine. Jacqmin \cite{jacqmin1999CalculationTwoPhaseNavier} suggested an asymptotic behavior for \( \kappa \) of 
+\begin{equation}
+    \kappa = \mathcal{O}(\epsilon^{\delta})
+\end{equation}
+and showed that \( 1 \leq \delta < 2 \). 
+For this work, a value of \( \kappa = 1.6 \times 10^{-18} \) was used. Durch anfängliche Probleme im Postprocessing wurde die Simulaiton nicht mit einer Adaptiven Netz verfeinerung durchgeführt. 
+Die Simulation wurde mit planarem Interface initialisiert und für den Ordnungsparametermit hilfe der \texttt{funkySetFields} Methode ein interface profil nach Gleichung \ref{eq: InterfactialNormalDirProfile} initialisiert. 
 
 
 
@@ -57,3 +65,8 @@ Für die Simulation werden unter anderem Wasser und Luft bei $25^{\circ}$ Celsiu
 Zur Auswertung der Simulation wurde unter anderem die Anwendung \texttt{paraview} verwendet. Alle bilder der Simulation wurden damit erzeugt. Die Auswertung und darstellung abgeleiteter oder berechneter Größen in Diagrammen wurden hingegen mit der python bibliothek \texttt{Matplotlib} erzeugt. Dazu wurde ein skript erstellt, das die Ergebnisse der function obsjects sammelt und gegebenenfalls Berechnungen damit vornimmt. 
 \paragraph{function objects}
 Mit hilfe von function objects können während der laufenden Simulation daten erfasst werden. \texttt{phaseFieldFoam} liefert einige funktionen zum auslesen der Simulation mit, die auch hier verwendet werden. Diese Müssen in der \texttt{controlDict} datei eingebunden und konfiguriert werden. 
+
+Zur analyse der wirkenden viskosen Kräfte im der Wassersäule, benötigen wir die gesamte viskose dissipationskraft in jener Wassersäule. Diese erhalten wir, wenn die divergenz des viskosen stress tensors $\tau$ aus Gleichung \ref{eq: NSEChanged} über das Gebiet integrieren
+\begin{equation}
+    \mathrm{F}_{\mathrm{visc}}{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
+\end{equation}

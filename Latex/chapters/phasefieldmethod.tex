@@ -94,9 +94,14 @@ Subsequently, for the first term from Equation \ref{eq: BCfWall} with Equations 
 \end{equation}
 From this, a function for the wall energy density can be derived after integration \cite{jacqmin2000ContactlineDynamicsDiffuse}\cite{holzinger2021DirectNumericalSimulation}.
 \begin{equation}
-    f_{\mathrm{w}}(C)=-\sigma \cos\theta_e \frac{C(3-C^2)}{4} + \frac{\sigma_{S_L}+ \sigma_{S_V}}{2}
+    \label{eq: wallfreeenergydensity}
+    f_{\mathrm{w}}(C)=-\sigma \cos\theta_{\mathrm{e}} \frac{C(3-C^2)}{4} + \frac{\sigma_{S_L}+ \sigma_{S_V}}{2}
 \end{equation}
 When only one of the phases is present, this equation only returns the respective surface tension. However, Yue et al. \cite{yue2011WallEnergyRelaxation} point out that this description of wall energy for equilibrium contact angles close to $0^{\circ}$ or $180^{\circ}$ is difficult to reproduce, and the model is not capable of handling precursor films.
+With equations \ref{eq: BCfWall} and \ref{eq: wallfreeenergydensity} and the definition of zero flux through the wall, the wetting boundary condition can be described as
+\begin{equation}
+    \frac{\partial C}{\partial n_{\partial\Omega}} = \frac{\cos \theta_{\mathrm{e}}}{\sqrt{2}\epsilon}(1-C^2).
+\end{equation}
 
 \paragraph{Non Equilibrium Boundary Condition}
 In aller Regel wird die Gleichgewichts Randbedingung verwendet (Gleichung \ref{eq: BCfWall}) und vernachlässigen dabei ungleichgewichte nahe der Wand. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} entwickelte und Yue et al. \cite{yue2011WallEnergyRelaxation} bzw. Qian et al. \cite{qian2006VariationalApproachMoving} studierten eine generalisierte Variante von Gleichung \ref{eq: BCfWall}.
@@ -114,11 +119,14 @@ The coupled Cahn-Hillard Navier Stokes equations are given by
     \partial_t(\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u}\mathbf{u})&= -\nabla \tilde{p} + \nabla \mathbf{\tau} - \nabla \cdot(\mathbf{u}\mathbf{J})-\phi\nabla C + \mathbf{f}_{\mathrm{b}}
 \end{align}
 
-Wherein, $\tilde{p}$ is a modified pressure that arises from the Korteweg tensor to account for capillarity. Assuming a Newtonian fluid, $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ with $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ as the deformation tensor. Furthermore, the density $\rho$ and viscosity $\mu$ are volumetrically averaged with 
+Wherein, $\tilde{p}$ is a modified pressure that arises from the Korteweg tensor to account for capillarity and is defined as
+\begin{equation}
+    \tilde{p} = p + \frac{f_{\mathrm{mix}}}{2}.
+\end{equation}
+Assuming a Newtonian fluid, $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ with $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ as the deformation tensor. Furthermore, the density $\rho$ and viscosity $\mu$ are volumetrically averaged with 
 \begin{equation}
     \rho = \frac{1 + C}{2} \rho_1 +\frac{1 + C}{2} \rho_2.
 \end{equation} 
 Here, the suffixes $1$ and $2$ are markers for the respective phases. The viscosity is calculated analogously. The term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ is necessary to ensure thermal consistency \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ is the phase-field flux and, according to Landau and Lifshitz \todo{cite}, $\mathbf{J} = -M\nabla \phi$.
 
 
-\subsection{Boundary Conditions}
