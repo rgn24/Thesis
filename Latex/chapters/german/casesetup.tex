@@ -69,7 +69,7 @@ Zur Auswertung der Simulation wurde unter anderem die Anwendung \texttt{paraview
 
 Mit hilfe von \textit{function objects} können während der laufenden Simulation daten erfasst werden. \texttt{phaseFieldFoam} liefert einige funktionen zum auslesen der Simulation mit, die auch hier verwendet werden. Diese Müssen in der \texttt{controlDict} datei eingebunden und konfiguriert werden. 
 
-Zur analyse der wirkenden viskosen Kräfte im der Wassersäule, benötigen wir die gesamte viskose dissipationskraft in jener Wassersäule. Diese erhalten wir, wenn die divergenz des viskosen stress tensors $\tau$ aus Gleichung \ref{eq: NSEChanged} über das Gebiet integrieren
+Beispielsweise wird zur analyse der wirkenden viskosen Kräfte in der Wassersäule, benötigen wir die gesamte viskose dissipationskraft in jener Wassersäule über solche function objects exportiert. Diese erhalten wir, wenn die divergenz des viskosen stress tensors $\tau$ aus Gleichung \ref{eq: NSEChanged} über das Gebiet integrieren
 \begin{equation}
     \mathrm{F}_{\mathrm{visc}}^{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
 \end{equation}

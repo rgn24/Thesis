@@ -4,21 +4,6 @@ The phase field method, rooted in system thermodynamics, offers a solution for a
 Phase field simulations for macroscopic wetting typically rely on the Cahn-Hilliard equations. For slow wetting phenomena, the phase field theory has been both analytically \cite{jacqmin2000ContactlineDynamicsDiffuse} and numerically \cite{yue2011CanDiffuseinterfaceModels,yue2010SharpinterfaceLimitCahn} proven to capture such wetting physics. However, for rapid spreading of water drops, the assumption of local equilibrium may not hold. Some studies have introduced a boundary condition for wetting far from equilibrium, introducing a parameter that controls the relaxation towards equilibrium . This parameter has been interpreted in various ways, from a local friction adjacent to the contact line to a relaxation parameter at the contact line\cite{yue2011WallEnergyRelaxation}\cite{carlsonCapillarityDynamicWetting2012}.
 
 
-\paragraph{Phase Field Theory}
-Die Phasenfeld theorie verwendet Ansätze beider Modelle unter verwendung der Beschreibung der freien Energie des Systems.\todo{ref chapter PhaseField}
-
-Daher ist es auch notwendig für die Phasenfeldmethode sowohl hydrodynamische Ansätze als auch Ansätze der Molekular Kinetik Theorie zu verwenden \cite{blake2006PhysicsMovingWetting, carlsonCapillarityDynamicWetting2012}.
-
-vof and level setzt
-difference interface tracking and capituring? 
-
-Free energy system 
-
-
-
-
-\todo[inline]{einleitende Worte}
-
 Wie bereits in Kapitel \ref{sec: Wetting_SurfaceTension} beshcrieben, gibt es unterschiedliche Möglichkeiten das Interface zu beschreiben. Hydrodynamische Modelle beschreiben das Interface so, dass am Übergang der Phasen die Stoffwerte springen. Ein Diffuses Interface hingegen, beschreibt die größen anders. \todo{picture of interfaces}
 
 \section{Phase Field Method in the Spirit of Cahn and Hillard}
@@ -71,15 +56,7 @@ Darin ist $n$ die normale auf dem Interface. Im gleichgewicht bleibt die Dicke d
 \end{equation}
 
 
-
-
-
 \subsection{Wall Energy}
-
-
-
-
-
 
 Jaqcmin \cite{jacqmin1999CalculationTwoPhaseNavier} postulierte eine Wandenergie der Form
 \begin{equation}
@@ -105,11 +82,22 @@ Daraus lässt sich eine Funktion für die Wandenergiedichte nach Integration abl
     f_{\mathrm{w}}(C)=-\sigma \cos\theta_e \frac{C(3-C^2)}{4} + \frac{\sigma_{S_L}+ \sigma_{S_V}}{2}
 \end{equation}
 Ist nur eine der Phasen anwesend, gibt diese Gleichung auch nur die jeweilige Oberflächenspannung zurück. Yue et al. \cite{yue2011WallEnergyRelaxation} weißt jedoch darauf hin, dass diese Beschreibung der Wandenergie für Gleichgewichtskontaktwinkel nahe $0^{\circ}$ oder $180^{\circ}$ nur schwer zu reproduzieren ist und das Modell nicht in der Lage ist precursor films zu handhaben. 
+When only one of the phases is present, this equation only returns the respective surface tension. However, Yue et al. \cite{yue2011WallEnergyRelaxation} point out that this description of wall energy for equilibrium contact angles close to $0^{\circ}$ or $180^{\circ}$ is difficult to reproduce, and the model is not capable of handling precursor films.
+With equations \ref{eq: BCfWall} and \ref{eq: wallfreeenergydensity} and the definition of zero flux through the wall, the wetting boundary condition can be described as
+\begin{equation}
+    \frac{\partial C}{\partial n_{\partial\Omega}} = \frac{\cos \theta_{\mathrm{e}}}{\sqrt{2}\epsilon}(1-C^2).
+\end{equation}
 
-
+\paragraph{Non Equilibrium Boundary Condition}
+\label{sec: nonEquiBC}
+In aller Regel wird die Gleichgewichts Randbedingung verwendet (Gleichung \ref{eq: BCfWall}) und vernachlässigen dabei ungleichgewichte nahe der Wand. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} entwickelte und Yue et al. \cite{yue2011WallEnergyRelaxation} bzw. Qian et al. \cite{qian2006VariationalApproachMoving} studierten eine generalisierte Variante von Gleichung \ref{eq: BCfWall}.
+\begin{equation}
+    \frac{\partial C}{\partial t} + \mathbf{u}_{\mathrm{w}}\cdot \nabla C = -\Gamma_{\mathrm{w}} \underbrace{\left(\lambda \frac{\partial C}{\partial n_{\partial \Omega}}+f'_{\mathrm{w}(C)}\right)}_{=:\phi_{\mathrm{w}}}
+\end{equation}
+Mit $\Gamma_{\mathrm{w}}$ als einer neu eingeführten Konstante, genannt \textit{wall relxation parameter}. Die Geschwindigkeit der Wand ist durch $\mathbf{u}_{\mathrm{w}}$ gegeben. Nach Qian et al. \cite{qian2006VariationalApproachMoving} folgt für $\Gamma_{\mathrm{w}}\rightarrow 0$ und $\kappa\rightarrow 0$ das sharp interface limit mit dominanter advektion. Für den gegenteiligen Fall folgt eine dominante Diffusion. Der wall relxation parameter ist ein paramter ist für die Simulation eine Einstellgröße und sollte as phänomenologischer parameter verstanden werden. Dieser parameter hängt sowohl vom Fluid system als auch von der Fluid wand Kombination ab\cite{jacqmin2000ContactlineDynamicsDiffuse}.
 
 \section{Cahn-Hillard Navier Stokes Equations}
-Die gekoppelten Cahn-Hillard Navier Stokes Gleichungen sind gegeben mit
+The coupled Cahn-Hillard Navier Stokes equations are given by
 \begin{align}
     \partial_t C + \nabla \cdot \left( C \mathbf{u} \right) &= -\nabla \cdot \mathbf{J} \\
     \nabla \cdot \mathbf{u} &= 0 \\
@@ -117,8 +105,14 @@ Die gekoppelten Cahn-Hillard Navier Stokes Gleichungen sind gegeben mit
     \partial_t(\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u}\mathbf{u})&= -\nabla \tilde{p} + \nabla \mathbf{\tau} - \nabla \cdot(\mathbf{u}\mathbf{J})-\phi\nabla C + \mathbf{f}_{\mathrm{b}}
 \end{align}
 
-Darin ist $\tilde{p}$ ein modifizierter Druck, der aus dem Korteweg tensor entsteht, um die Kapillarität zu berücksichtigen. Die Annahme eines Newtonschen Fluids gilt $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ mit $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ als Deformationstensor. Weiter ist die Dichte $\rho$ und viskosität $\mu$ volumetrisch gemittelt mit 
+Wherein, $\tilde{p}$ is a modified pressure that arises from the Korteweg tensor to account for capillarity and is defined as
+\begin{equation}
+    \tilde{p} = p + \frac{f_{\mathrm{mix}}}{2}.
+\end{equation}
+Assuming a Newtonian fluid, $\mathbf{\tau} = 2\mu \mathrm{dev}\mathbf{D}$ with $\mathbf{D} = 1/2[\nabla \mathbf{u}+(\nabla \mathbf{u})^{\mathrm{T}}]$ as the deformation tensor. Furthermore, the density $\rho$ and viscosity $\mu$ are volumetrically averaged with 
 \begin{equation}
     \rho = \frac{1 + C}{2} \rho_1 +\frac{1 + C}{2} \rho_2.
 \end{equation} 
-Darin sind die suffixe $1$ und $2$ Markierungen für die jeweiligen Phasen. Die Viskosität wird analog berechnet. Der Term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ ist notwendig, um die thermische consistenz zu gewährleisten \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ ist der phase-field flux und nach Landau und Lifshitz \todo{cite} gilt $\mathbf{J} = -M\nabla \phi$ 
+Here, the suffixes $1$ and $2$ are markers for the respective phases. The viscosity is calculated analogously. The term $- \nabla \cdot(\mathbf{u}\mathbf{J})$ is necessary to ensure thermal consistency \cite{ding2007DiffuseInterfaceModel}. $\mathbf{J}$ is the phase-field flux and, according to Landau and Lifshitz \todo{cite}, $\mathbf{J} = -\kappa \nabla \phi$ and therefore the phase-field system is driven by the gradient of the local chemical potential. 
+
+

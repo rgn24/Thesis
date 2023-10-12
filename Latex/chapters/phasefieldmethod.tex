@@ -4,19 +4,6 @@ The phase field method, rooted in system thermodynamics, offers a solution for a
 Phase field simulations for macroscopic wetting typically rely on the Cahn-Hilliard equations. For slow wetting phenomena, the phase field theory has been both analytically \cite{jacqmin2000ContactlineDynamicsDiffuse} and numerically \cite{yue2011CanDiffuseinterfaceModels,yue2010SharpinterfaceLimitCahn} proven to capture such wetting physics. However, for rapid spreading of water drops, the assumption of local equilibrium may not hold. Some studies have introduced a boundary condition for wetting far from equilibrium, introducing a parameter that controls the relaxation towards equilibrium . This parameter has been interpreted in various ways, from a local friction adjacent to the contact line to a relaxation parameter at the contact line\cite{yue2011WallEnergyRelaxation}\cite{carlsonCapillarityDynamicWetting2012}.
 
 
-\paragraph{Phase Field Theory}
-Die Phasenfeld theorie verwendet Ansätze beider Modelle unter verwendung der Beschreibung der freien Energie des Systems.\todo{ref chapter PhaseField}
-
-Daher ist es auch notwendig für die Phasenfeldmethode sowohl hydrodynamische Ansätze als auch Ansätze der Molekular Kinetik Theorie zu verwenden \cite{blake2006PhysicsMovingWetting, carlsonCapillarityDynamicWetting2012}.
-
-vof and level setzt
-difference interface tracking and capituring? 
-
-Free energy system 
-
-
-
-
 \todo[inline]{einleitende Worte}
 
 Wie bereits in Kapitel \ref{sec: Wetting_SurfaceTension} beshcrieben, gibt es unterschiedliche Möglichkeiten das Interface zu beschreiben. Hydrodynamische Modelle beschreiben das Interface so, dass am Übergang der Phasen die Stoffwerte springen. Ein Diffuses Interface hingegen, beschreibt die größen anders. \todo{picture of interfaces}
@@ -103,13 +90,14 @@ With equations \ref{eq: BCfWall} and \ref{eq: wallfreeenergydensity} and the def
     \frac{\partial C}{\partial n_{\partial\Omega}} = \frac{\cos \theta_{\mathrm{e}}}{\sqrt{2}\epsilon}(1-C^2).
 \end{equation}
 
-\paragraph{Non Equilibrium Boundary Condition}
+\paragraph{Non-Equilibrium Boundary Condition}
 \label{sec: nonEquiBC}
-In aller Regel wird die Gleichgewichts Randbedingung verwendet (Gleichung \ref{eq: BCfWall}) und vernachlässigen dabei ungleichgewichte nahe der Wand. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} entwickelte und Yue et al. \cite{yue2011WallEnergyRelaxation} bzw. Qian et al. \cite{qian2006VariationalApproachMoving} studierten eine generalisierte Variante von Gleichung \ref{eq: BCfWall}.
+Typically, the equilibrium boundary condition (Equation \ref{eq: BCfWall}) is used, neglecting any non-equilibrium effects near the wall. Jacqmin \cite{jacqmin2000ContactlineDynamicsDiffuse} proposed, and Yue et al. \cite{yue2011WallEnergyRelaxation} as well as Qian et al. \cite{qian2006VariationalApproachMoving} studied a generalized version of Equation \ref{eq: BCfWall}.
 \begin{equation}
     \frac{\partial C}{\partial t} + \mathbf{u}_{\mathrm{w}}\cdot \nabla C = -\Gamma_{\mathrm{w}} \underbrace{\left(\lambda \frac{\partial C}{\partial n_{\partial \Omega}}+f'_{\mathrm{w}(C)}\right)}_{=:\phi_{\mathrm{w}}}
 \end{equation}
-Mit $\Gamma_{\mathrm{w}}$ als einer neu eingeführten Konstante, genannt \textit{wall relxation parameter}. Die Geschwindigkeit der Wand ist durch $\mathbf{u}_{\mathrm{w}}$ gegeben. Nach Qian et al. \cite{qian2006VariationalApproachMoving} folgt für $\Gamma_{\mathrm{w}}\rightarrow 0$ und $\kappa\rightarrow 0$ das sharp interface limit mit dominanter advektion. Für den gegenteiligen Fall folgt eine dominante Diffusion. Der wall relxation parameter ist ein paramter ist für die Simulation eine Einstellgröße und sollte as phänomenologischer parameter verstanden werden. Dieser parameter hängt sowohl vom Fluid system als auch von der Fluid wand Kombination ab\cite{jacqmin2000ContactlineDynamicsDiffuse}.
+Here, $\Gamma_{\mathrm{w}}$ is a newly introduced constant, termed the \textit{wall relaxation parameter}. The wall velocity is represented by $\mathbf{u}_{\mathrm{w}}$. According to Qian et al. \cite{qian2006VariationalApproachMoving}, for $\Gamma_{\mathrm{w}}\rightarrow 0$ and $\kappa\rightarrow 0$, the sharp interface limit with dominant advection is obtained. In the opposite case, diffusion becomes dominant. The wall relaxation parameter serves as an adjustable parameter for the simulation and should be understood as a phenomenological parameter. This parameter depends on both the fluid system and the fluid-wall combination \cite{jacqmin2000ContactlineDynamicsDiffuse}.
+
 
 \section{Cahn-Hillard Navier Stokes Equations}
 The coupled Cahn-Hillard Navier Stokes equations are given by
