@@ -2,6 +2,7 @@ Die Geometrie und einige Stoffeigenschaften sind durch die in \ref{chap: wetting
 
 
 Wie bereits in Kapitel \ref{chap: Introduction} geschrieben, erfolgen die Simulationen mit dem solver \texttt{phaseFieldFoam}. Dieser wurde bereits mehrfach Validiert, worauf in Kapitel \ref{chap: Validation} genauer eingegangen wird. 
+
 \section{Geometry and Discretization}
 Die Geometrie der Kapillare wird so angenommen, dass sie wie in Abbildung \ref{fig: Capillary Geometry} zu sehen, ein Reservoir mit Wasser hat, welches durch Oberflächeneffekte in die Kapillare strömt. Durch die Annahme, dass sich ein Teil des Wassers bereits in der Kapillare befindet, wird in der Simulieren Geometrie lediglich die Randbedingung so gesetzt, dass das Wasser in diesem Reservoir nachströmen kann und das Reservoir nicht mit modelliert und diskretisiert werden muss. Die Dimensionen der Kapillare ergeben sich daraus, dass die Simulation der Kapillare perspektivisch auch mit experimenten verglichen werden soll. Daher wurden auch weitere, komplexere Geometrien simuliert, die jedoch nicht Teil dieser Arbeit sind. 
 Wie zu erkennen, handelt es sich um eine Kapillare mit lediglich $6nm$ Durchmesser. Eine Simulation so kleiner Kapillare wurde soweit bekannt bisher nicht mit der Phasenfeld methode Simuliert.
@@ -73,3 +74,14 @@ Beispielsweise wird zur analyse der wirkenden viskosen Kräfte in der Wassersäu
 \begin{equation}
     \mathrm{F}_{\mathrm{visc}}^{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
 \end{equation}
+
+\section{complex Geometry}
+In experiments it is not possible to generate a capillary with a constant diameter. Therefore a geometry with a more realistic geometry is also simulated. To create the porous medium for the experiments, "spheres" are used in a pour. The area between the spheres of this fill is then filled and the spheres are dissolved. This creates capillaries that are not ideally smooth as previously assumed, but rather a shape like in figure (\todo[inline]{ref to a picture with used geometry}). It was assumed in a simplified way that no bridges are created between capillaries in this process. Furthermore, it is assumed that the spheres are ideally aligned with each other at the beginning of the process.  \todo{Check, if correct!} 
+In this case it is assumed, that the centre of the circle is in the middle of a segment and only displaced by an offset from the x-axis. The connection between the segments is to make sure the mesh is sufficient. 
+
+The numerical setting keep the same as in the wedge case with a cylindrical capillary. 
+
+
+To simulate the imbibition process we use the \texttt{OpenFoam} framework. To get a estimation of the necessary parameters, a previously validated case is reused and adapted to this case. First the simulation is assumed to be axissymmetric. Therefore a Wedge is used for the major part of the simulations. To validate the results of the wedge a 3D simulation was performed, too. 
+
+The necessary geometry, settings and boundary conditions for each case are described below. 

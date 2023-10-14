@@ -1,18 +1,10 @@
-\todo[inline]{The Position of the meniskus was exported with paraview in the decomposed state. The position was then extracted with a python script.Probe data was preprocessed as well and several computations for eval of simulations. Plots were generated with matplotlib?; Start of real results with an overview when what where. Maybe work with normalized data? }
 
+Im folgenden werden die Ergebnisse der Simulationen diskutiert und versucht eine Beschreibung für den Übergang der vorgestellten Wachstumsregionen des Kapillaren Aufstiegs zu finden, genauer den Übergang des linearen Bereichs ($z(t)\sim t$) hin zum von Lucas und Washburn beschriebenen wachstum ($z(t)\sim \sqrt{t}$). Um mögliche Einflüsse durch den Kontaktwinkel berücksichtigen zu können wurden die Simulationen mit drei unterschiedlichen Kontaktwinkeln durchgeführt. Weiter wurden auch Simulationen mit aktivierter Ungleichgewichtsrandbedingung durchgeführt, um auch hier den Einfluss einer Relaxation an der Wand auf den Kapillaren Aufstieg zu untersuchen. Beginnend mit einer Untersuchung der Gleichgewichts Randbedingung in Kapitel \ref{sec: EquilibriumBoundaryCondition} und anschließendem Vergleich mit der Ungleichgewichtsrandbedingung. \todo{ref} 
+Bei den verwendeten Dimensionen der Kapillare und der Flüssigkeiten, ist zu erwarten, dass der Einfluss der Gravitation vernachlässigbar ist, was auch in gesondert durchgeführten Simulationen gezeigt werden konnte, jedoch aufgrund der geringen aussagekraft eines Vergleichs mit Simulationen ohne Gravitation nicht weiter betrachtet wird. Damit wird jedoch auch klar, dass eine der besprochenen von Lucas und Washburn angenommen Vereinfachnungen für diesen Fall nicht gelten und eine Abweichung der vorhersage mit Gleichung \ref{eq: LW-Eq} darauf zurückzuführen ist, dass ein Gleichgewicht zwischen Kapillarkraft und viskosem drag nicht ausreicht, um den Kapillaren Aufstieg in frühen imbibitionsstadien zu beschreiben.
 
-Wie in Kapitel \ref{sec: capillaryRise} gezeigt, ist der Kapillare Aufstieg bis heute nicht verstanden. Ziel dieser Arbeit ist es daher 
-
-
-Wie bereits beschrieben soll der Übergang vom linearen Anstieg der höhe einer Wassersäule in einer Kapillare hin zum Lucas Washburn Regime Untersucht werden. Weiter wurde beschrieben wie Delanoy et al. \cite{delannoy2019DualRoleViscosity} oder Ruiz et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} das Wachstum beschrieben. Zum Vergleich damit werden zunächst die Zeitpunkte oder Längen anhand ihrer vorhersagen berechnet und anschließend verglichen. Zunächst aber ein direkter Vergleich mit der Lucas-Washburn Gleichung. 
-Delanoy et al. \cite{delannoy2019DualRoleViscosity} oder Ruiz et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} haben eigene Ansätze gefunden, um den Übergang zwischen den beiden Wachstumsregionen zu beschreiben. 
-
-
-Im folgenden werden die Ergebnisse der Simulationen diskutiert und versucht eine Beschreibung für den Übergang der vorgestellten Wachstumsregionen des Kapillaren Aufstiegs zu finden. Um mögliche einflüsse durch den Kontaktwinkel berücksichtigen zu können wurden die Simulationen mit drei unterschiedlichen Kontaktwinkeln durchgeführt. Bei den verwendeten Dimensionen der Kapillare und der Flüssigkeiten, ist zu erwarten, dass der Einfluss der Gravitation vernachlässigbar ist, was auch in gesondert durchgeführten Simulationen gezeigt werden konnte, jedoch aufgrund der geringen aussagekraft eines Vergleichs mit Simulationen ohne Gravitation nicht weiter betrachtet wird. Damit wird jedoch auch klar, dass eine der besprochenen von Lucas und Washburn angenommen Vereinfachnungen für diesen Fall nicht gelten und eine Abweichung der vorhersage mit Gleichung \ref{eq: LW-Eq} darauf zurückzuführen ist, dass ein Gleichgewicht zwischen Kapillarkraft und viskosem drag nicht ausreicht, um den Kapillaren Aufstieg in frühen imbibitionsstadien zu beschreiben. 
-
-Abbildung \ref{fig: LW-PFF_comp} zeigt einen direkten vergleich der Simulationsergebnisse mit der Lucas-Washburn Gleichung (rote linie \todo{describe as in actual figure later}). Darin wurde in \ref{fig: LW-PFF_comp} (a) linear skalliert und in \ref{fig: LW-PFF_comp} (b) logarithmisch. In der logarithmischen Darstellung werden die Unterschiede deutlich sichtbar. Zu Beginn ist die Steigung der Simulationen größer als die der vorhersage, bis sie sich schließlich annähern. Das lässt darauf schließen, dass der Kapillare Aufstieg erst nach einiger Zeit dem bekannten Lucas Washburn Wachstum folgt. Dies 
-
-Wie ebenfalls bereits beschrieben sagt die Lucas-Washburn Gleichung ein Wachstum von $z(t)\sim \sqrt{t}$ vorher. 
+\section{Equilibrium Boundary Condition}
+\label{sec: EquilibriumBoundaryCondition}
+Der Vergleich mit der Gleichgewichtsrandbedingung wird zunächst mit nur einem der Simulierten Kontaktwinkel durchgeführt und anschließend auf einflüsse der Kontaktwinkelvariation eingegangen. Der Vergleich der Simulationsergebnisse für einen Kontaktwinkel $\theta_{\mathrm{e}}=15^{\circ}$ von mit der Lucas-Washburn Gleichung \ref{eq: LW-Eq} wird in Abbildung \ref{fig: LW-PFF_comp} dargestellt. Die vorhergesagte imbibition länge wird in rot und die Ergebnisse der Simulation in schwarz abgebildet. 
 
 \begin{figure}[h]
     \centering
@@ -20,3 +12,42 @@ Wie ebenfalls bereits beschrieben sagt die Lucas-Washburn Gleichung ein Wachstum
     \caption{Vergleich des von Lucas-Washburn vorhergesagten Wachstums mit den Ergenissen von \texttt{phaseFieldFoam}}
     \label{fig: LW-PFF_comp}
 \end{figure}
+In Abbildung \ref{fig: LW-PFF_comp} (a) wurde linear und in \ref{fig: LW-PFF_comp} (b) logarithmisch skalliert. In der logarithmischen Darstellung werden die Unterschiede deutlich sichtbar. Zu Beginn ist die Steigung der Simulationen größer als die der vorhersage, bis sie sich schließlich annähern. Das lässt darauf schließen, dass der Kapillare Aufstieg erst nach einiger Zeit dem bekannten Lucas Washburn Wachstum folgt, was auch der Aussage vieler in Abschnitt \ref{sec: capillaryRise} vorgestellter Arbeiten folgt. 
+
+Um zu verstehen wieso das Verhalten sich unterscheidet, macht es Sinn sich die wirkenden Kräfte in der Wassersäule anzuschauen. Delanoy et al. \cite{delannoy2019DualRoleViscosity} führte diese unterschiede auf eine lokale Dissipation zurück. Daher macht es Sinn sich den Bereich nahe des Interfaces genauer anzuschauen. In Abbildung \ref{fig: viscForce-PFF} sind in (a) die viskosen Kräfte in der Wassersäule gezeigt. Es ist deutlich zu erkennen, dass nahe der Kontaktlinieam größten sind und sich entlang der wand \todo{ausarbeiten+ Bild nachbearbeiten. }
+
+In Abbildung \ref*{fig: Velofield_Wedge} ist das Geschwidigkeitsfeld im Wasser dargestellt und sieht aus wie erwartet. In der Mitte der Kapillare ist die Geschwindigkeit des Wassers am höchsten (vgl. (a)). Zur Visualisierung des sich verändernden Geschwindigkeitsfeldes bei annäherung an das Interface wurden ebenfalls für drei Ebenen die Vektoren des Geschwindigkeitsfeldes hinzugefügt. Weit vom Interface entfernt, liegt das erwartete parabolische Profil vor. Bei näherung an das Interface ist deutlich zu erkennen wie die Strömung in der Mitte abgebremst wird und bei genauer betrachtung ist anhand der Vektoren auch zu erkennen, dass die Strömung an den Rand abgelenkt wird. Dazu wurde in (b) der Ausschnitt nahe des Interface vergrößert und statt der Magnitude der Geschwindigkeit nur die Komponente normal zur Strömungsrichtung ($z$-Richtung) visualisiert. Es ist deutlich zu erkennen, dass bis kurz vor der Strömung diese Komponente vernachlässigbar ist und nahe des Interface stark ansteigt und zwei Regionen zu bilden scheint. Eine direkt am Interface und nahe der Wand und ein weiteres etwas weiter innerhalb der Wassersäule. Anahnd der Legende ist deutlich erkennbar, dass die Größenordnung im Vergleich zur Geschwindigkeit in Strömungsrichtung sich um eine Dekade unterscheidet. Der Bereich in dem die Änderung der Geschwindigkeit stattfindet, wir im folgenden als $\mathrm{W}$ bezeichent.
+\todo{Woher kommt das?}
+\todo{Bild oder beschrieben der rezikulation} 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.95\textwidth]{Pictures/Velo_Wedge.pdf}
+    \caption{(a) Velocity field in the water column at $100ns$ and $\theta_{\mathrm{e}}=15^{\circ}$, (b) detailed view of recirculation near the interface.}
+    \label{fig: Velofield_Wedge}
+\end{figure}
+In diesem Bereich ist nicht nur das Geschwindigkeitsfeld interessant. Schaut man sich die viskosen Kräfte in diesem Bereich (vgl. \ref*{fig: eDiss_wedge}) an, wird deutlich, dass sich zwei dissipative kanäle bilden. Die viskosen Kräfte nahe der Kontaktlinie und der viskosie Widerstand, hervorgerufen durch die Veränderungen des Kontaktwinkels aufgrund der Dynamik des Systems.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.95\textwidth]{Pictures/eDiss_Wedge.pdf}
+    \caption{Dissipative channels near the contact line.}
+    \label{fig: eDiss_wedge}
+\end{figure}
+
+Zur Berechnung des Kontaktwinkels kann die in \ref*{chap: Validation} vorgestellte Methode zur Berechnung des Radius der spähre verwendet werden. Wie in Kapitel \ref*{chap: wettingTheory} beschrieben wird davon ausgegangen, dass sich der Meniskus zu einem Kreissegment entwickelt. Da in diesem Fall nur der Kontaktwinkel benötigt wird, kann auf eine in \cite{buttPhysicsChemistryInterfaces} vorgestellt Gleichung zurückgegriffen werden, womit sich der Kontaktwinkel mit 
+\begin{equation}
+    \theta = 90^{\circ}- 2\tan^{-1}\left(\frac{h}{R}\right) 
+\end{equation}
+berechnen lässt. Die variablen und wie sie erhalten werden ist bereits in Kapitel \ref*{chap: Validation} beschrieben. \todo{add cox angles to compare in one plot and just 15deg case}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.95\textwidth]{Pictures/contactAngle_overTime.pdf}
+    \caption{computed contact angle over time }
+    \label{fig: eDiss_wedge}
+\end{figure}
+
+
+%Diese erkenntnis bestätigt sich, wenn man die Steigung der SImulaiton an einigen Stichproben ermittelt. Dabei wird deutlich, dass die Steigung asymptotisch %auf den Wert der Lucas-Washburn Gleichung zustrebt. \todo{add table with slope values for some probes}
+
+

@@ -29,12 +29,12 @@ The essential boundary conditions on the wall are listed in Table \ref{tab: Boun
         Pressure $p$ & \texttt{fixedFluxPressure} \\
     \end{tabular}
 \end{table}
-For the order parameter $C$, the equilibrium boundary condition is assumed, and the equilibrium contact angle for each of the three simulations with this geometry is given as $15^{\circ}$, $45^{\circ}$, and $75^{\circ}$. For further simulations, in addition to the mentioned equilibrium condition \texttt{equilibriumPhaseContactAngle}, it was also assumed that there is an imbalance according to \ref{sec: nonEquiBC}. For the simulations, the boundary condition must be changed to \texttt{outOfEquilibriumPhaseContactAngle}, and a value for $\Gamma_{\mathrm{w}}$ must be specified.
-The gradient of the chemical potential on the wall is set to zero, as is the velocity of the wall. The boundary condition for the pressure is chosen with \texttt{fixedFluxPressure} so that the pressure gradient is adjusted in such a way that the mass flow at the boundary matches the given velocity on the wall.
-At the inlet or outlet of the capillary, a \texttt{zeroGradient} boundary condition also applies, and a pressure of $0$ Pa.
+For the order parameter $C$, the equilibrium boundary condition is assumed, and the equilibrium contact angle for each of the three simulations with this geometry is given as $15^{\circ}$, $45^{\circ}$, and $75^{\circ}$. For further simulations, in addition to the mentioned equilibrium condition \verb|equilibriumPhaseContactAngle|, it was also assumed that there is an imbalance according to \ref{sec: nonEquiBC}. For the simulations, the boundary condition must be changed to \verb|outOfEquilibriumPhaseContactAngle|, and a value for $\Gamma_{\mathrm{w}}$ must be specified.
+The gradient of the chemical potential on the wall is set to zero, as is the velocity of the wall. The boundary condition for the pressure is chosen with \verb|fixedFluxPressure| so that the pressure gradient is adjusted in such a way that the mass flow at the boundary matches the given velocity on the wall.
+At the inlet or outlet of the capillary, a \verb|zeroGradient| boundary condition also applies, and a pressure of $0$ Pa.
 
 \section{Material Properties}
-For the simulation, water and air at $25^{\circ}$ Celsius are assumed as the medium, among other things. This results in the material properties shown in Table \ref{tab:physicalProperties_CaseSetup}.
+For the simulation, water and air at $20^{\circ}$ Celsius are assumed as the medium, among other things. This results in the material properties shown in Table \ref{tab:physicalProperties_CaseSetup}.
 \begin{table}[h]
     \centering
     \caption{Physical properties}
@@ -45,7 +45,7 @@ For the simulation, water and air at $25^{\circ}$ Celsius are assumed as the med
         Air & $1$ & $1.00E-05$ \\
     \end{tabular}
 \end{table}
-The surface tension for a water-air interface at $25^{\circ}$ Celsius is given as \(0.072 N/m\). The interface thickness \( \epsilon \) was chosen to be approximately \(1.7 nm\) \cite{bagheriInterfacialRelaxationCrucial2022}, corresponding to the physical interface thickness.
+The surface tension for a water-air interface at $20^{\circ}$ Celsius is given as \(0.072 N/m\). The interface thickness \( \epsilon \) was chosen to be approximately \(1.7 nm\) \cite{bagheriInterfacialRelaxationCrucial2022}, corresponding to the physical interface thickness.
 
 
 \section{Simulation Parameters}
@@ -57,18 +57,28 @@ and showed that \( 1 \leq \delta < 2 \). Unfortunately, there is currently no co
 For this work, a value of \( \kappa = 1.6 \times 10^{-18} \) was used. For the wall relaxation factor $\Gamma_{\mathrm{w}}$, a value of \( \Gamma_{\mathrm{w}} = 5 \times 10^{12} \) was assumed. \todo{CHECK}
 
 Due to initial problems in post-processing, the simulation was conducted without adaptive mesh refinement.
-The simulation was initialized with a planar interface, and for the order parameter, an interface profile according to Equation \ref{eq: InterfactialNormalDirProfile} was initialized using the \texttt{funkySetFields} method.
+The simulation was initialized with a planar interface, and for the order parameter, an interface profile according to Equation \ref{eq: InterfactialNormalDirProfile} was initialized using the \verb|funkySetFields| method.
 
-The viscosity model of the simulation is carried out using the \texttt{blended} method. In this approach, the \texttt{arithmetic} and \texttt{harmonic} models are combined using a blending factor.
+The viscosity model of the simulation is carried out using the \verb|blended| method. In this approach, the \verb|arithmetic| and \verb|harmonic| models are combined using a blending factor.
 
 
 \section{Evaluation Methods}
-For the evaluation of the simulation, the software \texttt{paraview} was used, among other tools. All images of the simulation were generated using this software. However, the evaluation and representation of derived or calculated quantities in diagrams were produced using the Python library \texttt{Matplotlib}. A script was developed to collect the results from the function objects and, if necessary, to perform calculations with them.
+For the evaluation of the simulation, the software \verb|paraview| was used, among other tools. All images of the simulation were generated using this software. However, the evaluation and representation of derived or calculated quantities in diagrams were produced using the Python library \verb|Matplotlib|. A script was developed to collect the results from the function objects and, if necessary, to perform calculations with them.
 
-With the help of \textit{function objects}, data can be collected during the ongoing simulation. \texttt{phaseFieldFoam} provides several functions for reading out the simulation, which are also used here. These have to be integrated and configured in the \texttt{controlDict} file.
+With the help of \textit{function objects}, data can be collected during the ongoing simulation. \verb|phaseFieldFoam| provides several functions for reading out the simulation, which are also used here. These have to be integrated and configured in the \verb|controlDict| file.
 
 For instance, to analyze the viscous forces acting within the water column, we need the total viscous dissipation force in that water column, which is exported via such function objects. We obtain this by integrating the divergence of the viscous stress tensor $\tau$ from Equation \ref{eq: NSEChanged} over the domain:
 \begin{equation}
     \mathrm{F}_{\mathrm{visc}}^{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}^{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
 \end{equation}
 
+\section{Complex Geometry}
+In experiments it is not possible to generate a capillary with a constant diameter. Therefore a geometry with a more realistic geometry is also simulated. To create the porous medium for the experiments, "spheres" are used in a pour. The area between the spheres of this fill is then filled and the spheres are dissolved. This creates capillaries that are not ideally smooth as previously assumed, but rather a shape like in figure (\todo[inline]{ref to a picture with used geometry}). It was assumed in a simplified way that no bridges are created between capillaries in this process. Furthermore, it is assumed that the spheres are ideally aligned with each other at the beginning of the process.  \todo{Check, if correct!} 
+In this case it is assumed, that the centre of the circle is in the middle of a segment and only displaced by an offset from the x-axis. The connection between the segments is to make sure the mesh is sufficient. 
+
+The numerical setting keep the same as in the wedge case with a cylindrical capillary. 
+
+
+To simulate the imbibition process we use the \verb|OpenFoam| framework. To get a estimation of the necessary parameters, a previously validated case is reused and adapted to this case. First the simulation is assumed to be axissymmetric. Therefore a Wedge is used for the major part of the simulations. To validate the results of the wedge a 3D simulation was performed, too. 
+
+The necessary geometry, settings and boundary conditions for each case are described below. 
