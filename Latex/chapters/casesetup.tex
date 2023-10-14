@@ -69,16 +69,7 @@ With the help of \textit{function objects}, data can be collected during the ong
 
 For instance, to analyze the viscous forces acting within the water column, we need the total viscous dissipation force in that water column, which is exported via such function objects. We obtain this by integrating the divergence of the viscous stress tensor $\tau$ from Equation \ref{eq: NSEChanged} over the domain:
 \begin{equation}
+    \label{eq: total_viscForce}
     \mathrm{F}_{\mathrm{visc}}^{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}^{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
 \end{equation}
 
-\section{Complex Geometry}
-In experiments it is not possible to generate a capillary with a constant diameter. Therefore a geometry with a more realistic geometry is also simulated. To create the porous medium for the experiments, "spheres" are used in a pour. The area between the spheres of this fill is then filled and the spheres are dissolved. This creates capillaries that are not ideally smooth as previously assumed, but rather a shape like in figure (\todo[inline]{ref to a picture with used geometry}). It was assumed in a simplified way that no bridges are created between capillaries in this process. Furthermore, it is assumed that the spheres are ideally aligned with each other at the beginning of the process.  \todo{Check, if correct!} 
-In this case it is assumed, that the centre of the circle is in the middle of a segment and only displaced by an offset from the x-axis. The connection between the segments is to make sure the mesh is sufficient. 
-
-The numerical setting keep the same as in the wedge case with a cylindrical capillary. 
-
-
-To simulate the imbibition process we use the \verb|OpenFoam| framework. To get a estimation of the necessary parameters, a previously validated case is reused and adapted to this case. First the simulation is assumed to be axissymmetric. Therefore a Wedge is used for the major part of the simulations. To validate the results of the wedge a 3D simulation was performed, too. 
-
-The necessary geometry, settings and boundary conditions for each case are described below. 

@@ -46,8 +46,35 @@ berechnen lässt. Die variablen und wie sie erhalten werden ist bereits in Kapit
     \caption{computed contact angle over time }
     \label{fig: eDiss_wedge}
 \end{figure}
+Darin ist zu sehen, dass sich sehr schnell ein Winkel einstellt,... \todo{ausformulieren mit Daten vom feineren Netz.}
+
+Die viskosen Kräfte ausserhalb von $\mathrm{W}$ werden aufgrund des Strömungsprofils als poiseuilles viskosen Widerstand angenommen. Um die in $\mathrm{W}$ herrschenden viskosen Kräfte zu ermitteln, wird von den insgesamt herrschenden viskosen kräften (Gleichung \ref*{eq: total_viscForce}) der Poiseuille Widerstand ($F_{\eta}$ aus Gleichung \ref*{eq: NewtonBalanceForcesOnly}) abgezogen. 
+Weiter wird auch die aus Gleichung \ref*{eq: meniscusFormation} entstehenden Kräfte mit Hilfe der Simulation berechent. Plottet man diese Kräfte in einem Diagramm wird deutlich, wie zu Beginn der imbibition die Kräfte aus der Meniskusbildung die viskosen Kräfte überwiegen und erst nach einiger Zeit die viskosen Kräfte dominant werden. Dazu wurden in Abbildung \ref*{fig: forcesOverTime} auch die Ergebnisse aus der theoretischen Berechnung anhand der Simulationsdaten und der direkt aus der Simulation stammenden Daten gezeigt. Delanoy hat postuliert, dass ab einer imbibitionslänge von $\sim r\cdot ln(r/l_s)$ die viskosen Kräfte überwiegen. Auf diesen Fall übertragen würde das bedeuteten, dass für $t\approx 3\cdot 10^{-9}$ die viskosen Kräfte überwiegen. Da dies mit einer Automatischen auswertung der Ergebnisse nicht übereinstimmt, wurde exemplarisch für einen Fall händisch für mehrere Zeitschritte der Bereich $\mathrm{W}$ bestimmt und die Kräfte erneut überproft, wodurch sich dann nurnoch eine 
 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.95\textwidth]{Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf}
+    \caption{computed contact angle over time }
+    \label{fig: forcesOverTime}
+\end{figure}
 %Diese erkenntnis bestätigt sich, wenn man die Steigung der SImulaiton an einigen Stichproben ermittelt. Dabei wird deutlich, dass die Steigung asymptotisch %auf den Wert der Lucas-Washburn Gleichung zustrebt. \todo{add table with slope values for some probes}
 
 
+
+
+\section{Contact Angle Variation}
+Wie zuvor erwähnt wurden die Simulationen für mehrere Kontaktwinkel durchgeführt, um mögliche Einflüsse bewerten zu können. Es ist zu erwarten, dass der Kontaktwinkel einen einfluss auf die Geschwindigkeit hat, mit der die Wassersäule aufsteigt. Dies zeigt sich auch in den Daten; auf eine darfstellung wird jedoch aufgrund der geringen aussagekraft verzichtet. Interessanter ist ein Vergleich der Kräfte, genauer eine Betrachtung der Anteile der Kräfte. Bildet man wie zuvor die Viskosen Widerstandskräfte und beziegt diese auf die ingesamt wirkenden viskosen Kräfte. Liegt dieses Verhältnis näher bei $1$, folgt der Kapillare aufstiegt dem Lucas-Washburn gesetzmäßigkeiten, für Werte nahe $0$, einem linearen Wachstum. Die darstellung über die Zeit zeigt, dass mit verändertem Gleichgewichtskontaktwinkel die Zeit beeinflusst wird, bis die viskosen Kräfte überwiegen. Es zeigt sich jedoch auch, dass der Kontatkwinkel bezogen auf die notwendige Strecke, die der Meniskus zurücklegt keinen Einfluss zu haben scheint. Dies spiegelt sich auch in der von Delanoy vorgeschalgenen formel zur Abschätzung des Punktes wieder an dem die viskosen Kräfte überwiegen.
+
+
+
+
+\section{out of equilibrium boundary condition}
+
+
+
+
+\section{Conclusion}
+
+EVERYTHING IS SHIT!!!!!!!!
+I GIVE UP

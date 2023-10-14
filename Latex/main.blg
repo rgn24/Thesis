@@ -1,0 +1,20 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[174] biber-MSWIN64:340> INFO - === 
+[235] Biber.pm:419> INFO - Reading 'main.bcf'
+[335] Biber.pm:979> INFO - Found 55 citekeys in bib section 0
+[349] Biber.pm:4419> INFO - Processing section 0
+[372] Biber.pm:4610> INFO - Looking for bibtex file 'DEMO-TUDaBibliography.bib' for section 0
+[433] bibtex.pm:1713> INFO - LaTeX decoding ...
+[580] bibtex.pm:1519> INFO - Found BibTeX data source 'DEMO-TUDaBibliography.bib'
+[883] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[883] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[884] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[884] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[953] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[982] bbl.pm:763> INFO - Output to main.bbl
+[982] Biber.pm:131> WARN - I didn't find a database entry for 'lucas_ueber_1918' (section 0)
+[982] Biber.pm:131> WARN - I didn't find a database entry for 'washburn_dynamics_1921' (section 0)
+[982] Biber.pm:131> WARN - I didn't find a database entry for 'bosanquet_lv_1923' (section 0)
+[982] Biber.pm:131> WARN - I didn't find a database entry for 'quere_inertial_1997' (section 0)
+[982] Biber.pm:133> INFO - WARNINGS: 4

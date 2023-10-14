@@ -179,7 +179,12 @@ Now, considering the moving system, Equation \ref{eq: NewtonDynCapillary} for th
 \begin{equation}
     \pi r^{2}\rho z \frac{du}{dt}= 2\pi r\sigma \cos\theta_{\mathrm{m}}+\pi r^{2}\rho gz-8\pi \sigma z \dot{z} -2\pi r \sigma \cos \theta_{\mathrm{m}}f
 \end{equation}
-With the first two terms as driving forces and the last two as resistance forces. The last term has been added and acts as a correction for the fact that the dynamic contact angle does not correspond to the macroscopic contact angle.
+With the first two terms as driving forces and the last two as resistance forces. The last term has been added and acts as a correction for the fact that the dynamic contact angle does not correspond to the macroscopic contact angle. \todo{is that so????}
+For later usage the here proposed force, that is dissipated due to the formatation of the meniscus is given by:
+\begin{equation}
+    \label{eq: meniscusFormation}
+    F_{\mathrm{m}} = 2\pi r \sigma (\cos \theta_{\mathrm{e}}-\cos \theta_{\mathrm{D}}(U))
+\end{equation}
 
 Subsequently, dimensionless quantities were introduced, and four cases were defined. Two each with a large and small Laplace number, or a large and small ratio of length scales. With the quantities used in this work, case three from Ruiz-Gutiérrez et al. \cite{ruiz-gutierrez2022LongCrossoverDynamics} should apply. They predict that the quadratic regime will not occur, and the rise will begin with a linear region, eventually transitioning to the Lucas-Washburn regime.
 
