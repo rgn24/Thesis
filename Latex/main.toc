@@ -25,13 +25,14 @@
 \contentsline {section}{\numberline {4.5}Evaluation Methods}{25}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Validation}{27}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Results}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Equilibrium Boundary Condition}{29}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Contact Angle Variation}{33}{section.6.2}%
-\contentsline {section}{\numberline {6.3}out of equilibrium boundary condition}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Conclusion}{34}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Outlook}{35}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Complex Geometry}{35}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Temperature depend capillary rise}{36}{section.7.2}%
-\contentsline {section}{\numberline {7.3}surfactants influence on capillary rise}{36}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Phase Field Parameters}{36}{section.7.4}%
+\contentsline {section}{\numberline {6.1}Vorarbeiten}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Equilibrium Boundary Condition}{30}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Contact Angle Variation}{33}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}out of equilibrium boundary condition}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Conclusion}{35}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Outlook}{36}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Complex Geometry}{36}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Temperature depend capillary rise}{37}{section.7.2}%
+\contentsline {section}{\numberline {7.3}surfactants influence on capillary rise}{37}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Phase Field Parameters}{37}{section.7.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
