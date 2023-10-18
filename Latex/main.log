@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.7)  17 OCT 2023 23:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.7)  19 OCT 2023 00:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1407,8 +1407,19 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@baselineskip=\dimen359
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
+) (c:/texlive/2023/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+Package tocbasic Info: setting babel extension for `nlo' on input line 187.
+Package tocbasic Info: setting babel extension for `nls' on input line 188.
+\nomlabelwidth=\dimen360
+\nom@tempdim=\dimen361
+\nomitemsep=\skip136
 )
-LaTeX Info: Redefining \oldstylenums on input line 90.
+\@nomenclaturefile=\write6
+\openout6 = `main.nlo'.
+
+Package nomencl Info: Writing nomenclature file main.nlo on input line 90.
+LaTeX Info: Redefining \oldstylenums on input line 108.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
@@ -1418,45 +1429,45 @@ LaTeX Warning: Label `fig: RadiusCalc' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-Package scrbase Info: activating english \abstractname on input line 90.
-Package scrbase Info: activating english \partname on input line 90.
-Package scrbase Info: activating english \chaptername on input line 90.
-Package scrbase Info: activating english \appendixname on input line 90.
-Package scrbase Info: activating english \figurename on input line 90.
-Package scrbase Info: activating english \tablename on input line 90.
-Package scrbase Info: activating english \contentsname on input line 90.
-Package scrbase Info: activating english \listfigurename on input line 90.
-Package scrbase Info: activating english \listtablename on input line 90.
-Package scrbase Info: activating english \bibname on input line 90.
-Package scrbase Info: activating english \indexname on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+Package scrbase Info: activating english \abstractname on input line 108.
+Package scrbase Info: activating english \partname on input line 108.
+Package scrbase Info: activating english \chaptername on input line 108.
+Package scrbase Info: activating english \appendixname on input line 108.
+Package scrbase Info: activating english \figurename on input line 108.
+Package scrbase Info: activating english \tablename on input line 108.
+Package scrbase Info: activating english \contentsname on input line 108.
+Package scrbase Info: activating english \listfigurename on input line 108.
+Package scrbase Info: activating english \listtablename on input line 108.
+Package scrbase Info: activating english \bibname on input line 108.
+Package scrbase Info: activating english \indexname on input line 108.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count567
-\scratchdimen=\dimen360
+\scratchdimen=\dimen362
 \scratchbox=\box97
 \nofMPsegments=\count568
 \nofMParguments=\count569
 \everyMPshowfont=\toks58
 \MPscratchCnt=\count570
-\MPscratchDim=\dimen361
+\MPscratchDim=\dimen363
 \MPnumerator=\count571
 \makeMPintoPDFobject=\count572
 \everyMPtoPDFconversion=\toks59
@@ -1468,19 +1479,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@mv@tabular=\count573
 \c@mv@boldtabular=\count574
-LaTeX Info: Redefining \microtypecontext on input line 90.
-Package microtype Info: Applying patch `item' on input line 90.
-Package microtype Info: Applying patch `toc' on input line 90.
-Package microtype Info: Applying patch `eqnum' on input line 90.
-Package microtype Info: Applying patch `footnote' on input line 90.
-Package microtype Info: Applying patch `verbatim' on input line 90.
+LaTeX Info: Redefining \microtypecontext on input line 108.
+Package microtype Info: Applying patch `item' on input line 108.
+Package microtype Info: Applying patch `toc' on input line 108.
+Package microtype Info: Applying patch `eqnum' on input line 108.
+Package microtype Info: Applying patch `footnote' on input line 108.
+Package microtype Info: Applying patch `verbatim' on input line 108.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 90.
+LaTeX Info: Redefining \showhyphens on input line 108.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1488,28 +1499,28 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 )
 \ptxcd_headrule_box=\box98
-Package scrbase Info: activating english \ptxcd_byname on input line 90.
-Package scrbase Info: activating english \ptxcd_fromname on input line 90.
-Package scrbase Info: activating english \ptxcd_departmentprefix: on input line 90.
-Package scrbase Info: activating english \ptxcd_reviewname on input line 90.
-Package scrbase Info: activating english \ptxcd_examdatename on input line 90.
-Package scrbase Info: activating english \ptxcd_submissiondatename on input line 90.
-Package scrbase Info: activating english \ptxcd_studentIDname on input line 90.
-Package scrbase Info: activating english \ptxcd_thesisType on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 90.
-Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 90.
-Package scrbase Info: activating english \researchgroupname on input line 90.
-Package scrbase Info: activating english \institutename on input line 90.
-Package scrbase Info: activating english \authorandname on input line 90.
-Package scrbase Info: activating english \ptxcd_datename on input line 90.
-Package hyperref Info: Link coloring OFF on input line 90.
+Package scrbase Info: activating english \ptxcd_byname on input line 108.
+Package scrbase Info: activating english \ptxcd_fromname on input line 108.
+Package scrbase Info: activating english \ptxcd_departmentprefix: on input line 108.
+Package scrbase Info: activating english \ptxcd_reviewname on input line 108.
+Package scrbase Info: activating english \ptxcd_examdatename on input line 108.
+Package scrbase Info: activating english \ptxcd_submissiondatename on input line 108.
+Package scrbase Info: activating english \ptxcd_studentIDname on input line 108.
+Package scrbase Info: activating english \ptxcd_thesisType on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 108.
+Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 108.
+Package scrbase Info: activating english \researchgroupname on input line 108.
+Package scrbase Info: activating english \institutename on input line 108.
+Package scrbase Info: activating english \authorandname on input line 108.
+Package scrbase Info: activating english \ptxcd_datename on input line 108.
+Package hyperref Info: Link coloring OFF on input line 108.
  (./main.out) (./main.out)
-\@outlinefile=\write6
-\openout6 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
@@ -1518,7 +1529,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 90.
+(scrreprt)           before \begin{document} on input line 108.
  (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1581,16 +1592,16 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 90.
-Package biblatex Info: Reference segment=0 on input line 90.
+Package biblatex Info: Reference section=0 on input line 108.
+Package biblatex Info: Reference segment=0 on input line 108.
  (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 90.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 108.
  (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 90.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 108.
 \c@lstlisting=\count576
 
 *geometry* driver: auto-detecting
@@ -1628,7 +1639,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 90.
+Package layouts Warning: Layout scale set to 0.5 on input line 108.
 
 
 Package tudapub/thesis Info: You submitted birthplace data for title
@@ -1642,71 +1653,71 @@ Package tudapub/thesis Info: You submitted examdate data for title
 (tudapub/thesis)             This field is only used for type=dr/drfinal.
 (tudapub/thesis)             It will be ignored.
 
-LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input line 132.
+LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input line 150.
 (c:/texlive/2023/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 132.
+(Font)              `T1/Roboto-LF/regular/n' on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 132.
+(Font)              scaled to size 10.95pt on input line 150.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 132.
+(Font)              `T1/Roboto-LF/bold/n' on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 132.
+(Font)              scaled to size 10.95pt on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 132.
+(Font)              `T1/Roboto-LF/bold/n' on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 132.
+(Font)              scaled to size 12.0pt on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 132.
+(Font)              `T1/Roboto-LF/regular/n' on input line 150.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 132.
+(Font)              scaled to size 10.0pt on input line 150.
  (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 132.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 150.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 132.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 150.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 132.
+(Font)              scaled to size 10.0pt on input line 150.
  [1
 
 
 
 {c:/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 133.
+(Font)              `T1/Roboto-LF/bold/n' on input line 151.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 133.
-Package tocbasic Info: character protrusion at toc deactivated on input line 133.
+(Font)              scaled to size 20.74pt on input line 151.
+Package tocbasic Info: character protrusion at toc deactivated on input line 151.
  (./main.toc)
-\tf@toc=\write7
-\openout7 = `main.toc'.
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
  [2
 
 
-] [3] (./main.tdo [4
+] (./main.tdo [3
 
 ])
-\tf@tdo=\write8
-\openout8 = `main.tdo'.
+\tf@tdo=\write9
+\openout9 = `main.tdo'.
 
- [5]
+ [4]
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1728,7 +1739,7 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 9.
 
 
-LaTeX Warning: Reference `chap: BibliographyReview' on page 6 undefined on input line 9.
+LaTeX Warning: Reference `chap: BibliographyReview' on page 5 undefined on input line 9.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 9.
 LaTeX Font Info:    Trying to load font information for T1+RobotoSlab-TLF on input line 9.
@@ -1741,11 +1752,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `RobotoSlab-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [6
+ [5
 
 ]
 
-LaTeX Warning: Marginpar on page 7 moved.
+LaTeX Warning: Marginpar on page 6 moved.
 
 LaTeX Font Info:    Trying to load font information for T1+RobotoMono-TLF on input line 11.
 (c:/texlive/2023/texmf-dist/tex/latex/roboto/T1RobotoMono-TLF.fd
@@ -1761,10 +1772,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Citation 'lucas_ueber_1918' on page 7 undefined on input line 20.
+LaTeX Warning: Citation 'lucas_ueber_1918' on page 6 undefined on input line 20.
 
 
-LaTeX Warning: Citation 'washburn_dynamics_1921' on page 7 undefined on input line 20.
+LaTeX Warning: Citation 'washburn_dynamics_1921' on page 6 undefined on input line 20.
 
 
 Overfull \hbox (52.76323pt too wide) in paragraph at lines 20--21
@@ -1772,10 +1783,15 @@ Overfull \hbox (52.76323pt too wide) in paragraph at lines 20--21
  []
 
 
-LaTeX Warning: Citation 'bosanquet_lv_1923' on page 7 undefined on input line 24.
+LaTeX Warning: Citation 'bosanquet_lv_1923' on page 6 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'quere_inertial_1997' on page 7 undefined on input line 24.
+LaTeX Warning: Citation 'quere_inertial_1997' on page 6 undefined on input line 24.
+
+
+Overfull \hbox (1.47192pt too wide) in paragraph at lines 24--24
+\T1/RobotoSlab-TLF/regular/n/10.95 quere1997 
+ []
 
 
 Overfull \hbox (1.47192pt too wide) in paragraph at lines 24--24
@@ -1783,40 +1799,35 @@ Overfull \hbox (1.47192pt too wide) in paragraph at lines 24--24
  []
 
 
-Overfull \hbox (1.47192pt too wide) in paragraph at lines 24--24
-\T1/RobotoSlab-TLF/regular/n/10.95 quere1997 
- []
+LaTeX Warning: Marginpar on page 6 moved.
+
+[6{c:/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_j2bk2t.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_e24joy.enc}]
+
+LaTeX Warning: Marginpar on page 7 moved.
 
 
 LaTeX Warning: Marginpar on page 7 moved.
 
-[7{c:/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_j2bk2t.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_e24joy.enc}]
 
-LaTeX Warning: Marginpar on page 8 moved.
-
-
-LaTeX Warning: Marginpar on page 8 moved.
+LaTeX Warning: Marginpar on page 7 moved.
 
 
-LaTeX Warning: Marginpar on page 8 moved.
+LaTeX Warning: Marginpar on page 7 moved.
 
-
-LaTeX Warning: Marginpar on page 8 moved.
-
-) [8]
+) [7]
 chapter 2.
 (./chapters/wettingTheory.tex
 
-LaTeX Warning: Marginpar on page 9 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 
-LaTeX Warning: Marginpar on page 9 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 
-LaTeX Warning: Marginpar on page 9 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 
-LaTeX Warning: Marginpar on page 9 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 5.
@@ -1825,7 +1836,7 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/moleculesAhesionCohesion_Wetting.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/moleculesAhesionCohesion_Wetting.pdf, id=224, 412.56532pt x 146.03358pt>
+<Pictures/moleculesAhesionCohesion_Wetting.pdf, id=191, 412.56532pt x 146.03358pt>
 File: Pictures/moleculesAhesionCohesion_Wetting.pdf Graphic file (type pdf)
 <use Pictures/moleculesAhesionCohesion_Wetting.pdf>
 Package pdftex.def Info: Pictures/moleculesAhesionCohesion_Wetting.pdf  used on input line 12.
@@ -1833,12 +1844,12 @@ Package pdftex.def Info: Pictures/moleculesAhesionCohesion_Wetting.pdf  used on 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9
+[8
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/YoungsLaw.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/YoungsLaw.pdf, id=233, 412.56532pt x 119.31274pt>
+<Pictures/YoungsLaw.pdf, id=200, 412.56532pt x 119.31274pt>
 File: Pictures/YoungsLaw.pdf Graphic file (type pdf)
 <use Pictures/YoungsLaw.pdf>
 Package pdftex.def Info: Pictures/YoungsLaw.pdf  used on input line 34.
@@ -1849,36 +1860,36 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/DropletsAndWetting.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/DropletsAndWetting.pdf, id=242, 412.56532pt x 85.42455pt>
+<Pictures/DropletsAndWetting.pdf, id=209, 412.56532pt x 85.42455pt>
 File: Pictures/DropletsAndWetting.pdf Graphic file (type pdf)
 <use Pictures/DropletsAndWetting.pdf>
 Package pdftex.def Info: Pictures/DropletsAndWetting.pdf  used on input line 43.
 (pdftex.def)             Requested size: 397.3397pt x 82.27121pt.
-[10 <./Pictures/moleculesAhesionCohesion_Wetting.pdf>]
+[9 <./Pictures/moleculesAhesionCohesion_Wetting.pdf>]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 58.
- [11 <./Pictures/YoungsLaw.pdf> <./Pictures/DropletsAndWetting.pdf
+ [10 <./Pictures/YoungsLaw.pdf> <./Pictures/DropletsAndWetting.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/DropletsAndWetting.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/ContactAngles_HDT_MKT.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/ContactAngles_HDT_MKT.pdf, id=333, 409.71971pt x 68.11427pt>
+<Pictures/ContactAngles_HDT_MKT.pdf, id=299, 409.71971pt x 68.11427pt>
 File: Pictures/ContactAngles_HDT_MKT.pdf Graphic file (type pdf)
 <use Pictures/ContactAngles_HDT_MKT.pdf>
 Package pdftex.def Info: Pictures/ContactAngles_HDT_MKT.pdf  used on input line 65.
 (pdftex.def)             Requested size: 397.3397pt x 66.06036pt.
-[12 <./Pictures/ContactAngles_HDT_MKT.pdf>]
+[11 <./Pictures/ContactAngles_HDT_MKT.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/classicCapillary.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/classicCapillary.pdf, id=384, 412.56532pt x 230.67079pt>
+<Pictures/classicCapillary.pdf, id=351, 412.56532pt x 230.67079pt>
 File: Pictures/classicCapillary.pdf Graphic file (type pdf)
 <use Pictures/classicCapillary.pdf>
 Package pdftex.def Info: Pictures/classicCapillary.pdf  used on input line 104.
 (pdftex.def)             Requested size: 397.3397pt x 222.15593pt.
-[13 <./Pictures/classicCapillary.pdf>] [14] [15] [16]) [17]
+[12 <./Pictures/classicCapillary.pdf>] [13] [14] [15]) [16]
 chapter 3.
-(./chapters/phasefieldmethod.tex [18
+(./chapters/phasefieldmethod.tex [17
 
 ]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -1887,80 +1898,84 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 17.
 
 
-LaTeX Warning: Marginpar on page 19 moved.
+LaTeX Warning: Marginpar on page 18 moved.
 
 
-LaTeX Warning: Marginpar on page 19 moved.
+LaTeX Warning: Marginpar on page 18 moved.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/DiffusiveInterface.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Pictures/DiffusiveInterface.pdf, id=533, 409.71971pt x 117.68166pt>
+<Pictures/DiffusiveInterface.pdf, id=500, 409.71971pt x 117.68166pt>
 File: Pictures/DiffusiveInterface.pdf Graphic file (type pdf)
 <use Pictures/DiffusiveInterface.pdf>
 Package pdftex.def Info: Pictures/DiffusiveInterface.pdf  used on input line 48.
 (pdftex.def)             Requested size: 397.3397pt x 114.13309pt.
-[19] [20 <./Pictures/DiffusiveInterface.pdf>] [21]) [22]
+[18] [19 <./Pictures/DiffusiveInterface.pdf>] [20]) [21]
 chapter 4.
-(./chapters/german/casesetup.tex [23
+(./chapters/german/casesetup.tex [22
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/Cap_5DEG.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/Cap_5DEG.pdf, id=630, 597.50829pt x 184.94295pt>
+<Pictures/Cap_5DEG.pdf, id=597, 597.50829pt x 184.94295pt>
 File: Pictures/Cap_5DEG.pdf Graphic file (type pdf)
 <use Pictures/Cap_5DEG.pdf>
 Package pdftex.def Info: Pictures/Cap_5DEG.pdf  used on input line 20.
 (pdftex.def)             Requested size: 397.3397pt x 122.98549pt.
 
-LaTeX Warning: Reference `tab: BoundaryConditions' on page 24 undefined on input line 25.
+LaTeX Warning: Reference `tab: BoundaryConditions' on page 23 undefined on input line 25.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./Pictures/Cap_5DEG.pdf>] [25]
-Overfull \hbox (92.66096pt too wide) in paragraph at lines 75--76
+[23 <./Pictures/Cap_5DEG.pdf>] [24]
+Overfull \hbox (92.66096pt too wide) in paragraph at lines 74--75
 []\T1/XCharter-TLF/m/n/10.95 (-20) Zur ini-tial-isierung des dif-fu-siven In-ter-faces wird auf die \T1/RobotoMono-TLF/regular/n/10.95 funkySetFields \T1/XCharter-TLF/m/n/10.95 (-20) bzw. \T1/RobotoMono-TLF/regular/n/10.95 funkySetBoundaryField
  []
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/RadiusCalc.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/RadiusCalc.pdf, id=700, 412.56532pt x 186.36327pt>
+<Pictures/RadiusCalc.pdf, id=666, 412.56532pt x 186.36327pt>
 File: Pictures/RadiusCalc.pdf Graphic file (type pdf)
 <use Pictures/RadiusCalc.pdf>
 Package pdftex.def Info: Pictures/RadiusCalc.pdf  used on input line 97.
 (pdftex.def)             Requested size: 397.3397pt x 179.48395pt.
-[26] [27 <./Pictures/RadiusCalc.pdf>]
+[25] [26 <./Pictures/RadiusCalc.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/CA_CALCMEthod2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/CA_CALCMEthod2.pdf, id=738, 412.56532pt x 97.6983pt>
+<Pictures/CA_CALCMEthod2.pdf, id=705, 412.56532pt x 97.6983pt>
 File: Pictures/CA_CALCMEthod2.pdf Graphic file (type pdf)
 <use Pictures/CA_CALCMEthod2.pdf>
 Package pdftex.def Info: Pictures/CA_CALCMEthod2.pdf  used on input line 118.
 (pdftex.def)             Requested size: 397.3397pt x 94.0919pt.
-File: Pictures/CA_CALCMEthod2.pdf Graphic file (type pdf)
-<use Pictures/CA_CALCMEthod2.pdf>
-Package pdftex.def Info: Pictures/CA_CALCMEthod2.pdf  used on input line 129.
-(pdftex.def)             Requested size: 397.3397pt x 94.0919pt.
 
-LaTeX Warning: Marginpar on page 28 moved.
 
-[28 <./Pictures/CA_CALCMEthod2.pdf>]) [29]
+pdfTeX warning: pdflatex.exe (file ./Pictures/Mesh_Study.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<Pictures/Mesh_Study.pdf, id=706, 398.3382pt x 312.9803pt>
+File: Pictures/Mesh_Study.pdf Graphic file (type pdf)
+<use Pictures/Mesh_Study.pdf>
+Package pdftex.def Info: Pictures/Mesh_Study.pdf  used on input line 129.
+(pdftex.def)             Requested size: 397.3397pt x 312.21063pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [27 <./Pictures/CA_CALCMEthod2.pdf>] [28 <./Pictures/Mesh_Study.pdf>]
 chapter 5.
 (./chapters/validation.tex
 File: Pictures/RadiusCalc.pdf Graphic file (type pdf)
 <use Pictures/RadiusCalc.pdf>
 Package pdftex.def Info: Pictures/RadiusCalc.pdf  used on input line 8.
 (pdftex.def)             Requested size: 397.3397pt x 179.48395pt.
-) [30
+) [29
 
-] [31]
+] [30]
 chapter 6.
 (./chapters/german/Results.tex
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/LW-lin_loglog.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/LW-lin_loglog.pdf, id=808, 412.56532pt x 147.44084pt>
+<Pictures/LW-lin_loglog.pdf, id=799, 412.56532pt x 147.44084pt>
 File: Pictures/LW-lin_loglog.pdf Graphic file (type pdf)
 <use Pictures/LW-lin_loglog.pdf>
 Package pdftex.def Info: Pictures/LW-lin_loglog.pdf  used on input line 12.
@@ -1968,12 +1983,12 @@ Package pdftex.def Info: Pictures/LW-lin_loglog.pdf  used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32
+[31
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/eDiss_Wedge.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/eDiss_Wedge.pdf, id=819, 412.56532pt x 187.08896pt>
+<Pictures/eDiss_Wedge.pdf, id=811, 412.56532pt x 187.08896pt>
 File: Pictures/eDiss_Wedge.pdf Graphic file (type pdf)
 <use Pictures/eDiss_Wedge.pdf>
 Package pdftex.def Info: Pictures/eDiss_Wedge.pdf  used on input line 23.
@@ -1984,7 +1999,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/Velo_Wedge.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/Velo_Wedge.pdf, id=820, 412.56532pt x 372.28085pt>
+<Pictures/Velo_Wedge.pdf, id=812, 412.56532pt x 372.28085pt>
 File: Pictures/Velo_Wedge.pdf Graphic file (type pdf)
 <use Pictures/Velo_Wedge.pdf>
 Package pdftex.def Info: Pictures/Velo_Wedge.pdf  used on input line 30.
@@ -1992,59 +2007,40 @@ Package pdftex.def Info: Pictures/Velo_Wedge.pdf  used on input line 30.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `eq: total_viscForce' on page 33 undefined on input line 34.
-
-[33 <./Pictures/LW-lin_loglog.pdf>]
-Overfull \hbox (4.71312pt too wide) in paragraph at lines 34--34
-[][][]\T1/RobotoSlab-TLF/regular/n/10.95 entspricht 
- []
-
-
-Overfull \hbox (4.71312pt too wide) in paragraph at lines 34--34
-[][][]\T1/RobotoSlab-TLF/regular/n/10.95 entspricht 
- []
-
-
-Overfull \hbox (14.51337pt too wide) in paragraph at lines 37--37
+[32 <./Pictures/LW-lin_loglog.pdf>]
+Overfull \hbox (14.51337pt too wide) in paragraph at lines 43--43
 \T1/RobotoSlab-TLF/regular/n/10.95 beschrieben 
  []
 
 
-Overfull \hbox (14.51337pt too wide) in paragraph at lines 37--37
+Overfull \hbox (14.51337pt too wide) in paragraph at lines 43--43
 \T1/RobotoSlab-TLF/regular/n/10.95 beschrieben 
  []
 
 
-LaTeX Warning: Marginpar on page 34 moved.
+LaTeX Warning: Marginpar on page 33 moved.
 
-
-LaTeX Warning: Marginpar on page 34 moved.
-
-
-LaTeX Warning: Marginpar on page 34 moved.
-
-<Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf, id=857, 462.52798pt x 346.89601pt>
-File: Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf Graphic file (type pdf)
-<use Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf>
-Package pdftex.def Info: Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf  used on input line 41.
-(pdftex.def)             Requested size: 397.3397pt x 298.01775pt.
+<Pictures/loglog_fp_fw_total_visc_force_overTime.pdf, id=852, 398.3386pt x 312.98033pt>
+File: Pictures/loglog_fp_fw_total_visc_force_overTime.pdf Graphic file (type pdf)
+<use Pictures/loglog_fp_fw_total_visc_force_overTime.pdf>
+Package pdftex.def Info: Pictures/loglog_fp_fw_total_visc_force_overTime.pdf  used on input line 47.
+(pdftex.def)             Requested size: 397.3397pt x 312.21066pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./Pictures/eDiss_Wedge.pdf>] [35 <./Pictures/Velo_Wedge.pdf>]
-<Pictures/contactAngle_overTime.pdf, id=917, 462.52798pt x 346.89601pt>
+[33 <./Pictures/eDiss_Wedge.pdf>] [34 <./Pictures/Velo_Wedge.pdf>]
+<Pictures/contactAngle_overTime.pdf, id=911, 462.52798pt x 346.89601pt>
 File: Pictures/contactAngle_overTime.pdf Graphic file (type pdf)
 <use Pictures/contactAngle_overTime.pdf>
-Package pdftex.def Info: Pictures/contactAngle_overTime.pdf  used on input line 59.
+Package pdftex.def Info: Pictures/contactAngle_overTime.pdf  used on input line 63.
 (pdftex.def)             Requested size: 397.3397pt x 298.01775pt.
 
-Overfull \hbox (30.53317pt too wide) in paragraph at lines 63--63
+Overfull \hbox (30.53317pt too wide) in paragraph at lines 67--67
 [][][]\T1/RobotoSlab-TLF/regular/n/10.95 ausformulieren 
  []
 
 
-Overfull \hbox (30.53317pt too wide) in paragraph at lines 63--63
+Overfull \hbox (30.53317pt too wide) in paragraph at lines 67--67
 [][][]\T1/RobotoSlab-TLF/regular/n/10.95 ausformulieren 
  []
 
@@ -2052,130 +2048,135 @@ Overfull \hbox (30.53317pt too wide) in paragraph at lines 63--63
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Marginpar on page 36 moved.
+LaTeX Warning: Marginpar on page 35 moved.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/loglog_z_over__time_CA_Var.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/loglog_z_over__time_CA_Var.pdf, id=919, 372.72551pt x 283.50316pt>
+<Pictures/loglog_z_over__time_CA_Var.pdf, id=913, 372.72551pt x 283.50316pt>
 File: Pictures/loglog_z_over__time_CA_Var.pdf Graphic file (type pdf)
 <use Pictures/loglog_z_over__time_CA_Var.pdf>
-Package pdftex.def Info: Pictures/loglog_z_over__time_CA_Var.pdf  used on input line 75.
+Package pdftex.def Info: Pictures/loglog_z_over__time_CA_Var.pdf  used on input line 79.
 (pdftex.def)             Requested size: 397.3397pt x 302.2293pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36 <./Pictures/log_fp_fw_total_visc_force_fm_ruiz_overTime.pdf>]
+[35 <./Pictures/loglog_fp_fw_total_visc_force_overTime.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Pictures/CA_Forces_Variation.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Pictures/CA_Forces_Variation.pdf, id=968, 412.56532pt x 147.44084pt>
+<Pictures/CA_Forces_Variation.pdf, id=959, 412.56532pt x 147.44084pt>
 File: Pictures/CA_Forces_Variation.pdf Graphic file (type pdf)
 <use Pictures/CA_Forces_Variation.pdf>
-Package pdftex.def Info: Pictures/CA_Forces_Variation.pdf  used on input line 85.
+Package pdftex.def Info: Pictures/CA_Forces_Variation.pdf  used on input line 89.
 (pdftex.def)             Requested size: 334.60422pt x 119.57939pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37 <./Pictures/contactAngle_overTime.pdf>]
-
-LaTeX Warning: Marginpar on page 38 moved.
-
-[38 <./Pictures/loglog_z_over__time_CA_Var.pdf>]
-Overfull \hbox (20.84245pt too wide) in paragraph at lines 100--100
+[36 <./Pictures/contactAngle_overTime.pdf>]
+Overfull \hbox (20.84245pt too wide) in paragraph at lines 103--103
 [][][]\T1/RobotoSlab-TLF/regular/n/10.95 Simulationen 
  []
 
 
-Overfull \hbox (5.24965pt too wide) in paragraph at lines 100--100
+Overfull \hbox (5.24965pt too wide) in paragraph at lines 103--103
 \T1/RobotoSlab-TLF/regular/n/10.95 auswirken 
  []
 
 
-Overfull \hbox (20.84245pt too wide) in paragraph at lines 100--100
+Overfull \hbox (20.84245pt too wide) in paragraph at lines 103--103
 [][][]\T1/RobotoSlab-TLF/regular/n/10.95 Simulationen 
  []
 
 
-Overfull \hbox (5.24965pt too wide) in paragraph at lines 100--100
+Overfull \hbox (5.24965pt too wide) in paragraph at lines 103--103
 \T1/RobotoSlab-TLF/regular/n/10.95 auswirken 
  []
 
-) [39 <./Pictures/CA_Forces_Variation.pdf>]
+[37 <./Pictures/loglog_z_over__time_CA_Var.pdf>]) [38 <./Pictures/CA_Forces_Variation.pdf>]
 chapter 7.
-(./chapters/Outlook.tex
-LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on input line 2.
- (c:/texlive/2023/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
+(./chapters/german/ConclusionandOutlook.tex
+Overfull \hbox (2.65454pt too wide) in paragraph at lines 9--9
+[][][]\T1/RobotoSlab-TLF/regular/n/10.95 validation[]  
+ []
+
+
+Overfull \hbox (2.65454pt too wide) in paragraph at lines 9--9
+[][][]\T1/RobotoSlab-TLF/regular/n/10.95 validation[]  
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on input line 14.
+(c:/texlive/2023/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
 File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 2.
+(Font)              scaled to size 10.95pt on input line 14.
 Package microtype Info: Character `textbardbl ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textcelsius ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [40
+) [39
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/xcharter/xch1_co4ru4.enc}]) [41]
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/xcharter/xch1_co4ru4.enc}]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 173.
+(Font)              scaled to size 10.95pt on input line 193.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/XCharter-TLF/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (35.81114pt too wide) in paragraph at lines 174--174
+Overfull \hbox (35.81114pt too wide) in paragraph at lines 194--194
 \T1/XCharter-TLF/m/n/10.95 (-20) 1923), pp. 525^^U531. \T1/XCharter-TLF/m/sc/10.95 (-20) issn\T1/XCharter-TLF/m/n/10.95 (-20) : 1941-5982, 1941-5990. \T1/XCharter-TLF/m/sc/10.95 (-20) doi\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 10 . 1080 / 14786442308634144$[]\T1/XCharter-TLF/m/n/10.95 (-20) .
  []
 
 
-Overfull \hbox (45.06105pt too wide) in paragraph at lines 174--174
+Overfull \hbox (45.06105pt too wide) in paragraph at lines 194--194
 \T1/XCharter-TLF/m/sc/10.95 (-20) url\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 https : / / www . tandfonline . com / doi / full / 10 . 1080 / 14786442308634144$[]
  []
 
-[42
+[40
 
 {c:/texlive/2023/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}]
-Overfull \hbox (13.10376pt too wide) in paragraph at lines 174--174
+Overfull \hbox (13.10376pt too wide) in paragraph at lines 194--194
 \T1/RobotoMono-TLF/regular/n/10.95 elsevier . com / retrieve / pii / S0017931014003378$[] \T1/XCharter-TLF/m/n/10.95 (-20) (vis-ited on 10/10/2023). 
  []
 
-[43] [44]
-Overfull \hbox (9.09132pt too wide) in paragraph at lines 174--174
+[41] [42]
+Overfull \hbox (9.09132pt too wide) in paragraph at lines 194--194
 \T1/XCharter-TLF/m/sc/10.95 (-20) issn\T1/XCharter-TLF/m/n/10.95 (-20) : 00219991. \T1/XCharter-TLF/m/sc/10.95 (-20) doi\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 10 . 1006 / jcph . 1999 . 6332$[]\T1/XCharter-TLF/m/n/10.95 (-20) . \T1/XCharter-TLF/m/sc/10.95 (-20) url\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 https : / / linkinghub .
  []
 
 
-Overfull \hbox (13.10376pt too wide) in paragraph at lines 174--174
+Overfull \hbox (13.10376pt too wide) in paragraph at lines 194--194
 \T1/RobotoMono-TLF/regular/n/10.95 elsevier . com / retrieve / pii / S0021999199963325$[] \T1/XCharter-TLF/m/n/10.95 (-20) (vis-ited on 10/05/2023). 
  []
 
 
-Overfull \hbox (6.6496pt too wide) in paragraph at lines 174--174
+Overfull \hbox (6.6496pt too wide) in paragraph at lines 194--194
 \T1/RobotoMono-TLF/regular/n/10.95 www . cambridge . org / core / product / identifier / S0022112022002191 /
  []
 
-[45]
-Overfull \hbox (8.2921pt too wide) in paragraph at lines 174--174
+[43]
+Overfull \hbox (8.2921pt too wide) in paragraph at lines 194--194
 []$\T1/RobotoMono-TLF/regular/n/10.95 http : / / www . journals . cambridge . org / abstract _ S0022112006001935$[]
  []
 
 
-Overfull \hbox (24.79123pt too wide) in paragraph at lines 174--174
+Overfull \hbox (24.79123pt too wide) in paragraph at lines 194--194
 \T1/XCharter-TLF/m/n/10.95 (-20) 1528-9036. \T1/XCharter-TLF/m/sc/10.95 (-20) doi\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 10 . 1115 / 1 . 3641647$[]\T1/XCharter-TLF/m/n/10.95 (-20) . \T1/XCharter-TLF/m/sc/10.95 (-20) url\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 https : / / asmedigitalcollection .
  []
 
 
-Overfull \hbox (5.5071pt too wide) in paragraph at lines 174--174
+Overfull \hbox (5.5071pt too wide) in paragraph at lines 194--194
 \T1/RobotoMono-TLF/regular/n/10.95 asme . org / appliedmechanics / article / 28 / 2 / 165 / 385908 / Transient -[]
  []
 
-[46]
-Overfull \hbox (64.81343pt too wide) in paragraph at lines 174--174
+[44]
+Overfull \hbox (64.81343pt too wide) in paragraph at lines 194--194
 \T1/XCharter-TLF/m/n/10.95 (-20) 2053-9223. \T1/XCharter-TLF/m/sc/10.95 (-20) doi\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 10 . 1098 / rstl . 1805 . 0005$[]\T1/XCharter-TLF/m/n/10.95 (-20) . \T1/XCharter-TLF/m/sc/10.95 (-20) url\T1/XCharter-TLF/m/n/10.95 (-20) : []$\T1/RobotoMono-TLF/regular/n/10.95 https : / / royalsocietypublishing .
  []
 
-[47]
+[45]
 
 Package tudapub Warning: You did not provide a Label for key introduction.
 (tudapub)                Either you need to recompile your document or add a
@@ -2196,7 +2197,7 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 (tudapub)                Either you need to recompile your document or add a
 (tudapub)                label using \IMRADlabel.
 
-[48] (./main.aux)
+[46] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -2215,18 +2216,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58606 strings out of 474928
- 1236346 string characters out of 5763562
- 2195802 words of memory out of 5000000
- 78647 multiletter control sequences out of 15000+600000
+ 58685 strings out of 474928
+ 1238290 string characters out of 5763562
+ 2196864 words of memory out of 5000000
+ 78737 multiletter control sequences out of 15000+600000
  702499 words of font info for 334 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 122i,21n,121p,10989b,3666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,21n,121p,10989b,3664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2023/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/google/roboto/RobotoMono-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/google/roboto/RobotoSlab-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (48 pages, 6963806 bytes).
+Output written on main.pdf (46 pages, 7461411 bytes).
 PDF statistics:
- 1507 PDF objects out of 1728 (max. 8388607)
- 1188 compressed objects within 12 object streams
- 250 named destinations out of 1000 (max. 500000)
- 65881 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1476 PDF objects out of 1728 (max. 8388607)
+ 1150 compressed objects within 12 object streams
+ 234 named destinations out of 1000 (max. 500000)
+ 65846 words of extra memory for PDF output out of 74296 (max. 10000000)
 

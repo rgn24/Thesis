@@ -1,48 +1,39 @@
-\contentsline {todo}{ADD CHAPTER}{7}{section*.4}%
-\contentsline {todo}{ADD CHAPTER}{7}{section*.5}%
-\contentsline {todo}{Here a introduction, but probably only after the most is done and the layout of the thesis is set.}{7}{section*.6}%
-\contentsline {todo}{check if quere1997 is also a source. Probably talked about that. Maybe even Washburn talked about that? }{7}{section*.7}%
-\contentsline {todo}{rework this regment.}{7}{section*.8}%
-\contentsline {todo}{ref chapter}{8}{section*.9}%
-\contentsline {todo}{ref chapter}{8}{section*.10}%
-\contentsline {todo}{ref to both chapters}{8}{section*.11}%
-\contentsline {todo}{chapter}{8}{section*.12}%
-\contentsline {todo}{chapter}{8}{section*.13}%
-\contentsline {todo}{ref}{9}{section*.14}%
-\contentsline {todo}{ref}{9}{section*.15}%
-\contentsline {todo}{ref chapter}{9}{section*.16}%
-\contentsline {todo}{ref}{9}{section*.17}%
-\contentsline {todo}{rework}{9}{section*.18}%
-\contentsline {todo}{possibly ref to corresponding chapters here.}{9}{section*.19}%
-\contentsline {todo}{is that so????}{16}{section*.24}%
-\contentsline {todo}{maybe use this eq instead of shorted one?}{16}{section*.25}%
-\contentsline {todo}{Elaborate or maybe move the entire section to phase field? Or perhaps case setup with a reasoning why phase field?}{17}{section*.26}%
-\contentsline {todo}{einleitende Worte}{18}{section*.27}%
-\contentsline {todo}{picture of interfaces}{18}{section*.28}%
-\contentsline {todo}{check!!!}{19}{section*.29}%
-\contentsline {todo}{check if right function}{19}{section*.30}%
-\contentsline {todo}{check if already mentioned}{19}{section*.31}%
-\contentsline {todo}{cite}{19}{section*.32}%
-\contentsline {todo}{cite}{22}{section*.35}%
-\contentsline {todo}{CHECK}{25}{section*.36}%
-\contentsline {todo}{ref to image or chapter}{26}{section*.37}%
-\contentsline {todo}{maybe name some?}{26}{section*.38}%
-\contentsline {todo}{image MeshStudy}{28}{section*.39}%
-\contentsline {todo}{Mobility Study}{28}{section*.40}%
-\contentsline {todo}{evtl gar nciht nennen???}{28}{section*.41}%
-\contentsline {todo}{visc Study and why we used harmonic}{29}{section*.42}%
-\contentsline {todo}{ggf anhang mit weiteren plots ohne n\_th??}{32}{section*.43}%
-\contentsline {todo}{check!!!!}{33}{section*.44}%
-\contentsline {todo}{CHEKCEN BEI ANDEREN WINKELN!!! und ob es drin bleibt!!!}{34}{section*.45}%
-\contentsline {todo}{entspricht eher den Kräften ohne poseuille, oder?}{34}{section*.46}%
-\contentsline {todo}{EQ}{34}{section*.47}%
-\contentsline {todo}{Woher kommt das?}{34}{section*.48}%
-\contentsline {todo}{Bild oder beschrieben der rezikulation}{34}{section*.49}%
-\contentsline {todo}{check and talk with Francisco about this; especially about how he computed ruiz fm thing. Mine is shit i assume...}{35}{section*.50}%
-\contentsline {todo}{add cox angles to compare in one plot and just 15deg case}{36}{section*.51}%
-\contentsline {todo}{ausformulieren mit Daten vom feineren Netz.}{36}{section*.52}%
-\contentsline {todo}{add image and chapter where the different methods are explained!}{38}{section*.53}%
-\contentsline {todo}{image of CA}{38}{section*.54}%
-\contentsline {todo}{Simulationen laufen. ggf. erwähnen und anmerken, ob und wenn ja wie, sich diese auswirken oder geändert haben. }{39}{section*.55}%
-\contentsline {todo}{ref to a picture with used geometry}{40}{section*.56}%
-\contentsline {todo}{Check, if correct!}{40}{section*.57}%
+\contentsline {todo}{ADD CHAPTER}{6}{section*.4}%
+\contentsline {todo}{ADD CHAPTER}{6}{section*.5}%
+\contentsline {todo}{Here a introduction, but probably only after the most is done and the layout of the thesis is set.}{6}{section*.6}%
+\contentsline {todo}{check if quere1997 is also a source. Probably talked about that. Maybe even Washburn talked about that? }{6}{section*.7}%
+\contentsline {todo}{rework this regment.}{6}{section*.8}%
+\contentsline {todo}{ref chapter}{7}{section*.9}%
+\contentsline {todo}{ref chapter}{7}{section*.10}%
+\contentsline {todo}{ref to both chapters}{7}{section*.11}%
+\contentsline {todo}{chapter}{7}{section*.12}%
+\contentsline {todo}{chapter}{7}{section*.13}%
+\contentsline {todo}{ref}{8}{section*.14}%
+\contentsline {todo}{ref}{8}{section*.15}%
+\contentsline {todo}{ref chapter}{8}{section*.16}%
+\contentsline {todo}{ref}{8}{section*.17}%
+\contentsline {todo}{rework}{8}{section*.18}%
+\contentsline {todo}{possibly ref to corresponding chapters here.}{8}{section*.19}%
+\contentsline {todo}{is that so????}{15}{section*.24}%
+\contentsline {todo}{maybe use this eq instead of shorted one?}{15}{section*.25}%
+\contentsline {todo}{Elaborate or maybe move the entire section to phase field? Or perhaps case setup with a reasoning why phase field?}{16}{section*.26}%
+\contentsline {todo}{einleitende Worte}{17}{section*.27}%
+\contentsline {todo}{picture of interfaces}{17}{section*.28}%
+\contentsline {todo}{check!!!}{18}{section*.29}%
+\contentsline {todo}{check if right function}{18}{section*.30}%
+\contentsline {todo}{check if already mentioned}{18}{section*.31}%
+\contentsline {todo}{cite}{18}{section*.32}%
+\contentsline {todo}{cite}{21}{section*.35}%
+\contentsline {todo}{ref to image or chapter}{25}{section*.36}%
+\contentsline {todo}{maybe name some?}{25}{section*.37}%
+\contentsline {todo}{image MeshStudy}{27}{section*.38}%
+\contentsline {todo}{visc Study and why we used harmonic}{27}{section*.39}%
+\contentsline {todo}{ggf anhang mit weiteren plots ohne n\_th??}{31}{section*.40}%
+\contentsline {todo}{check!!!!}{32}{section*.41}%
+\contentsline {todo}{Woher kommt das?}{33}{section*.42}%
+\contentsline {todo}{Bild oder beschrieben der rezikulation}{33}{section*.43}%
+\contentsline {todo}{add cox angles to compare in one plot and just 15deg case}{35}{section*.44}%
+\contentsline {todo}{ausformulieren mit Daten vom feineren Netz.}{35}{section*.45}%
+\contentsline {todo}{add image and chapter where the different methods are explained!}{36}{section*.46}%
+\contentsline {todo}{Simulationen laufen. ggf. erwähnen und anmerken, ob und wenn ja wie, sich diese auswirken oder geändert haben. }{38}{section*.47}%
+\contentsline {todo}{validation}{39}{section*.48}%

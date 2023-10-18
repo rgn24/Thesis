@@ -59,8 +59,7 @@ The mobility ($\kappa$) is a factor in the phase-field simulation that is diffic
 \begin{equation}
     \kappa = \mathcal{O}(\epsilon^{\delta})
 \end{equation}
-and showed that \( 1 \leq \delta < 2 \). Leider gibt es für die Mobility $\kappa$ und Wandrelaxationsfaktor $\Gamma_{\mathrm{w}}$den bisher keine konkrete Berechnungsmethode. Die tatsache, dass diese parameter phänomenologischer natur sind, macht es schwierig sie vorherzusagen und es gibt lediglich empfehlungen. 
-For this work, a value of \( \kappa = 1.6 \times 10^{-18} \) was used. Für den Wand relaxationsfaktor $\Gamma_{\mathrm{w}}$ wurde ein wert von \( \kappa = 5 \times 10^{12} \) verwendet. \todo{CHECK}
+and showed that \( 1 \leq \delta < 2 \). Leider gibt es für die Mobility $\kappa$ und Wandrelaxationsfaktor $\Gamma_{\mathrm{w}}$den bisher keine konkrete Berechnungsmethode. 
 
 Für die Annahme zweier nicht mischbarer FLuide ($mu_{\mathrm{A}}, mu_{\mathrm{B}}$) mit unterschiedlichen Viskositäten wird die Oberflächen interpolierte dynamische laminare viskosität $mu_{\mathrm{f}}$in \texttt{phaseFieldFoam} über drei Viskositätsmodelle Berehcnet. Die wahl des Viskositsmodells kann die Ergebisse maßgeblich beeinflussen \todo{ref to image or chapter}. Die drei Methoden sind $\mu_{\mathrm{f}}^{(S)}$ (seriell/arithmethic), $\mu_{\mathrm{f}}^{(\mathrm{P})}$ (parallel/harmonic) und $\mu_{\mathrm{f}}^{(\mathrm{B})}$ (blended) und definiert als
 $$
@@ -82,6 +81,7 @@ Mit hilfe von \textit{function objects} können während der laufenden Simulatio
 
 Beispielsweise wird zur analyse der wirkenden viskosen Kräfte in der Wassersäule, benötigen wir die gesamte viskose dissipationskraft in jener Wassersäule über solche function objects exportiert. Diese erhalten wir, wenn die divergenz des viskosen stress tensors $\tau$ aus Gleichung \ref{eq: NSEChanged} über das Gebiet integrieren
 \begin{equation}
+    \label{eq: totalViscForce}
     \mathrm{F}_{\mathrm{visc}}^{\mathrm{total}} = \int_{\Omega} \mathrm{f}_{\mathrm{visc}}^{\mathrm{total}} dV = \int_{\Omega} \nabla \cdot \tau dV.
 \end{equation}
 
@@ -122,17 +122,17 @@ ergibt.
 
 
 \section{Model Calibration}
-Viele der genannten Parameter sind wie bereits erwähnt nur schwer zu definieren. Dher wurden, um diese festlegen zu können Simulationen durchgeführt, bei denen einzele Parameter variiert wurden. Um die notwendige Diskretisierung zu ermitteln wurde eine Netzstudie durchgeführt, für die in Abbildung \ref*{fig: Mesh_Study} die Ergebisse für das Verwendete mesh und für ein feineres Netz mit doppelter Auflösung dargestellt sind. Es wird deutlich, dass die Ergebnisse für die beiden Simulationen übereinstimmen. Das Verwendete Rechennetz besteht damit auf \texttt{4250} Zellen. \todo{image MeshStudy}
+Viele der genannten Parameter sind wie bereits erwähnt nur schwer zu definieren. Dher wurden, um diese festlegen zu können Simulationen durchgeführt, bei denen einzele Parameter variiert wurden. Um die notwendige Diskretisierung zu ermitteln wurde eine Netzstudie durchgeführt, für die in Abbildung \ref*{fig: Mesh_Study} die Ergebisse für das Verwendete mesh und für ein feineres Netz mit doppelter Auflösung dargestellt sind. Es wird deutlich, dass die Ergebnisse kaum merklich voneinander unterscheiden. Das Verwendete Rechennetz besteht damit aus \texttt{4250} Zellen. \todo{image MeshStudy}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.95\textwidth]{Pictures/CA_CALCMEthod2.pdf}
+    \includegraphics[width=.95\textwidth]{Pictures/Mesh_Study.pdf}
     \caption{Results of the mesh study for the used and a more refined mesh. Here the imbibition height is plotted over time.}
     \label{fig: Mesh_Study}
 \end{figure}
 Aufgrund des kleinen Rechennetzes wurde auf die verwendung eins Adaptiv Mesh Refinement verzichtet. 
-\todo{Mobility Study}
-\todo{evtl gar nciht nennen???}Die Courant zahl ist eine wichtige größe bei den Einstellungen von Simulationen. Daher wurde auch hier anhand mehrerer Simulationen ermittelt 
+Da die Mobilität ein Phänomenologischer parameter ist, macht es schwierig sie vorherzusagen und es gibt lediglich empfehlungen. Daher wurden auch hier mehrere Simulationen durchgeführt und sich auf einen Wert geeinigt, der pysikalische Ergebnisse liefert und gleichzeitig die Grenzflächendiffusion verringert. Während der folgenden Simulationen wurde daher ein Wert von $\kappa = 1.6 \times 10^{-18}$ verwendet.
+Als Viskositsmodell wurde das \texttt{blended}- Modell verwendet. Ein vorteil dieser Methode ist, dass das blending über die Richtung der Geschwindigkeitsflüsse erfolgt. Dennoch wurden auch hier Simulaiton durchgeführt, die die unterscheidlichen Modelle bewerten sollten.
 Um die auswirkungen der unterschiedlichen Viskositätsmodelle beurteilen zu können, wurden auch hier Simulationen durchgeführt. \todo{visc Study and why we used harmonic}
 Bei den verwendeten Dimensionen der Kapillare und der Flüssigkeiten, ist zu erwarten, dass der Einfluss der Gravitation vernachlässigbar ist, was auch in gesondert durchgeführten Simulationen gezeigt werden konnte, jedoch aufgrund der geringen aussagekraft einer Darstellung hier nicht weiter gezeigt wird. 
 

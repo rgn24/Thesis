@@ -85,6 +85,24 @@
 \newcommand*{\FeatureFalse}{\ding{56}}
 
 \usepackage{dirtree}
+\usepackage{nomencl}
+
+\makenomenclature
+
+%% This code creates the groups
+% -----------------------------------------
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\item[\bfseries
+	\ifstrequal{#1}{G}{Greek Symbols}{%
+	\ifstrequal{#1}{L}{Latin Symbols}{%
+	\ifstrequal{#1}{I}{Indices}{
+	\ifstrequal{#1}{O}{Other Symbols}{}}}}%
+]}
+% -----------------------------------------
+
+
+
 
 
 \begin{document}
@@ -133,6 +151,8 @@
 \tableofcontents
 \listoftodos
 %\listoffigures
+%\input{chapters/Symbols.tex}
+%\printnomenclature
 
 
 
@@ -166,9 +186,9 @@
 \label{chap: Results}
 \input{chapters/german/Results.tex}
 
-\chapter{Outlook}
-\label{chap: Outlook}
-\input{chapters/Outlook}
+\chapter{Conclusion and Outlook}
+\label{chap: ConclusionandOutlook}
+\input{chapters/german/ConclusionandOutlook}
 
 \printbibliography
 
