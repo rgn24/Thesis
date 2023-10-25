@@ -1,16 +1,11 @@
 import os
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from util.ErrorHandling import UnknownWritingError
+import util.Visualization as vis
+import util.Computations as comp
 
-class UnknownWritingError(Exception):
-    """Raised when a writing error occurs"""
-    pass
-
-
-class DataFrameUtilityMixin:
-    def compute_velocity(self):
-        # Ihre Berechnung hier. Zum Zwecke dieses Beispiels werde ich einfach eine neue Spalte "velocity" hinzufügen.
-        # Sie können diesen Code an Ihre spezielle Logik anpassen.
-        self["velocity"] = self["min(CACoordsX)"] * 2  # Beispielberechnung. Ersetzen Sie "some_column" durch den richtigen Spaltennamen.
 
 class Simulation:
     def __init__(self, dir_path) -> None:
@@ -68,32 +63,39 @@ class Simulation:
             print("read csv file: ", os.path.join(self.dir_path, self.name + "_merged.csv"))
             
     def process_dataframe(self):
-        self.df.__class__ = type('CustomDataFrame', (DataFrameUtilityMixin, pd.DataFrame), {})
+        self.df.__class__ = type('CustomDataFrame', (comp.DataFrameUtilityMixin, pd.DataFrame), {})
+        method_list = [method for method in dir(comp.DataFrameUtilityMixin) if method.startswith('__') is False]
+        print(method_list)
         
         # Nun können Sie die Methode wie gewünscht aufrufen
         self.df.compute_velocity()
-        print(self.df.head())
-    
-    
+        self.df.compute_imbibition_height(160e-9)
     
     def get_info(self):
-        return {"name": self.name, "length": self.length, "path": self.dir_path}
+        return {"name": self.name, "shape": self.shape, "path": self.dir_path, "cols": self.df.columns}
     
 def get_dirs(base_directory):
     all_dirs = [os.path.join(base_directory, d) for d in os.listdir(base_directory) if os.path.isdir(os.path.join(base_directory, d))]
     return all_dirs
-    
-def main():
-    simulations_path = "./"
-    exceptions = ["CA45"]
+
+
+def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
     all_dirs = get_dirs(simulations_path)
-    print(all_dirs)
     simulations = []
     for dir in all_dirs:
-        print(dir)
         if dir.split("/")[-1] in exceptions:
             continue
         simulations.append(Simulation(dir))
+    return simulations
+    
+def main():
+    simulations_path = "./Messreihen/"
+    exceptions = ["CA45"]
+    
+    simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
+    print(f"loaded {len(simulations)} simulations")
+    viz = vis.Visualization(simulations)
+    
     
 if __name__ == "__main__":
     main()
