@@ -10,22 +10,64 @@ class Visualization:
         self.dump_path = dump_path + "/Plots"
         
     def set_color(self):
-        COLOR_TEMPLATE = [
-            "#D32F2F",  # Rot
-            "#1976D2",  # Blau
-            "#388E3C",  # Grün
-            "#FBC02D",  # Gelb
-            "#8E24AA",  # Lila
-            "#D84315",  # Orange
-            "#0288D1",  # Himmelblau
-            "#7B1FA2",  # Dunkellila
-            "#C2185B",  # Pink
-            "#7E57C2",  # Indigo
-            "#0288D1",  # Hellblau
-            "#5D4037"   # Braun
-        ]
+        pass
+    
+    def get_log_elems(self, data_set):
+        i = 0
+        i_c = 0
+        ret_arr = []
+        for id_e, elem in enumerate(data_set):
+            if (id_e+1) % 10**i == 0:
+                if i_c==10:
+                    i+=1
+                    i_c = 1
+                    continue
+                ret_arr.append(elem)
+                i_c+=1
+        return ret_arr
+    
+    def get_naming(self, arg:list) -> str:
+        naming_dict = {"Time": r"Time in $s$", 
+                       "max(CACoordsX)": r"position of meniscus valley in $m$", 
+                       "velocity": r"velocity magnitude in $m/s$", 
+                       "imbibition_height": r"imbibition height in $m$", 
+                       "radius": r"computed radius in $m$", 
+                       "ca_radius": r"computed radius with the contact angle in $m$", 
+                       "ca_first_element": r"dynamic contact angle $\theta_\mathrm{D}$", 
+                       "radius_pressure": r"computed radius with pressure difference in $m$", 
+                       "predicted_pressure": r"predicted pressure in $Pa$", 
+                       "pressure_error": r"error of pressure prediction"}
+        ret_str = ""
+        for id_e, elem in enumerate(arg):
+            if len(arg) > 1 and id_e != len(arg)-1:
+                str_name = naming_dict[elem]+", "
+                ret_str+= str_name
+            else:
+                ret_str+=naming_dict[elem]
+        return ret_str
+    
+    def lucas_washburn(self, t, theta=None):
+        r=3e-9
+        sigma = 0.072
+        eta = 2e-6
+        #print(theta)
+        theta = np.deg2rad(theta)
+        #print(theta)
+        if theta is None:
+            theta = float(15)
+        lw = np.sqrt((r*sigma * np.cos(theta)/(2*eta)) * t)
+        lw[0] = np.nan
+        return 0.042*lw
         
-    def plot(self):
+    def plot(self, xy:list=[[],[]], font_size:int=12, log_log=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:list=None, x_limits:list=None, y_limits:list=None, n_th=None): 
+        # checks if the input is valid
+        if n_th == "log":
+            spacing_plot = 1
+        else:
+            spacing_plot = n_th
+        
+        
+        fig, ax = plt.subplots(figsize=(12, 8))
         for simulation in self.simulations:
             x = xy[0][0]
             for id_y, y in enumerate(xy[1]):
