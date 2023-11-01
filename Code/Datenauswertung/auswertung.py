@@ -36,7 +36,7 @@ class Simulation:
         
         for id, file in enumerate(files):
             data_frames.append(pd.read_csv(os.path.join(self.dir_path, file)))
-            print(data_frames[id].head())
+            #print(data_frames[id].head())
 
         # merge all dataframes
         merged_df = pd.concat(data_frames, axis=1)
@@ -65,7 +65,7 @@ class Simulation:
     def process_dataframe(self):
         self.df.__class__ = type('CustomDataFrame', (comp.DataFrameUtilityMixin, pd.DataFrame), {})
         method_list = [method for method in dir(comp.DataFrameUtilityMixin) if method.startswith('__') is False]
-        print(method_list)
+        #print(method_list)
         
         # Nun können Sie die Methode wie gewünscht aufrufen
         self.df.compute_velocity()
@@ -75,12 +75,20 @@ class Simulation:
         return {"name": self.name, "shape": self.shape, "path": self.dir_path, "cols": self.df.columns}
     
 def get_dirs(base_directory):
-    all_dirs = [os.path.join(base_directory, d) for d in os.listdir(base_directory) if os.path.isdir(os.path.join(base_directory, d))]
+    all_dirs = [os.path.join(base_directory, d) for d in os.listdir(base_directory) if os.path.isdir(os.path.join(base_directory, d)) and d != "Plots"]
     return all_dirs
+
+def create_folder_plots(path_: str = ""):
+    """creates a folder named Plots in a specified folder, if it not already exists."""
+    check_folder = path_ + "/Plots/"
+    if not os.path.exists(check_folder):
+        os.makedirs(check_folder)
+        print(f"folder: {check_folder} created.")
 
 
 def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
     all_dirs = get_dirs(simulations_path)
+    create_folder_plots(simulations_path)
     simulations = []
     for dir in all_dirs:
         if dir.split("/")[-1] in exceptions:
@@ -94,7 +102,8 @@ def main():
     
     simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
     print(f"loaded {len(simulations)} simulations")
-    viz = vis.Visualization(simulations)
+    viz = vis.Visualization(simulations, dump_path=simulations_path)
+    viz.plot(xy=[["Time"], ["imbibition_height"]], log_log="semilogx", save=False, show=True, n_th="log")
     
     
 if __name__ == "__main__":

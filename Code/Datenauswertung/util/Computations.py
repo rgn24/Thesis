@@ -3,13 +3,13 @@ import numpy as np
 class DataFrameUtilityMixin:
     def compute_velocity(self):
         # TODO: Implement velocity computation
+        # FIXME: not correct result! probably data related. Clean up used dataset.
         u = [np.nan]
         for index, row in self.iterrows():
             if index == 0:
                 row_prev = row
                 continue
-            print(row)
-            u.append((row["max(coordsX)"] - row_prev["max(coordsX)"]) / (row["Time"] - row_prev["Time"]))
+            u.append((row["max(CACoordsX)"] - row_prev["max(CACoordsX)"]) / (row["Time"] - row_prev["Time"]))
             row_prev = row
         self["velocity"] = u
         
