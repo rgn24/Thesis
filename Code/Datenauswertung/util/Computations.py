@@ -9,7 +9,7 @@ class DataFrameUtilityMixin:
             if index == 0:
                 row_prev = row
                 continue
-            u.append((row["max(CACoordsX)"] - row_prev["max(CACoordsX)"]) / (row["Time"] - row_prev["Time"]))
+            u.append((row["imbibition_height"] - row_prev["imbibition_height"]) / (row["Time"] - row_prev["Time"]))
             row_prev = row
         self["velocity"] = u
         
@@ -19,7 +19,7 @@ class DataFrameUtilityMixin:
         Args:
             height (float): Height of the capillary
         """
-        self["imbibition_height"] = height - self["max(coordsX)"]
+        self["imbibition_height"] = height - self["max(coordsX_Meniscus)"]
         
     def compute_radius(self, capillary_radius: float):
         """Computes the Radius of the Meniscus with the known Radius of the Capillary.
@@ -27,13 +27,13 @@ class DataFrameUtilityMixin:
         Args:
             capillary_radius (float): Radius of the Capillary
         """
-        h = self["max(coordsX)"]-self["min(coordsX)"]
+        h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
         self["radius"] = np.pow(capillary_radius, 2) /(2*h) + h
         
     def compute_ca_radius(self):
         """Computes the Contact Angle using the computed radius of the meniscus
         """
-        h = h = self["max(coordsX)"]-self["min(coordsX)"]
+        h = h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
         self["ca_radius"] = 90 - 2 * np.rad2deg(np.arctan(h/self["radius"]))
         
     def compute_ca_first_Element(self, h_first_element: float):
@@ -43,7 +43,7 @@ class DataFrameUtilityMixin:
             h_first_element (float): Height of the first element of the capillary from the wall. Could be a value in between two elements as well.
         """
         # TODO check, if can be computed. If not, set to NaN
-        h = self["max(coordsX)"]-self["min(coordsX)"]
+        h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
         self["ca_first_element"] = np.rad2deg(np.arctan(h_first_element/h))
         
     def compute_radius_pressure(self):
@@ -76,4 +76,17 @@ class DataFrameUtilityMixin:
         ln_l = np.ln(160/1)
         self["ca_cox_voinov"] = np.rad2deg(np.power(np.power(np.deg2rad(theta_e), 3)+9 * ca * ln_l, 1/3))
         
-    
+    def compute_poiseuille_forces(self):
+        mu = 1e-3
+        self["f_p"] = 8 * np.pi * self["velocity"] * mu * self["imbibition_height"]
+        
+    def compute_total_visc_force(self):
+        print(self.columns)
+        total_visc_f = []
+        for index, row in self.iterrows():
+            temp = float(row["divDevRhoTot(N)"].strip("(").split(" ")[0]) * 72 #360/5
+            total_visc_f.append(temp)
+        self["f_t"] = total_visc_f
+        
+    def compute_wedge_forces(self):
+        self["f_w"] = self["f_t"] - self["f_p"]

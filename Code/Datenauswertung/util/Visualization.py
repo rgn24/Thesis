@@ -36,7 +36,11 @@ class Visualization:
                        "ca_first_element": r"dynamic contact angle $\theta_\mathrm{D}$", 
                        "radius_pressure": r"computed radius with pressure difference in $m$", 
                        "predicted_pressure": r"predicted pressure in $Pa$", 
-                       "pressure_error": r"error of pressure prediction"}
+                       "pressure_error": r"error of pressure prediction", 
+                       "PD": r"pressure difference in $Pa$",
+                       "f_p": r"Poseuille Forces in $N$",
+                       "f_t": r"Total viscous forces in $N$", 
+                       "f_w": r"Wedge forces in $N$",}
         ret_str = ""
         for id_e, elem in enumerate(arg):
             if len(arg) > 1 and id_e != len(arg)-1:
@@ -82,7 +86,7 @@ class Visualization:
                 if n_th is not None and n_th == "log":
                     dx = self.get_log_elems(dx)
                     dy = self.get_log_elems(dy)
-                ax.plot(dx[::spacing_plot], dy[::spacing_plot], label=label_name, marker="o", linestyle="None")
+                ax.plot(dx[::spacing_plot], dy[::spacing_plot], label=label_name, marker=".", linestyle="None")
             
         # plot settings
         if log_log =="loglog":
