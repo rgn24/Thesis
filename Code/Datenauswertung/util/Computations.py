@@ -81,7 +81,7 @@ class DataFrameUtilityMixin:
         self["f_p"] = 8 * np.pi * self["velocity"] * mu * self["imbibition_height"]
         
     def compute_total_visc_force(self):
-        print(self.columns)
+        #print(self.columns)
         total_visc_f = []
         for index, row in self.iterrows():
             temp = float(row["divDevRhoTot(N)"].strip("(").split(" ")[0]) * 72 #360/5

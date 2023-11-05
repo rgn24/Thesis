@@ -11,7 +11,7 @@ class Simulation:
     def __init__(self, dir_path) -> None:
         self.dir_path = dir_path
         self.name = os.path.basename(dir_path)
-        self.shape = None
+        self.shape_df = None
         self.init_run = True
         self.computed = False
         self.df = None
@@ -20,6 +20,7 @@ class Simulation:
         
         self.preprocess()
         self.process_dataframe()
+        self.set_data_info()
     
     def set_history(self):
         if "history" in os.listdir(self.dir_path):
@@ -37,7 +38,7 @@ class Simulation:
                 
     
     def set_data_info(self)-> None:
-        self.shape = self.df.shape
+        self.shape_df = self.df.shape
         
     def merge_csv(self, files: list)-> None:
         """Merge all csv files of the provided list into one csv file and dumps it. Note: All duplicates will be deleted!

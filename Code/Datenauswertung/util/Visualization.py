@@ -1,6 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
+from pylab import *
+from typing import Optional
 
 plt.rcParams['text.usetex'] = True
 
@@ -9,10 +12,65 @@ class Visualization:
         self.simulations = simulations
         self.dump_path = dump_path + "/Plots"
         
-    def set_color(self):
-        pass
+        # dictionary to get better looking visuals of the plots for the supported quantities
+        self.naming_dict = {"Time": [r"Time", r" in $s$"], 
+                       "max(CACoordsX)": [r"position of meniscus valley", r" in $m$"], 
+                       "velocity": [r"velocity magnitude", r" in $m/s$"], 
+                       "imbibition_height": [r"imbibition height", r" in $m$"], 
+                       "radius": [r"computed radius", r" in $m$"], 
+                       "ca_radius": [r"computed radius with the contact angle", r" in $m$"], 
+                       "ca_first_element": [r"dynamic contact angle", r" $\theta_\mathrm{D}$"], 
+                       "radius_pressure": [r"computed radius with pressure difference", r" in $m$"], 
+                       "predicted_pressure": [r"predicted pressure", r" in $Pa$"], 
+                       "pressure_error": [r"error of pressure prediction",r""], 
+                       "PD": [r"pressure difference", r" in $Pa$"],
+                       "f_p": [r"Poseuille Forces", r" in $N$"],
+                       "f_t": [r"Total viscous forces", r" in $N$"], 
+                       "f_w": [r"Wedge forces", r" in $N$"]}
+        
+    def set_style(self, monocolor:bool=False, len_y_sim:int=1):
+        """Set Style of plot. Namely color and Markers. If monocolor is set to True, the color for each simulation will be the same, no matter, if several quantities are plottet at the same time. Good for comparison of Simulations with other settings.
+        In that case all the marker will be the same for different simualtions, but same quantities. 15 different markers are available.
+
+        Args:
+            monocolor (bool, optional): Value to decide, if the colr for one simulation will be the same. Defaults to False.
+            len_y_sim (int, optional): number of simulaitons. Defaults to 1.
+
+        Returns:
+            _type_: _description_
+        """
+        markers = [".", "o", "v", "s", "+", "x", "^", "<", ">", "D", "p", "P", "*", "h", "H"]
+        if monocolor:
+            n_colors = len(self.simulations)
+        else:
+            n_colors = len(self.simulations) * len_y_sim
+        COLOR_MAP = plt.cm.get_cmap('Set1', n_colors)
+        ret_arr_color = []
+        ret_arr_marker = []
+        n_plots = len(self.simulations) * len_y_sim
+        if monocolor:
+            c_color = 0
+            for i in range(1,n_plots+1):
+                ret_arr_color.append(COLOR_MAP(c_color))
+                ret_arr_marker.append(markers[i-1 - c_color*len_y_sim])
+                if i % len_y_sim == 0 and i != 0:
+                    c_color += 1
+        else:
+            for i in range(n_plots):
+                ret_arr_color.append(COLOR_MAP(i))
+                ret_arr_marker.append(markers[i])
+        return ret_arr_color, ret_arr_marker
     
     def get_log_elems(self, data_set):
+        """filter the data set to get only every log_10th element. This is used for loglog plots, to get a better overview.
+
+        Args:
+            data_set (_type_): manipulated data set
+
+        Returns:
+            _type_: manipulated data set with only every log_10th element
+        """
+        print(type(data_set))
         i = 0
         i_c = 0
         ret_arr = []
@@ -26,45 +84,61 @@ class Visualization:
                 i_c+=1
         return ret_arr
     
+    def get_label(self, label_y:str="", len_xy: int=1, sim: object=None) -> str:
+        """the the Name of the label for the plot. If more than one quantity is plotted, the name of the simulation will be added to the label.
+
+        Args:
+            label_y (str, optional): plotted quantity. Defaults to "".
+            len_xy (int, optional): number of visualisied quantities. Defaults to 1.
+            sim (object, optional): util.Simulation Object to get info about the simulation data. Defaults to None.
+
+        Returns:
+            str: _description_
+        """
+        if len_xy > 1:
+            label_name = sim.name + " " + self.naming_dict[label_y][0]
+        else:
+            label_name = sim.name + " " + self.naming_dict[label_y][0]
+        return label_name
+    
     def get_naming(self, arg:list) -> str:
-        naming_dict = {"Time": r"Time in $s$", 
-                       "max(CACoordsX)": r"position of meniscus valley in $m$", 
-                       "velocity": r"velocity magnitude in $m/s$", 
-                       "imbibition_height": r"imbibition height in $m$", 
-                       "radius": r"computed radius in $m$", 
-                       "ca_radius": r"computed radius with the contact angle in $m$", 
-                       "ca_first_element": r"dynamic contact angle $\theta_\mathrm{D}$", 
-                       "radius_pressure": r"computed radius with pressure difference in $m$", 
-                       "predicted_pressure": r"predicted pressure in $Pa$", 
-                       "pressure_error": r"error of pressure prediction", 
-                       "PD": r"pressure difference in $Pa$",
-                       "f_p": r"Poseuille Forces in $N$",
-                       "f_t": r"Total viscous forces in $N$", 
-                       "f_w": r"Wedge forces in $N$",}
-        ret_str = ""
+        ret_str_axis = ""
         for id_e, elem in enumerate(arg):
             if len(arg) > 1 and id_e != len(arg)-1:
-                str_name = naming_dict[elem]+", "
-                ret_str+= str_name
+                str_name = self.naming_dict[elem][0] + self.naming_dict[elem][1] +", "
+                ret_str_axis+= str_name
             else:
-                ret_str+=naming_dict[elem]
-        return ret_str
+                ret_str_axis+=self.naming_dict[elem][0] + self.naming_dict[elem][1]
+        return ret_str_axis
     
     def lucas_washburn(self, t, theta=None):
         r=3e-9
         sigma = 0.072
         eta = 2e-6
-        #print(theta)
         theta = np.deg2rad(theta)
-        #print(theta)
         if theta is None:
             theta = float(15)
         lw = np.sqrt((r*sigma * np.cos(theta)/(2*eta)) * t)
         lw[0] = np.nan
         return 0.042*lw
         
-    def plot(self, xy:list=[[],[]], font_size:int=12, log_log=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:list=None, x_limits:list=None, y_limits:list=None, n_th=None): 
+    def plot(self, xy:list=[[],[]], font_size:int=12, log_log: Optional[str]=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:Optional[list]=None, x_limits:Optional[list]=None, y_limits:Optional[list]=None, n_th=None, monocolor:bool=False): 
         # checks if the input is valid
+        """Plot of the provided list of simulations.
+
+        Args:
+            xy (list, optional): _description_. Defaults to [[],[]].
+            font_size (int, optional): _description_. Defaults to 12.
+            log_log (Optional[str], optional): logarithmic scaling of both or a single axis. Supported values are: "loglog", "semilogx", "semilogy" or None . Defaults to None.
+            show (bool, optional): show the plot in runtime. Defaults to True.
+            save (bool, optional): Save the plot. Defaults to False.
+            save_path (str, optional): Path to save the plot. Defaults to "$SIM_DIR$/Plots/".
+            xy_name (Optional[list], optional): Names of the axis. Defaults to provided quantities.
+            x_limits (Optional[list], optional): Limits of the x-axis (lower, upper). Defaults to None.
+            y_limits (Optional[list], optional): Limits of the y-axis (lower, upper). Defaults to None.
+            n_th (_type_, optional): filter the data to each n_th-Element. Accepts integers or "log". Defaults to 1.
+            monocolor (bool, optional): show each simulation data with one color to compare with other simulation. Defaults to False.
+        """
         if n_th == "log":
             spacing_plot = 1
         else:
@@ -72,21 +146,21 @@ class Visualization:
         
         
         fig, ax = plt.subplots(figsize=(12, 8))
+        color_map, marker_map = self.set_style(monocolor=monocolor, len_y_sim=len(xy[1]))
+        style_id = 0
         for simulation in self.simulations:
             x = xy[0][0]
             for id_y, y in enumerate(xy[1]):
-                #TODO refactor
-                if len(xy[1]) > 1:
-                    label_name = simulation.name + " " + y
-                else:
-                    label_name = simulation.name
-                    
                 dx = simulation.df[x]
                 dy = simulation.df[y]
                 if n_th is not None and n_th == "log":
                     dx = self.get_log_elems(dx)
                     dy = self.get_log_elems(dy)
-                ax.plot(dx[::spacing_plot], dy[::spacing_plot], label=label_name, marker=".", linestyle="None")
+                ax.plot(dx[::spacing_plot], dy[::spacing_plot], label=self.get_label(y, len(xy[1]),simulation), marker=marker_map[style_id], linestyle="None", color=color_map[style_id])
+                style_id += 1
+        #plt.plot()
+        # TODO add lucas washburn
+        # TODO add secondary y axis for differences.
             
         # plot settings
         if log_log =="loglog":
@@ -116,7 +190,8 @@ class Visualization:
         plt.xticks(fontsize=font_size)
         plt.yticks(fontsize=font_size)
         plt.legend(fontsize=font_size)
-        plt.grid()
+        plt.grid(which='both', linestyle='-', linewidth=0.7)
+        plt.grid(which='minor', linestyle='--', linewidth=0.5)
         
         
         if save:

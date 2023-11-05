@@ -19,26 +19,38 @@ def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
     all_dirs = get_dirs(simulations_path)
     create_folder_plots(simulations_path)
     simulations = []
+    longest_sim = 0
     for dir in all_dirs:
         if dir.split(os.sep)[-1] in exceptions:
             continue
         simulations.append(sim.Simulation(dir))
+        print(type(simulations[-1].shape_df))
+        # TODO not done yet! Foundation for support of LW (get longest Simulation to get the time data)
+        if longest_sim < simulations[-1].shape_df[0]:
+            longest_sim = simulations[-1].shape_df[0]
+    print(f"longest simulation has {longest_sim} timesteps")
     return simulations
 
     
-def main():
+def main(plot_list: list=[]):
     simulations_path = "M:\Data_Plots\GammaLongRun"
-    exceptions = ["CA45", "1_5e12"]
+    exceptions = ["CA45"]
     
     simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
     print(f"loaded {len(simulations)} simulations")
     
-    print(simulations[0].df["f_p"].head())
     viz = vis.Visualization(simulations, dump_path=simulations_path)
-    viz.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9])
+    
+    viz.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
+    viz.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
+    
+    #for plots in plot_list:
+    #    viz.plot(xy=plots, log_log="semilogx", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
     
     
 if __name__ == "__main__":
+    #plotting_list = [[["Time"], ["f_p", "f_t", "f_w"]], 
+    #                 [["Time"], ["imbibition_height"]]]
     main()
     
     
