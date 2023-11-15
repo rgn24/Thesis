@@ -121,8 +121,11 @@ class Visualization:
         lw = np.sqrt((r*sigma * np.cos(theta)/(2*eta)) * t)
         lw[0] = np.nan
         return 0.042*lw
+    
+    def get_diff_arr(self, arr1, arr2):
+        return np.abs(arr1-arr2)
         
-    def plot(self, xy:list=[[],[]], font_size:int=12, log_log: Optional[str]=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:Optional[list]=None, x_limits:Optional[list]=None, y_limits:Optional[list]=None, n_th=None, monocolor:bool=False): 
+    def plot(self, xy:list=[[],[]], font_size:int=12, log_log: Optional[str]=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:Optional[list]=None, x_limits:Optional[list]=None, y_limits:Optional[list]=None, secondary_y: Optional[int] = None, n_th=None, monocolor:bool=False): 
         # checks if the input is valid
         """Plot of the provided list of simulations.
 
@@ -136,6 +139,7 @@ class Visualization:
             xy_name (Optional[list], optional): Names of the axis. Defaults to provided quantities.
             x_limits (Optional[list], optional): Limits of the x-axis (lower, upper). Defaults to None.
             y_limits (Optional[list], optional): Limits of the y-axis (lower, upper). Defaults to None.
+            secondary_y (Optional[int], optional): quantity, which should be plotted on the secondary y-axis. Defaults to None.
             n_th (_type_, optional): filter the data to each n_th-Element. Accepts integers or "log". Defaults to 1.
             monocolor (bool, optional): show each simulation data with one color to compare with other simulation. Defaults to False.
         """
@@ -144,8 +148,22 @@ class Visualization:
         else:
             spacing_plot = n_th
         
-        
         fig, ax = plt.subplots(figsize=(12, 8))
+        
+        # TODO not Impletented yet DO NOT USE
+        if secondary_y is not None:
+            print("Secondary y axis not implemented yet. Please do not use this feature.")
+            # Erstellung der Sekundärachse
+            ax2 = ax.twinx()
+            # Plot der Daten für die Sekundärachse
+            ax2.plot(xy[0][::spacing_plot], xy[1][secondary_y][::spacing_plot], label='Secondary Axis Data', linestyle='--', color='red')
+            ax2.set_ylabel('Secondary Axis Label', fontsize=font_size)
+
+            # Einstellen der Grenzen der Sekundärachse, falls angegeben
+            if y_limits is not None and len(y_limits) > secondary_y:
+                ax2.set_ylim(y_limits[secondary_y])
+        
+        
         color_map, marker_map = self.set_style(monocolor=monocolor, len_y_sim=len(xy[1]))
         style_id = 0
         for simulation in self.simulations:
