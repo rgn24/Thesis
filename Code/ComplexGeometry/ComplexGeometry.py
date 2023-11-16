@@ -12,6 +12,12 @@ class Bead:
         self.verts_2D = None
         self.verts_3D = None
         
+        self.connection_y = 0
+        self.connection_z = 0
+        
+        self.max_y = 0
+        self.max_z = 0
+        
         self.set_len_x()
         self.set_zR()
         
@@ -53,6 +59,13 @@ class Bead:
     
     def generate_verts3D(self):
         y_wedge, z_wedge = wedify(self.z_R, self.angle)
+        self.connection_y = y_wedge[0]
+        self.max_y = y_wedge[1]
+        self.connection_z = z_wedge[0]
+        self.max_z = z_wedge[1]
+        
+    def get_block_verts_id(self):
+        return [0, 1, 2, 0, 3, 4, 5, 3]
     
 if __name__== "__main__":
     bead = Bead()
