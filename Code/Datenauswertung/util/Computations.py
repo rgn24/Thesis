@@ -90,3 +90,14 @@ class DataFrameUtilityMixin:
         
     def compute_wedge_forces(self):
         self["f_w"] = self["f_t"] - self["f_p"]
+        
+    def compute_lucas_washburn(self, t, theta=None):
+        r=3e-9
+        sigma = 0.072
+        eta = 2e-6
+        theta = np.deg2rad(theta)
+        if theta is None:
+            theta = float(15)
+        lw = np.sqrt((r*sigma * np.cos(theta)/(2*eta)) * t)
+        lw[0] = np.nan
+        return 0.042*lw

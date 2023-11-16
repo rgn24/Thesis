@@ -8,10 +8,10 @@ from typing import Optional
 plt.rcParams['text.usetex'] = True
 
 class Visualization:
-    def __init__(self, simulations:list, dump_path="") -> None:
+    def __init__(self, simulations:list, dump_path="", longest_id:int=0) -> None:
         self.simulations = simulations
         self.dump_path = dump_path + "/Plots"
-        
+        self.longest = longest_id
         # dictionary to get better looking visuals of the plots for the supported quantities
         self.naming_dict = {"Time": [r"Time", r" in $s$"], 
                        "max(CACoordsX)": [r"position of meniscus valley", r" in $m$"], 
@@ -116,8 +116,6 @@ class Visualization:
         sigma = 0.072
         eta = 2e-6
         theta = np.deg2rad(theta)
-        if theta is None:
-            theta = float(15)
         lw = np.sqrt((r*sigma * np.cos(theta)/(2*eta)) * t)
         lw[0] = np.nan
         return 0.042*lw
@@ -125,7 +123,7 @@ class Visualization:
     def get_diff_arr(self, arr1, arr2):
         return np.abs(arr1-arr2)
         
-    def plot(self, xy:list=[[],[]], font_size:int=12, log_log: Optional[str]=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:Optional[list]=None, x_limits:Optional[list]=None, y_limits:Optional[list]=None, secondary_y: Optional[int] = None, n_th=None, monocolor:bool=False): 
+    def plot(self, xy:list=[[],[]], font_size:int=12, log_log: Optional[str]=None, show:bool = True, save:bool = False, save_path:str = "", xy_name:Optional[list]=None, x_limits:Optional[list]=None, y_limits:Optional[list]=None, secondary_y: Optional[int] = None, n_th=None, monocolor:bool=False, lw:Optional[float]=None, longest_id:int=0): 
         # checks if the input is valid
         """Plot of the provided list of simulations.
 
@@ -149,8 +147,9 @@ class Visualization:
             spacing_plot = n_th
         
         fig, ax = plt.subplots(figsize=(12, 8))
-        
+        ####
         # TODO not Impletented yet DO NOT USE
+        # TODO add secondary y axis for differences.
         if secondary_y is not None:
             print("Secondary y axis not implemented yet. Please do not use this feature.")
             # Erstellung der Sekundärachse
@@ -162,7 +161,7 @@ class Visualization:
             # Einstellen der Grenzen der Sekundärachse, falls angegeben
             if y_limits is not None and len(y_limits) > secondary_y:
                 ax2.set_ylim(y_limits[secondary_y])
-        
+        ####
         
         color_map, marker_map = self.set_style(monocolor=monocolor, len_y_sim=len(xy[1]))
         style_id = 0
@@ -176,10 +175,13 @@ class Visualization:
                     dy = self.get_log_elems(dy)
                 ax.plot(dx[::spacing_plot], dy[::spacing_plot], label=self.get_label(y, len(xy[1]),simulation), marker=marker_map[style_id], linestyle="None", color=color_map[style_id])
                 style_id += 1
-        #plt.plot()
-        # TODO add lucas washburn
-        # TODO add secondary y axis for differences.
-            
+        
+        ## plotting LW, if wanted
+        if lw is not None:
+            lw_data = self.lucas_washburn(self.simulations[longest_id].df[x], lw)
+            #lw_data = lucas_washburn(t=datasets[longest_id].data[x])
+            plt.plot(self.simulations[longest_id].df[x], lw_data, "-", color="red", label="LW")
+        
         # plot settings
         if log_log =="loglog":
             plt.loglog()

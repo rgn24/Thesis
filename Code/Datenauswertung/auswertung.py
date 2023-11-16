@@ -42,6 +42,9 @@ def main(plot_list: list=[]):
     
     analysis = Analysis(simulations_path=simulations_path, exceptions=exceptions)
     print(f"loaded {len(analysis.simulations)} simulations")
+    analysis.print_info()
+    analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
+    analysis.visualize.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True, lw=15.0)
     
     ##simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
     ##print(f"loaded {len(simulations)} simulations")
