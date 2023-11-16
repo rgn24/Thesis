@@ -1,4 +1,5 @@
 import os
+from Analysis import Analysis
 import util.Simulation as sim
 import util.Visualization as vis
 import util.Computations as comp
@@ -39,14 +40,17 @@ def main(plot_list: list=[]):
     #simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
     exceptions = ["CA45", "GM1", "GM2", "GM025"]
     
-    simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
-    print(f"loaded {len(simulations)} simulations")
+    analysis = Analysis(simulations_path=simulations_path, exceptions=exceptions)
+    print(f"loaded {len(analysis.simulations)} simulations")
     
-    viz = vis.Visualization(simulations, dump_path=simulations_path)
-    
-    viz.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
-    viz.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
-    viz.plot(xy=[["Time"], ["ca_first_element"]], log_log=None, save=False, show=True, n_th=1, y_limits=None, monocolor=True)
+    ##simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
+    ##print(f"loaded {len(simulations)} simulations")
+    ##
+    ##viz = vis.Visualization(simulations, dump_path=simulations_path)
+    ##
+    ##viz.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
+    ##viz.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
+    ##viz.plot(xy=[["Time"], ["ca_first_element"]], log_log=None, save=False, show=True, n_th=1, y_limits=None, monocolor=True)
     
     
     #for plots in plot_list:
