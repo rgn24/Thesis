@@ -10,7 +10,7 @@ class Bead:
         self.dx_R = 0
         self.z_R = 0
         self.verts_2D = None
-        self.verts_3D = None
+        self.verts_3D = np.zeros([3,8])
         
         self.connection_y = 0
         self.connection_z = 0
@@ -20,6 +20,22 @@ class Bead:
         
         self.set_len_x()
         self.set_zR()
+        
+    def get_info(self):
+        info = {"Bead length":self.length_segment, 
+                "inner Radius": self.r_i, 
+                "outer Radius": self.r_o, 
+                "Extrema y-Koordinate": self.max_y,
+                "Extrema z-Koordinate": self.max_z,
+                "Connector y-Koordinate": self.connection_y,
+                "Connector z-Koordinate": self.connection_z}
+        return info
+        
+    def print_info(self):
+        print("\nInfo:")
+        info = self.get_info()
+        for key in info.keys():
+            print(key, ": ", info[key])
         
         
     def set_len_x(self) -> None:
@@ -51,7 +67,7 @@ class Bead:
                              [0, self.z_R[0]],
                              [self.length_segment, 0.0],
                              [self.length_segment, self.z_R[-1]]])
-        print(vertices)
+        print("vertieces: \n", vertices)
         #return vertices
 
     def get_maxima(self):
@@ -63,11 +79,25 @@ class Bead:
         self.max_y = y_wedge[1]
         self.connection_z = z_wedge[0]
         self.max_z = z_wedge[1]
+        self.verts_3D[:, 0] = np.array([0,0,0])
+        self.verts_3D[:, 1] = np.array([0,self.connection_y,self.connection_z])
+        self.verts_3D[:, 2] = np.array([0,-self.connection_y,self.connection_z])
+        print(self.verts_3D)
+        print(self.verts_3D.shape)
         
     def get_block_verts_id(self):
         return [0, 1, 2, 0, 3, 4, 5, 3]
+    
+    
+class Joint:
+    def __init__(self, connection_y, connection_x, length) -> None:
+        self.connection_y = 0
+        self.connection_z = 0
+        self.length = 0
+        pass
     
 if __name__== "__main__":
     bead = Bead()
     bead.generate_verts2D()
     bead.generate_verts3D()
+    bead.print_info()
