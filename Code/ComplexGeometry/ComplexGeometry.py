@@ -88,6 +88,75 @@ class Bead:
     def get_block_verts_id(self):
         return [0, 1, 2, 0, 3, 4, 5, 3]
     
+    
+    
+class BlockMesh:
+    def __init__(self, n_beads:int, geom:list, xyz_resolution:list) -> None:
+        self.n_beads = n_beads
+        self.geom = geom
+        self.xyz_resolution = xyz_resolution
+        
+        # internal variables
+        self.layers = self.n_beads * 2 + 1
+        self.vertices_blockMesh = ""
+        self.blocks_blockMesh = ""
+        self.edges_blockMesh = ""
+        self.faces_blockMesh = ""
+        self.y_conn = self.geom[0]
+        self.z_conn = self.geom[1]
+        
+        # temp internal variables
+        self.wall, self.front, self.back = "", "", ""
+        
+        
+    def add_header(self):
+        self.vertices_blockMesh += "\nvertecies(\n"
+        self.blocks_blockMesh += "\nblocks(\n"
+        self.edges_blockMesh  += "\nedges(\n"
+        self.faces_blockMesh  += "\nfaces(\n"
+        #TODO Add header
+        
+    def update_vertices(self, x_off):
+        vertices = np.array([[x_off, 0, 0],
+                            [x_off, self.y_conn, self.z_conn],
+                            [x_off, -self.y_conn, self.z_conn]])
+        
+        vert_body= lambda vert : f"\t({vert[0]} {vert[1]} {vert[2]})\n"
+        verts_blockMesh = ""
+        for row in vertices:
+            verts_blockMesh += vert_body(row)
+        self.vertices_blockMesh = verts_blockMesh
+        
+    def update_blocks(self, block_id):
+        blocks_template = np.array([0, 1, 2, 0, 3, 4, 5, 3])
+        offset_id = block_id * 3
+        blocks = blocks_template + offset_id
+        blocks_body = lambda blocks, number_of_elements : f"\t({blocks[0]} {blocks[1]} {blocks[2]} {blocks[3]} {blocks[4]} {blocks[5]} {blocks[6]} {blocks[7]}) ({number_of_elements[0]} {number_of_elements[1]} {number_of_elements[2]}) simpleGrading (1 1 1)"
+        return blocks_body(blocks, self.xyz_resolution)
+        
+    def generate_block_mesh_dict(self):
+        offset = 0
+        count_block = 0
+        offset = 0
+        add_header()
+        
+        
+        for i in range(self.layers):
+            if i%2 == 0 and i != 0:
+                offset += 1
+            elif i%2 != 0 and i != 0:
+                offset += bead.length_segment
+            self.vertices_blockMesh += update_vertices(offset, bead.connection_y, bead.connection_z)
+        wall, front, back = "", "", ""
+        for i in range(number_of_beads * 2):
+            if i%2 == 0:
+                self.blocks_blockMesh += update_blocks([1,1,1], i)
+            elif i%2 != 0 and i != 0:
+                self.blocks_blockMesh += update_blocks([10,10,10], i)
+                self.edges_blockMesh += update_edges(i, bead.length_segment/2, bead.max_y, bead.max_z)
+
+        
+    
 def update_vertices(x_off, y_conn, z_conn):
     vertices = np.array([[x_off, 0, 0],
                          [x_off, y_conn, z_conn],
@@ -159,28 +228,4 @@ if __name__== "__main__":
     #print(update_vertices(0, 1, 2))
     #print(update_blocks(bead.get_block_verts_id(), [1,2,3]))
     
-    offset = 0
-    layers = number_of_beads * 2 + 1
-    count_block = 0
-    offset = 0
     
-    vertices_blockMesh = ""
-    blocks_blockMesh = ""
-    edges_blockMesh = ""
-    faces_blockMesh = ""
-    vertices_blockMesh, blocks_blockMesh, edges_blockMesh, faces_blockMesh = add_header(vertices_blockMesh, blocks_blockMesh, edges_blockMesh, faces_blockMesh)
-    for i in range(layers):
-        if i%2 == 0 and i != 0:
-            count_block += 1
-            offset += 1
-        elif i%2 != 0 and i != 0:
-            offset += bead.length_segment
-        vertices_blockMesh += update_vertices(offset, bead.connection_y, bead.connection_z)
-    wall, front, back = "", "", ""
-    for i in range(number_of_beads * 2):
-        if i%2 == 0:
-            blocks_blockMesh += update_blocks([1,1,1], i)
-        elif i%2 != 0 and i != 0:
-            blocks_blockMesh += update_blocks([10,10,10], i)
-            edges_blockMesh += update_edges(i, bead.length_segment/2, bead.max_y, bead.max_z)
-
