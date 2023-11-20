@@ -1,5 +1,6 @@
 import numpy as np
 from util.util_functions import *
+import os
 
 class Bead:
     def __init__(self, angle: float = 5.0, outer_diameter: float = 7.0, inner_Diameter: float = 4.0):
@@ -114,7 +115,7 @@ class BlockMesh:
         # temp internal variables faces
         self.wall = "\twall\n\t{\n\t\ttype wall;\n\t\tfaces\n\t\t(\n"
         self.front = "\tfront\n\t{\n\t\ttype wedge;\n\t\tfaces\n\t\t(\n"
-        self.back  = "\tback\n\t{\n\t\ttype wedge;\n\t\tfaces\n\t\t(\n"
+        self.back = "\tback\n\t{\n\t\ttype wedge;\n\t\tfaces\n\t\t(\n"
         self.axis = "\taxis\n\t{\n\t\ttype axis;\n\t\tfaces\n\t\t(\n"
         self.top = "\ttop\n\t{\n\t\ttype empty;\n\t\tfaces\n\t\t(\n"
         self.bottom = "\tbottom\n\t{\n\t\ttype empty;\n\t\tfaces\n\t\t(\n"
@@ -122,15 +123,15 @@ class BlockMesh:
     def add_header(self):
         self.vertices_blockMesh += "\nvertices\n(\n"
         self.blocks_blockMesh += "\nblocks\n(\n"
-        self.edges_blockMesh  += "\nedges\n(\n"
-        self.faces_blockMesh  += "\nboundary\n(\n"
+        self.edges_blockMesh += "\nedges\n(\n"
+        self.faces_blockMesh += "\nboundary\n(\n"
         #TODO Add header
         
     def add_end(self):
         self.vertices_blockMesh += ");\n"
         self.blocks_blockMesh += ");\n"
-        self.edges_blockMesh  += ");\n"
-        self.faces_blockMesh  += ");\n"
+        self.edges_blockMesh += ");\n"
+        self.faces_blockMesh += ");\n"
         
     def add_end_faces(self):
         self.wall += "\t\t);\n\t}\n"
@@ -168,14 +169,16 @@ class BlockMesh:
         self.blockMesh = text
         
     def update_vertices(self, x_off):
+        # generate vertices
         vertices = np.array([[x_off, 0, 0],
                             [x_off, self.y_conn, self.z_conn],
                             [x_off, -self.y_conn, self.z_conn]])
-        
+        # function to update string
         vert_body= lambda vert : f"\t({vert[0]} {vert[1]} {vert[2]})\n"
         verts_blockMesh = ""
         for row in vertices:
             verts_blockMesh += vert_body(row)
+        # update vertices
         self.vertices_blockMesh += verts_blockMesh
         
     def update_blocks(self, block_id, number_of_elements:list):
@@ -184,17 +187,23 @@ class BlockMesh:
         #update ids
         offset_id = block_id * 3
         blocks = blocks_template + offset_id
+        #functions
         blocks_body = lambda blocks, number_of_elements : f"\thex ({blocks[0]} {blocks[1]} {blocks[2]} {blocks[3]} {blocks[4]} {blocks[5]} {blocks[6]} {blocks[7]}) ({number_of_elements[0]} {number_of_elements[1]} {number_of_elements[2]}) simpleGrading (1 1 1)\n"
+        # update blocks
         self.blocks_blockMesh += blocks_body(blocks, number_of_elements)
         
     def update_edges(self, block_id, x_mid:float):
+        #templates
         arc_template_pos = np.array([1, 4])
-        arc_template_neg = np.array([2, 5]) 
+        arc_template_neg = np.array([2, 5])
+        #update ids
         offset_id = block_id * 3
         arc_neg = arc_template_neg + offset_id
         arc_pos = arc_template_pos + offset_id
+        #functions
         edges_pos = lambda arc_pos, x_mid, y_max, z_max : f"\tarc {arc_pos[0]} {arc_pos[1]} ({x_mid} {y_max} {z_max})\n"
         edges_neg = lambda arc_neg, x_mid, y_max, z_max : f"\tarc {arc_neg[0]} {arc_neg[1]} ({x_mid} {-y_max} {z_max})\n"
+        # update edges
         self.edges_blockMesh += f"{edges_pos(arc_pos, x_mid, self.y_max, self.z_max)}{edges_neg(arc_neg, x_mid, self.y_max, self.z_max)}"
         
     def update_faces(self, block_id):
@@ -261,65 +270,10 @@ class BlockMesh:
         
         print(self.blockMesh)
         
-    
-##def update_vertices(x_off, y_conn, z_conn):
-##    vertices = np.array([[x_off, 0, 0],
-##                         [x_off, y_conn, z_conn],
-##                         [x_off, -y_conn, z_conn]])
-##    
-##    vert_body= lambda vert : f"\t({vert[0]} {vert[1]} {vert[2]})\n"
-##    verts_blockMesh = ""
-##    for row in vertices:
-##        verts_blockMesh += vert_body(row)
-##    return verts_blockMesh
-##
-##def update_blocks(number_of_elements:list, block_id):
-##    blocks_template = np.array([0, 1, 2, 0, 3, 4, 5, 3])
-##    offset_id = block_id * 3
-##    blocks = blocks_template + offset_id
-##    blocks_body = lambda blocks, number_of_elements : f"\t({blocks[0]} {blocks[1]} {blocks[2]} {blocks[3]} {blocks[4]} {blocks[5]} {blocks[6]} {blocks[7]}) ({number_of_elements[0]} {number_of_elements[1]} {number_of_elements[2]}) simpleGrading (1 1 1)"
-##    return blocks_body(blocks, number_of_elements)
-##
-##def update_edges(block_id, x_mid:float, y_max:float, z_max:float):
-##    arc_template_pos = np.array([1, 4])
-##    arc_template_neg = np.array([2, 5]) 
-##    offset_id = block_id * 6
-##    arc_neg = arc_template_neg + offset_id
-##    arc_pos = arc_template_pos + offset_id
-##    edges_pos = lambda arc_pos, x_mid, y_max, z_max : f"\tarc({arc_pos[0]} {arc_pos[1]}) ({x_mid} {y_max} {z_max}))"
-##    edges_neg = lambda arc_neg, x_mid, y_max, z_max : f"\tarc({arc_neg[0]} {arc_neg[1]}) ({x_mid} {-y_max} {z_max}))"
-##    return f"{edges_pos(arc_pos, x_mid, y_max, z_max)}\n{edges_neg(arc_neg, x_mid, y_max, z_max)}"
-##
-##def update_faces(block_id):
-##    offset_id = block_id * 3
-##    wall_template = np.array([1, 4, 5, 2])
-##    front_template = np.array([0, 3, 4, 1])
-##    back_template = np.array([0, 2, 5, 3])
-##    wall_id = wall_template + offset_id
-##    front_id = front_template + offset_id
-##    back_id = back_template + offset_id
-##    wall = lambda wall_id : f"\t({wall_id[0]} {wall_id[1]} {wall_id[2]} {wall_id[3]})"
-##    front = lambda front_id : f"\t({front_id[0]} {front_id[1]} {front_id[2]} {front_id[3]})"
-##    back = lambda back_id : f"\t({back_id[0]} {back_id[1]} {back_id[2]} {back_id[3]})"
-##    return wall, front, back
-##
-##def get_header():
-##    pass
-##    #TODO Add head
-##    return head
-##
-##def get_transform():
-##    pass
-##    #TODO Add transform
-##    return transform
-
-##def add_header(verts, blocks, edges, faces):
-##    verts += "\nvertecies(\n"
-##    blocks += "\nblocks(\n"
-##    edges += "\nedges(\n"
-##    faces += "\nfaces(\n"
-##    #TODO Add header
-##    return verts, blocks, edges, faces
+    def save_blockMeshDict(self, path=os.getcwd()+"\\blockMeshDict"):
+        with open(path, "w") as f:
+            f.write(self.blockMesh)
+        print(f"blockMeshDict saved in {path}")
 
 if __name__== "__main__":
     number_of_beads = 2
@@ -330,7 +284,7 @@ if __name__== "__main__":
     
     blockmesh = BlockMesh(2, "1e-9",[bead.connection_y, bead.connection_z, bead.max_y, bead.max_z, bead.length_segment], [10,1,10])
     blockmesh.generate_block_mesh_dict()
-    
+    blockmesh.save_blockMeshDict()
     
     #print(update_vertices(0, 1, 2))
     #print(update_blocks(bead.get_block_verts_id(), [1,2,3]))
