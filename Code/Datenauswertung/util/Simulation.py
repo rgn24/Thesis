@@ -156,7 +156,9 @@ class Simulation:
         self.df.compute_poiseuille_forces()
         self.df.compute_total_visc_force()
         self.df.compute_wedge_forces()
-        self.df.compute_ca_first_Element(3e-10)
+        #self.df.compute_ca_first_Element(3e-10)
+        #self.df.compute_ca_radius()
+        #self.df.compute_radius()
         
     
     def get_info(self):

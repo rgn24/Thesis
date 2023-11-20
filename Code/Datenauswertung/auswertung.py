@@ -35,16 +35,16 @@ def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
     
 def main(plot_list: list=[]):
     #simulations_path = "M:\Data_Plots\GammaLongRun"
-    simulations_path = "M:\Data_Plots\GammaLongRunCO"
+    #simulations_path = "M:\Data_Plots\GammaLongRunCO"
     #simulations_path = "M:\Data_Plots\BiggerRadius"
     #simulations_path = "M:\Data_Plots\MobilityStudyEQUI"
-    #simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
-    exceptions = ["CA45", "GM1", "GM2", "GM025"]
+    simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
+    exceptions = ["GM1", "GM2", "GM025", "CA45", "1_0e12", "1_5e12", "1_75e12", "Gamma"]
     
     analysis = Analysis(simulations_path=simulations_path, exceptions=exceptions)
     print(f"loaded {len(analysis.simulations)} simulations")
     analysis.print_info()
-    analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
+    analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log=None, save=False, show=True, n_th=10, y_limits=None, monocolor=True)
     analysis.visualize.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True, lw=15.0)
     analysis.visualize.plot(xy=[["Time"], ["ca_first_element"]], log_log=None, save=False, show=True, n_th=1, y_limits=None, monocolor=True)
     ##simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)

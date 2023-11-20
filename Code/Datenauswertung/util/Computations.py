@@ -2,8 +2,6 @@ import numpy as np
 
 class DataFrameUtilityMixin:
     def compute_velocity(self):
-        # TODO: Implement velocity computation
-        # FIXME: not correct result! probably data related. Clean up used dataset.
         u = [np.nan]
         for index, row in self.iterrows():
             if index == 0:
@@ -21,14 +19,16 @@ class DataFrameUtilityMixin:
         """
         self["imbibition_height"] = height - self["max(coordsX_Meniscus)"]
         
-    def compute_radius(self, capillary_radius: float):
+    def compute_radius(self, capillary_radius: float=3e-9):
         """Computes the Radius of the Meniscus with the known Radius of the Capillary.
 
         Args:
             capillary_radius (float): Radius of the Capillary
         """
-        h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
-        self["radius"] = np.pow(capillary_radius, 2) /(2*h) + h
+        h = self["max(coordsX_Meniscus)"] - self["min(coordsX_Meniscus)"]
+        print(h)
+        #FIXME: not working somehow; Radius is not defined in dataframe after computation... 
+        self["radius"] = capillary_radius**2 /(2*h) + h
         
     def compute_ca_radius(self):
         """Computes the Contact Angle using the computed radius of the meniscus
@@ -36,14 +36,14 @@ class DataFrameUtilityMixin:
         h = h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
         self["ca_radius"] = 90 - 2 * np.rad2deg(np.arctan(h/self["radius"]))
         
-    def compute_ca_first_Element(self, h_first_element: float):
+    def compute_ca_first_Element(self, h_first_element: float=0.3e-9):
         """Compute the Contact angle using only the first element of the capillary. Technically every distance of the measured height is possible here.
 
         Args:
             h_first_element (float): Height of the first element of the capillary from the wall. Could be a value in between two elements as well.
         """
         # TODO check, if can be computed. If not, set to NaN
-        h = self["max(coordsX_Meniscus)"]-self["min(coordsX_Meniscus)"]
+        h = self["max(CACoordsX)"]-self["min(CACoordsX)"]
         self["ca_first_element"] = np.rad2deg(np.arctan(h_first_element/h))
         
     def compute_radius_pressure(self):
