@@ -84,7 +84,11 @@ class DataFrameUtilityMixin:
         #print(self.columns)
         total_visc_f = []
         for index, row in self.iterrows():
-            temp = float(row["divDevRhoTot(N)"].strip("(").split(" ")[0]) * 72 #360/5
+            print(row["divDevRhoTot(N)"])
+            try:
+                temp = float(row["divDevRhoTot(N)"].strip("(").split(" ")[0]) * 72 #360/5
+            except:
+                temp = np.nan
             total_visc_f.append(temp)
         self["f_t"] = total_visc_f
         

@@ -38,8 +38,9 @@ def main(plot_list: list=[]):
     #simulations_path = "M:\Data_Plots\GammaLongRunCO"
     #simulations_path = "M:\Data_Plots\BiggerRadius"
     #simulations_path = "M:\Data_Plots\MobilityStudyEQUI"
-    simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
-    exceptions = ["GM1", "GM2", "GM025", "CA45", "1_0e12", "1_5e12", "1_75e12", "Gamma"]
+    simulations_path = "M:\Data_Plots\CA_FINAL"
+    #simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
+    exceptions = ["GM1", "GM2", "GM025", "1_0e12", "1_5e12", "1_75e12", "Gamma"]
     
     analysis = Analysis(simulations_path=simulations_path, exceptions=exceptions)
     print(f"loaded {len(analysis.simulations)} simulations")
