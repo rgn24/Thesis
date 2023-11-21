@@ -11,7 +11,7 @@ class Bead:
         self.dx_R = 0
         self.z_R = 0
         self.verts_2D = None
-        self.verts_3D = np.zeros([3,8])
+        self.verts_3D = np.zeros([3, 8])
         
         self.connection_y = 0
         self.connection_z = 0
@@ -56,19 +56,14 @@ class Bead:
         :return: The x-coordinates and z-coordinates of the right boundary
         """
         series = np.array([self.dx_R, 0])
-        print("dxRRR", self.dx_R)
         self.z_R = np.sqrt(1 - (np.power(series / self.r_o, 2))) * self.r_o
-        print("DZR", self.z_R)
         
     
     def generate_verts2D(self):
-        # vertices = [[]]
-        print(self.length_segment)
         vertices = np.array([[0, 0.0],
                              [0, self.z_R[0]],
                              [self.length_segment, 0.0],
                              [self.length_segment, self.z_R[-1]]])
-        print("vertieces: \n", vertices)
         #return vertices
 
     def get_maxima(self):
@@ -83,12 +78,9 @@ class Bead:
         self.verts_3D[:, 0] = np.array([0,0,0])
         self.verts_3D[:, 1] = np.array([0,self.connection_y,self.connection_z])
         self.verts_3D[:, 2] = np.array([0,-self.connection_y,self.connection_z])
-        #print(self.verts_3D)
-        #print(self.verts_3D.shape)
         
     def get_block_verts_id(self):
         return [0, 1, 2, 0, 3, 4, 5, 3]
-    
     
     
 class BlockMesh:
@@ -120,14 +112,13 @@ class BlockMesh:
         self.top = "\ttop\n\t{\n\t\ttype empty;\n\t\tfaces\n\t\t(\n"
         self.bottom = "\tbottom\n\t{\n\t\ttype empty;\n\t\tfaces\n\t\t(\n"
         
-    def add_header(self):
+    def add_headers(self):
         self.vertices_blockMesh += "\nvertices\n(\n"
         self.blocks_blockMesh += "\nblocks\n(\n"
         self.edges_blockMesh += "\nedges\n(\n"
         self.faces_blockMesh += "\nboundary\n(\n"
-        #TODO Add header
         
-    def add_end(self):
+    def add_ends(self):
         self.vertices_blockMesh += ");\n"
         self.blocks_blockMesh += ");\n"
         self.edges_blockMesh += ");\n"
@@ -241,7 +232,7 @@ class BlockMesh:
     
     def generate_block_mesh_dict(self):
         offset = 0
-        self.add_header()
+        self.add_headers()
         
         # vertices iterations
         for i in range(self.layers):
@@ -264,7 +255,7 @@ class BlockMesh:
             self.update_faces(i)
             
         self.merge_faces()
-        self.add_end()
+        self.add_ends()
         self.add_header_blockMesh()
         self.blockMesh += self.vertices_blockMesh + self.blocks_blockMesh + self.edges_blockMesh + self.faces_blockMesh + "\nmergePatchPairs\n(\n);\n"
         
@@ -285,8 +276,4 @@ if __name__== "__main__":
     blockmesh = BlockMesh(2, "1e-9",[bead.connection_y, bead.connection_z, bead.max_y, bead.max_z, bead.length_segment], [10,1,10])
     blockmesh.generate_block_mesh_dict()
     blockmesh.save_blockMeshDict()
-    
-    #print(update_vertices(0, 1, 2))
-    #print(update_blocks(bead.get_block_verts_id(), [1,2,3]))
-    
     
