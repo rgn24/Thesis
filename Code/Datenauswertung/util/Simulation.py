@@ -70,8 +70,14 @@ class Simulation:
         return arr[idx], idx
         
     def open_history_files(self):
-        paths = {"wall": f"{self.dir_path}/history/0/wallForceswall.dat",
-                    "energy": f"{self.dir_path}/history/0/energyDensitieswall.dat"}
+        print(os.listdir(f"{self.dir_path}/history/"))
+        files_hist = os.listdir(f"{self.dir_path}/history/")
+        paths={"wall": [], "energy": []}
+        for file in files_hist:
+            paths["wall"].append(f"{self.dir_path}/history/{file}/wallForceswall.dat")
+            paths["energy"].append(f"{self.dir_path}/history/{file}/energyDensitieswall.dat")
+        #paths = {"wall": [f"{self.dir_path}/history/0/wallForceswall.dat"],
+        #            "energy": f"{self.dir_path}/history/0/energyDensitieswall.dat"}
         cols = {"wall": ["# Time", "pressureForceX", "pressureForceY", "pressureForceZ",
                             "viscousForceX", "viscousForceY", "viscousForceZ",
                             "capillaryForceX", "capillaryForceY", "capillaryForceZ"],
@@ -90,25 +96,31 @@ class Simulation:
         id_temp = []
         in_area = False
         time_step = spacing
+        print("HELLO \n\n\n\n", paths["wall"], "\n\n\n\n")
         for elem in cols:
+            print("elem", elem)
             print(f"opening {self.name}: {elem}")
-            df = pd.read_csv(paths[elem], delimiter="\t", index_col=False)
-            for index, row in tqdm(df.iterrows(), total=df.shape[0], desc=f"Processing {elem}", leave=False):
-                if np.abs(row[cols[elem][0]] - time_step) < delta:
-                    in_area = True
-                    temp_rows.append(row[cols[elem][0]])
-                    id_temp.append(index)
-                elif in_area:
-                    _, id_nearest = self.find_nearest(temp_rows, time_step)
-                    time_step += spacing
-                    in_area = False
-                    ids_rows[elem].append(id_temp[id_nearest])
-                    temp_rows = []
-                    id_temp = []
+            for id_hist, hist in enumerate(paths[elem]):
+                print("hist", hist, "\n\n")
+                df = pd.read_csv(hist, delimiter="\t", index_col=False)
+                for index, row in tqdm(df.iterrows(), total=df.shape[0], desc=f"Processing {elem}", leave=False):
+                    if np.abs(row[cols[elem][0]] - time_step) < delta:
+                        in_area = True
+                        temp_rows.append(row[cols[elem][0]])
+                        id_temp.append(index)
+                    elif in_area:
+                        _, id_nearest = self.find_nearest(temp_rows, time_step)
+                        time_step += spacing
+                        in_area = False
+                        ids_rows[elem].append(id_temp[id_nearest])
+                        temp_rows = []
+                        id_temp = []
+                
+                for id_list_rows, id_row in enumerate(ids_rows[elem]):
+                    for idl, line in enumerate(df):
+                        lists[elem][idl].append(df.loc[id_row][line])
+                ids_rows[elem] = []
             time_step = spacing
-            for id_list_rows, id_row in enumerate(ids_rows[elem]):
-                for idl, line in enumerate(df):
-                    lists[elem][idl].append(df.loc[id_row][line])
         #print(cols)
         if not lists["energy"][-1]:
             lists["energy"].pop()
