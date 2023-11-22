@@ -4,9 +4,9 @@ import util.Simulation as sim
 import os
 
 class Analysis:
-    def __init__(self, simulations_path: str, exceptions: list, init_run: bool = True):
+    def __init__(self, simulations_path: str, viewed_simulations: list, init_run: bool = True):
         self.simulations_path = simulations_path
-        self.exceptions = exceptions
+        self.viewed_simulations = viewed_simulations
         self.init_run=init_run
         self.longest_sim_id = None
         self.all_dirs_abs = self.get_dirs()
@@ -26,6 +26,7 @@ class Analysis:
 
     def get_dirs(self):
         all_dirs = [os.path.join(self.simulations_path, d) for d in os.listdir(self.simulations_path) if os.path.isdir(os.path.join(self.simulations_path, d)) and d != "Plots"]
+        print(all_dirs)
         return all_dirs
     
     def create_folder_plots(self):
@@ -44,9 +45,9 @@ class Analysis:
 
     def load_simulations(self) -> None:
         longest_sim = 0
-        
+        loaded_id = 0
         for id_dir, dir in enumerate(self.all_dirs_abs):
-            if dir.split(os.sep)[-1] in self.exceptions:
+            if dir.split(os.sep)[-1] not in self.viewed_simulations:
                 self.ignored_simulations.append(dir)
                 continue
             self.simulations.append(sim.Simulation(dir))
@@ -54,9 +55,11 @@ class Analysis:
             # TODO not done yet! Foundation for support of LW (get longest Simulation to get the time data)
             if longest_sim < self.simulations[-1].shape_df[0]:
                 longest_sim = self.simulations[-1].shape_df[0]
-                self.longest_sim_id = id_dir
+                self.longest_sim_id = loaded_id
+            loaded_id += 1
                 
     def postprocess(self):
+        print(self.longest_sim_id)
         time_series = self.simulations[self.longest_sim_id].df["Time"]
         print(len(time_series))
         print(self.simulations[self.longest_sim_id].name)

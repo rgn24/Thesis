@@ -34,37 +34,17 @@ def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
 
     
 def main(plot_list: list=[]):
-    #simulations_path = "M:\Data_Plots\GammaLongRun"
-    #simulations_path = "M:\Data_Plots\GammaLongRunCO"
-    #simulations_path = "M:\Data_Plots\BiggerRadius"
-    #simulations_path = "M:\Data_Plots\MobilityStudyEQUI"
-    simulations_path = "M:\Data_Plots\CA_FINAL"
-    #simulations_path = "M:\Data_Plots\MobilityStudyGAMMA"
-    exceptions = ["GM1", "GM2", "GM025", "1_0e12", "1_5e12", "1_75e12", "Gamma"]
-    
-    analysis = Analysis(simulations_path=simulations_path, exceptions=exceptions)
+    global_path = "M:\DataPlots_"
+    viewed_simulations = ["GM1", "GM2"]
+    #TODO add usage of file to load
+    analysis = Analysis(simulations_path=global_path, viewed_simulations=viewed_simulations)
     print(f"loaded {len(analysis.simulations)} simulations")
     analysis.print_info()
     analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log=None, save=False, show=True, n_th=10, y_limits=None, monocolor=True)
     analysis.visualize.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True, lw=15.0)
-    analysis.visualize.plot(xy=[["Time"], ["ca_first_element"]], log_log=None, save=False, show=True, n_th=1, y_limits=None, monocolor=True)
-    ##simulations = initialize_analysis(simulations_path=simulations_path, exceptions=exceptions)
-    ##print(f"loaded {len(simulations)} simulations")
-    ##
-    ##viz = vis.Visualization(simulations, dump_path=simulations_path)
-    ##
-    ##viz.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
-    ##viz.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
-    ##viz.plot(xy=[["Time"], ["ca_first_element"]], log_log=None, save=False, show=True, n_th=1, y_limits=None, monocolor=True)
-    
-    
-    #for plots in plot_list:
-    #    viz.plot(xy=plots, log_log="semilogx", save=False, show=True, n_th=1, y_limits=None, monocolor=True)
     
     
 if __name__ == "__main__":
-    #plotting_list = [[["Time"], ["f_p", "f_t", "f_w"]], 
-    #                 [["Time"], ["imbibition_height"]]]
     main()
     
     
