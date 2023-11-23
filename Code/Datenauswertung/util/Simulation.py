@@ -7,16 +7,25 @@ import util.Computations as comp
 
 from tqdm import tqdm
 
+from typing import Optional
 class Simulation:
-    def __init__(self, dir_path) -> None:
+    def __init__(self, dir_path, name_plot:Optional[str]=None) -> None:
         self.dir_path = dir_path
         self.name = os.path.basename(dir_path)
+        if name_plot is not None:
+            self.name_plot = name_plot
+        else:
+            self.name_plot = self.name
+            
+        
+        print(self.name_plot)
         self.shape_df = None
         self.init_run = True
         self.computed = False
         self.df = None
         self.history = self.set_history()
         print(self.history)
+        
         
         self.preprocess()
         self.process_dataframe()

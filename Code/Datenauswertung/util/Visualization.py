@@ -12,6 +12,8 @@ class Visualization:
         self.simulations = simulations
         self.dump_path = dump_path + "/Plots"
         self.longest = longest_id
+            
+        
         # dictionary to get better looking visuals of the plots for the supported quantities
         self.naming_dict = {"Time": [r"Time", r" in $s$"], 
                        "max(CACoordsX)": [r"position of meniscus valley", r" in $m$"], 
@@ -70,7 +72,6 @@ class Visualization:
         Returns:
             _type_: manipulated data set with only every log_10th element
         """
-        print(type(data_set))
         i = 0
         i_c = 0
         ret_arr = []
@@ -96,9 +97,9 @@ class Visualization:
             str: _description_
         """
         if len_xy > 1:
-            label_name = sim.name + " " + self.naming_dict[label_y][0]
+            label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
         else:
-            label_name = sim.name + " " + self.naming_dict[label_y][0]
+            label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
         return label_name
     
     def get_naming(self, arg:list) -> str:

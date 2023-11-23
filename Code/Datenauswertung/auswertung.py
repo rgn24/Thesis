@@ -35,16 +35,16 @@ def initialize_analysis(simulations_path: str="", exceptions: list=[])-> list:
     
 def main(plot_list: list=[]):
     global_path = "M:\DataPlots_"
-    viewed_simulations = ["GM1", "GM2"]
+    viewed_simulations = ["CA15", "1_75e12"]
+    naming = ["CA15", "GCA15"]
     #TODO add usage of file to load
-    analysis = Analysis(simulations_path=global_path, viewed_simulations=viewed_simulations)
+    analysis = Analysis(simulations_path=global_path, viewed_simulations=viewed_simulations, naming=naming)
     print(f"loaded {len(analysis.simulations)} simulations")
-    analysis.print_info()
-    analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log=None, save=False, show=True, n_th=10, y_limits=None, monocolor=True)
-    analysis.visualize.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, show=True, n_th=1, y_limits=None, monocolor=True, lw=15.0)
+    #analysis.print_info()
+    analysis.visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=True, show=True, n_th="log", y_limits=None, monocolor=True)
+    analysis.visualize.plot(xy=[["Time"], ["imbibition_height"]], log_log=None, save=True, show=True, n_th=1, y_limits=None, monocolor=True, lw=15.0)
     
     
 if __name__ == "__main__":
     main()
-    
     

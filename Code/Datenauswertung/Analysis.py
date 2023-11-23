@@ -2,9 +2,10 @@ from util.Simulation import Simulation
 import util.Visualization as vis
 import util.Simulation as sim
 import os
+from typing import Optional
 
 class Analysis:
-    def __init__(self, simulations_path: str, viewed_simulations: list, init_run: bool = True):
+    def __init__(self, simulations_path: str, viewed_simulations: list, init_run: bool = True, naming:Optional[list]=None):
         self.simulations_path = simulations_path
         self.viewed_simulations = viewed_simulations
         self.init_run=init_run
@@ -13,8 +14,16 @@ class Analysis:
         self.all_dirs_rel = [os.path.relpath(d, self.simulations_path) for d in self.all_dirs_abs]
         self.ignored_simulations = list()
         self.simulations = list()
+        if naming is not None:
+            self.sim_names = naming
+        else:
+            self.sim_names = None
+        print("NAME", self.sim_names)
+        
+        
         self.load_simulations()
         self.visualize = self.postprocess()
+        
         
         # Assumed Simulation parameters global!
         self.h_first_element = 3e-10
@@ -50,7 +59,10 @@ class Analysis:
             if dir.split(os.sep)[-1] not in self.viewed_simulations:
                 self.ignored_simulations.append(dir)
                 continue
-            self.simulations.append(sim.Simulation(dir))
+            if self.sim_names is not None:
+                self.simulations.append(sim.Simulation(dir_path=dir, name_plot=self.sim_names[loaded_id]))
+            else:
+                self.simulations.append(sim.Simulation(dir_path=dir))
             print(type(self.simulations[-1].shape_df))
             # TODO not done yet! Foundation for support of LW (get longest Simulation to get the time data)
             if longest_sim < self.simulations[-1].shape_df[0]:
