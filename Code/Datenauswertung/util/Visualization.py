@@ -181,7 +181,7 @@ class Visualization:
         if lw is not None:
             lw_data = self.lucas_washburn(self.simulations[longest_id].df[x], lw)
             #lw_data = lucas_washburn(t=datasets[longest_id].data[x])
-            plt.plot(self.simulations[longest_id].df[x], lw_data, "-", color="red", label="LW")
+            plt.plot(self.simulations[longest_id].df[x], lw_data, "-", color="black", label="LW")
         
         # plot settings
         if log_log =="loglog":

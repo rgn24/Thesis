@@ -18,13 +18,11 @@ class Simulation:
             self.name_plot = self.name
             
         
-        print(self.name_plot)
         self.shape_df = None
         self.init_run = True
         self.computed = False
         self.df = None
         self.history = self.set_history()
-        print(self.history)
         
         
         self.preprocess()

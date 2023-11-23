@@ -18,7 +18,6 @@ class Analysis:
             self.sim_names = naming
         else:
             self.sim_names = None
-        print("NAME", self.sim_names)
         
         
         self.load_simulations()
@@ -35,7 +34,7 @@ class Analysis:
 
     def get_dirs(self):
         all_dirs = [os.path.join(self.simulations_path, d) for d in os.listdir(self.simulations_path) if os.path.isdir(os.path.join(self.simulations_path, d)) and d != "Plots"]
-        print(all_dirs)
+        #print(all_dirs)
         return all_dirs
     
     def create_folder_plots(self):
@@ -63,7 +62,6 @@ class Analysis:
                 self.simulations.append(sim.Simulation(dir_path=dir, name_plot=self.sim_names[loaded_id]))
             else:
                 self.simulations.append(sim.Simulation(dir_path=dir))
-            print(type(self.simulations[-1].shape_df))
             # TODO not done yet! Foundation for support of LW (get longest Simulation to get the time data)
             if longest_sim < self.simulations[-1].shape_df[0]:
                 longest_sim = self.simulations[-1].shape_df[0]
@@ -71,10 +69,7 @@ class Analysis:
             loaded_id += 1
                 
     def postprocess(self):
-        print(self.longest_sim_id)
         time_series = self.simulations[self.longest_sim_id].df["Time"]
-        print(len(time_series))
-        print(self.simulations[self.longest_sim_id].name)
         visualize = vis.Visualization(self.simulations, dump_path=self.simulations_path, longest_id=self.longest_sim_id)
         
         

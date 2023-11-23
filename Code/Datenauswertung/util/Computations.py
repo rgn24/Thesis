@@ -26,7 +26,6 @@ class DataFrameUtilityMixin:
             capillary_radius (float): Radius of the Capillary
         """
         h = self["max(coordsX_Meniscus)"] - self["min(coordsX_Meniscus)"]
-        print(h)
         #FIXME: not working somehow; Radius is not defined in dataframe after computation... 
         self["radius"] = capillary_radius**2 /(2*h) + h
         
