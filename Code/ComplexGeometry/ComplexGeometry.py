@@ -1,5 +1,4 @@
 import numpy as np
-from util.util_functions import *
 import os
 
 class Bead:
@@ -44,6 +43,13 @@ class Bead:
         print("dxr", type(self.dx_R))
         self.length_segment = np.dot(2, self.dx_R)
         print("length", self.length_segment)
+        
+    def wedify(self, z: np.array, angle) -> np.array:
+
+        z_wedge = z * np.cos(np.deg2rad(angle / 2))
+        y_wedge = z * np.sin(np.deg2rad(angle / 2))
+        print(f"y: {y_wedge}, z: {z_wedge}")
+        return y_wedge, z_wedge
     
     def set_zR(self):
         """
@@ -70,7 +76,7 @@ class Bead:
         return [self.length_segment, self.r_o]
     
     def generate_verts3D(self):
-        y_wedge, z_wedge = wedify(self.z_R, self.angle)
+        y_wedge, z_wedge = self.wedify(self.z_R, self.angle)
         self.connection_y = y_wedge[0]
         self.max_y = y_wedge[1]
         self.connection_z = z_wedge[0]
