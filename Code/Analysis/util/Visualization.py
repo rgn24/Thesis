@@ -102,10 +102,12 @@ class Visualization:
         Returns:
             str: _description_
         """
+        #TODO just a quick fix, to get rid of redundant naming. Should be changed to a better solution
+        print(len_xy)
         if len_xy > 1:
             label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
         else:
-            label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
+            label_name = sim.name_plot #+ " " + self.naming_dict[label_y][0]
         return label_name
 
     def get_naming(self, arg: list) -> str:
@@ -119,6 +121,7 @@ class Visualization:
         return ret_str_axis
 
     def lucas_washburn(self, t, theta=None):
+        # TODO radius is as of now not variable. Should be changed
         r = 3e-9
         sigma = 0.072
         eta = 2e-6

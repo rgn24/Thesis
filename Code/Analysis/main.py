@@ -8,7 +8,7 @@ GLOBAL_PATH = "M:\FINAL_DATA"
 print(os.listdir(GLOBAL_PATH))
 
 gamma_comp = ["CA15", "GM025"]
-gamma_naming = [r"\textbf{Equi}", r"\textbf{Gamma}"]
+gamma_naming = [r"\textbf{equilibrium}", r"\textbf{out of equilibrium}"]
 gamma_naming_save_name = ["gammaComp_Forces", "gamma_Comp_imbibition_subplots"]
 gamma_comp_dict = {"viewed": gamma_comp, "naming": gamma_naming, "save_name": gamma_naming_save_name}
 
@@ -63,27 +63,27 @@ mesh_comp_naming = [r"\boldmath{$M1$}", r"\boldmath{$M2$}"]
 mesh_comp_save_name = ["_", "Mesh_Comparison_imbibition_subplots"]
 mesh_comp_dict = {"viewed": mesh_comp, "naming": mesh_comp_naming, "save_name": mesh_comp_save_name}
 
-VIEWED_SIMULATIONS = equi_LW_comp_dict["viewed"]
-NAMING_SIMULATIONS = equi_LW_comp_dict["naming"]
-SAVE_NAME = equi_LW_comp_dict["save_name"]
+VIEWED_SIMULATIONS = gamma_comp_dict["viewed"]
+NAMING_SIMULATIONS = gamma_comp_dict["naming"]
+SAVE_NAME = gamma_comp_dict["save_name"]
 
 if __name__ == '__main__':
     pass
     analysis = Analysis(GLOBAL_PATH, VIEWED_SIMULATIONS, NAMING_SIMULATIONS)
     analysis.load_simulations()
     vis = analysis.postprocess()
-    #vis.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th="log", y_limits=None, x_limits=[0,None], monocolor=True, linestyle="-", start_from=1)
+    vis.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th="log", y_limits=None, x_limits=[0,None], monocolor=True, linestyle="-", start_from=1, font_size=18)
     #vis.plot(xy=[["Time"], ["slope"]], log_log="semilogx", save=True, save_name="predicted_radius", show=True,
     #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
     #vis.plot(xy=[["Time"], ["ca_first_element", "ca_radius", "ca_cox_voinov"]], log_log="semilogx", save=False, save_name=SAVE_NAME[0],
     #         show=True,
     #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
 
-    #vis.plot(xy=[["imbibition_height"], ["f_p_over_f_t"]], log_log=None, save=True, save_name=f"{SAVE_NAME[0]}_fp_ft_over_imbibition", show=True, n_th=10, y_limits=[0,None], monocolor=True)
+    vis.plot(xy=[["imbibition_height"], ["f_p_over_f_t"]], log_log=None, save=True, save_name=f"{SAVE_NAME[0]}_fp_ft_over_imbibition", show=True, n_th=10, y_limits=[0,None], monocolor=True, font_size=18)
     #vis.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, save_name=SAVE_NAME[0], show=True, n_th=None, y_limits=None, monocolor=False, lw=1, start_from=2)
     #vis.plot(xy=[["Time"], ["slope"]], log_log=None, save=False, save_name=SAVE_NAME[0], show=True,
     #         n_th=None, y_limits=[0,2], monocolor=False,  start_from=2)
-    vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=14, log_log="loglog", save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)
+    vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=18, log_log="loglog", save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)
     #vis.subplot(xy=[["Time"], ["f_p_over_f_t"]], fig_size=(14, 7), font_size=14, log_log="loglog", save=True,
     #            save_name=SAVE_NAME[1]+"_fpft_over_time", show=True, n_th=20, y_limits=None, monocolor=False, active=True)
     #vis.plot(xy=[["Time"], ["ca_cox_voinov"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th=10, y_limits=None, monocolor=True)
