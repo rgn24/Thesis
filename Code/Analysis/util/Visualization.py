@@ -234,9 +234,11 @@ class Visualization:
                 name_y = ""
                 for substr in xy[1]: name_y += substr + "_"
                 plt.savefig(self.dump_path + xy[0][0] + "_over_" + name_y + ".pdf", bbox_inches='tight')
+                plt.savefig(self.dump_path + xy[0][0] + "_over_" + name_y + ".svg", bbox_inches='tight')
                 print("saved at: ", self.dump_path + xy[0][0] + "_over_" + name_y + ".pdf")
             else:
                 plt.savefig(self.dump_path + save_name + ".pdf", bbox_inches='tight')
+                plt.savefig(self.dump_path + save_name + ".svg", bbox_inches='tight')
         if show:
             plt.show()
 
@@ -367,8 +369,10 @@ class Visualization:
                 name_y = ""
                 for substr in xy[1]: name_y += substr + "_"
                 plt.savefig(self.dump_path + xy[0][0] + "_over_" + name_y + ".pdf", bbox_inches='tight')
+                plt.savefig(self.dump_path + xy[0][0] + "_over_" + name_y + ".svg", bbox_inches='tight')
                 print("saved at: ", self.dump_path + xy[0][0] + "_over_" + name_y + ".pdf")
             else:
                 plt.savefig(self.dump_path + save_name + ".pdf", bbox_inches='tight')
+                plt.savefig(self.dump_path + save_name + ".svg", bbox_inches='tight')
         if show:
             plt.show()
