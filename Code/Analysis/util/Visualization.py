@@ -243,10 +243,10 @@ class Visualization:
             plt.show()
 
     def subplot(self, xy: list = [[], []], font_size: int = 12, fig_size: Optional[tuple] = (14, 8),
-                log_log: Optional[str] = None, show: bool = True, save: bool = False, save_name: str = "",
+                show: bool = True, save: bool = False, save_name: str = "",
                 xy_name: Optional[list] = None, x_limits: Optional[list] = None, y_limits: Optional[list] = None,
-                secondary_y: Optional[int] = None, n_th=None, monocolor: bool = False, lw: Optional[float] = None,
-                longest_id: int = 0, start_from:int=0, active:bool=False):
+                n_th=None, monocolor: bool = False, lw: Optional[float] = None,
+                start_from:int=0, active:bool=False):
         # checks if the input is valid
         """Plot of the provided list of simulations.
 

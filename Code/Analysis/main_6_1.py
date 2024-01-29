@@ -1,12 +1,9 @@
 import os
-import sys
-script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
-print(script_directory)
 
 from util.Analysis import Analysis
-#GLOBAL_PATH = "M:\DataPlots_"
+GLOBAL_PATH = "M:\DataPlots_"
 
-GLOBAL_PATH = f"{script_directory}/data"
+GLOBAL_PATH = "data"
 #GLOBAL_PATH = "M:\Data_Plots\compMesh"
 
 
@@ -91,19 +88,5 @@ if __name__ == '__main__':
     
     # plot generation 
     
-    #vis.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th="log", y_limits=None, x_limits=[0,None], monocolor=True, linestyle="-", start_from=1, font_size=18)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log="semilogx", save=True, save_name="predicted_radius", show=True,
-    #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
-    #vis.plot(xy=[["Time"], ["ca_first_element", "ca_radius", "ca_cox_voinov"]], log_log="semilogx", save=False, save_name=SAVE_NAME[0],
-    #         show=True,
-    #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
-
-    #vis.plot(xy=[["imbibition_height"], ["f_p_over_f_t"]], log_log=None, save=True, save_name=f"{SAVE_NAME[0]}_fp_ft_over_imbibition", show=True, n_th=10, y_limits=[0,None], monocolor=True, font_size=18)
-    #vis.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, save_name=SAVE_NAME[0], show=True, n_th=None, y_limits=None, monocolor=False, lw=1, start_from=2)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log=None, save=False, save_name=SAVE_NAME[0], show=True,
-    #         n_th=None, y_limits=[0,2], monocolor=False,  start_from=2)
+    #vis.subplot (imbibition height over time, figuresize(inch(matplotlib default unit)), fontsize of the text, save the plot, name of the saved plot (without endig; default save as a pdf and svg), show the plot in runtime, every element, same color for plots of one dataset, starting point, scaliung factor for lw)
     vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=18, save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)
-    #vis.subplot(xy=[["Time"], ["f_p_over_f_t"]], fig_size=(14, 7), font_size=14, log_log="loglog", save=True,
-    #            save_name=SAVE_NAME[1]+"_fpft_over_time", show=True, n_th=20, y_limits=None, monocolor=False, active=True)
-    #vis.plot(xy=[["Time"], ["ca_cox_voinov"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th=10, y_limits=None, monocolor=True)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th=None, y_limits=None, monocolor=False)
