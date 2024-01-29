@@ -85,7 +85,6 @@ class Analysis:
         loaded_id = 0
         for id_dir, dir in enumerate(self.viewed_abs_path):
             self.simulations.append(sim.Simulation(dir_path=dir, name_plot=self.naming[id_dir], geom=self.geom[id_dir]))
-            # TODO not done yet! Foundation for support of LW (get longest Simulation to get the time data)
             if longest_sim < self.simulations[-1].shape_df[0]:
                 longest_sim = self.simulations[-1].shape_df[0]
                 self.longest_sim_id = id_dir
@@ -93,10 +92,8 @@ class Analysis:
             #self.simulations[-1].print_info()
 
     def postprocess(self):
-        time_series = self.simulations[self.longest_sim_id].df["Time"]
+        #time_series = self.simulations[self.longest_sim_id].df["Time"]
         visualize = vis.Visualization(self.simulations, dump_path=self.path, longest_id=self.longest_sim_id)
-
-        # visualize.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=False, show=True, n_th=1, y_limits=[0, 2e-9], monocolor=True)
         return visualize
 
 

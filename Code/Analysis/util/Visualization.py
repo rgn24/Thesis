@@ -45,7 +45,7 @@ class Visualization:
             len_y_sim (int, optional): number of simulaitons. Defaults to 1.
 
         Returns:
-            _type_: _description_
+            _type_: color and marker settings for the plot
         """
         markers = [".", "v", "s", "+", "x", "^", "<", ">", "D", "p", "P", "*", "h", "H", "o"]
         if monocolor:
@@ -100,9 +100,8 @@ class Visualization:
             sim (object, optional): util.Simulation Object to get info about the simulation data. Defaults to None.
 
         Returns:
-            str: _description_
+            str: label of the dataseries
         """
-        #TODO just a quick fix, to get rid of redundant naming. Should be changed to a better solution
         print(len_xy)
         if len_xy > 1:
             label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
@@ -151,8 +150,8 @@ class Visualization:
         """Plot of the provided list of simulations.
 
         Args:
-            xy (list, optional): _description_. Defaults to [[],[]].
-            font_size (int, optional): _description_. Defaults to 12.
+            xy (list, optional): list with the x, y datasets to plot. Defaults to [[],[]].
+            font_size (int, optional): font size of the texts in the plot. Defaults to 12.
             log_log (Optional[str], optional): logarithmic scaling of both or a single axis. Supported values are: "loglog", "semilogx", "semilogy" or None . Defaults to None.
             show (bool, optional): show the plot in runtime. Defaults to True.
             save (bool, optional): Save the plot. Defaults to False.
@@ -191,12 +190,12 @@ class Visualization:
 
         ## plotting LW, if wanted
         if lw is not None:
-            print("LONGEST", self.longest, "Name", self.simulations[self.longest].name, "shape",
-                  self.simulations[self.longest].df["Time"].shape)
+            #print("LONGEST", self.longest, "Name", self.simulations[self.longest].name, "shape",
+            #      self.simulations[self.longest].df["Time"].shape)
             lw_data = self.lucas_washburn(self.simulations[self.longest].df["Time"], lw)
             linear_data = self.linear_growth(self.simulations[self.longest].df[x], lw)
             # lw_data = lucas_washburn(t=datasets[longest_id].data[x])
-            print(len(lw_data))
+            #print(len(lw_data))
             plt.plot(self.simulations[self.longest].df[x], lw_data, "-", color="black", label=r"\textbf{Lucas-Washburn}-prediction")
             if log_log == "loglog":
                 plt.plot(self.simulations[self.longest].df[x], linear_data, "-", color="black", label=r"\textbf{$z\sim t$}", linestyle="dashed")
