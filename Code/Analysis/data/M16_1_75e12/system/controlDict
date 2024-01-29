@@ -1,0 +1,96 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.7.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     phaseFieldFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         1.e-6;
+
+deltaT          1e-15;
+
+writeControl    runTime;//runTime;//adjustableRunTime;
+
+writeInterval   1e-10;//5e-10;
+
+purgeWrite      0;
+
+writeFormat     ascii;//binary;//
+
+writePrecision  12;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable no;
+
+adjustTimeStep  yes;
+
+maxCo           0.0002; //0.000125, 0.0005, 0.002
+
+maxDeltaT       2e-14; // 1e-15
+
+//loadBalance     no;
+
+
+libs (
+"libbalancedRefinementFvMesh.so"
+"libenergyDensityFields.so"
+"libphaseFieldFO.so"
+);
+
+functions
+( 
+    
+    energyDensities
+    {
+        type           energyDensityFields;
+        historyPatch   wall;
+        phaseFieldName CWater;
+    }
+
+    history
+    {
+        type energyDensityFields;
+        functionObjectLibs
+        (
+            "libenergyDensityFields.so"
+        );
+    }
+    
+    wallForcesDown
+    {
+        type           wallForces;
+        historyPatch   wall;
+        log            yes;
+        fields            yes;
+    } 
+);
+
+InfoSwitches
+{
+        allowSystemOperations 1;
+}
+
+// ************************************************************************* //

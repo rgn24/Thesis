@@ -1,0 +1,162 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      dynamicMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//dynamicFvMesh loadBalanceDynamicPolyRefinementFvMesh;
+//dynamicFvMesh dynamicPolyMultiRefinementFvMesh;
+dynamicFvMesh staticFvMesh;
+
+dynamicRefineFvMeshCoeffs
+{
+    // Load Balancing settings
+
+    // Balance if imbalance < imbalanceTrigger
+    // default 0.8
+    // A value of 1.0 will force LB code to run every timestep if AMR was done
+    /*imbalanceTrigger 0.8;
+
+    // Decomposition settings
+    method          hierarchical;
+    hierarchicalCoeffs
+    {
+        n       ( 4 4 3 );
+        delta   0.001;
+        order   xyz;
+    }*/
+
+    // Global refinement configuration
+
+    // Maximum refinement level
+    maxRefinementLevel   1;
+
+    // Refine every refineInterval timesteps during solver runs
+    refineInterval       10;
+
+    // Unrefine every 3 refinement cycles
+    nRefinementCyclesUntilUnrefine     10;
+
+    // Allow unrefinement while running pre-processing utilities
+    unrefineInUpdateMesh true;
+
+    // Separate refinement/unrefinement steps. Switched off by default, meaning
+    // that it should be safe to perform both at the same time
+    separateUpdates false;
+
+    // Dynamic mesh procedure controls
+
+    // Activate Polyhedral refinement engine
+    active yes;
+
+    // Maximum number of cells to allow (not strictly controlled)
+    maxCells             20000000;
+
+    // Number of buffer layers between refinement levels
+    nRefinementBufferLayers        3;
+
+    // Number of buffer layers for unrefinement in order to run away from the
+    // region that is getting refined at the same time in order to avoid point
+    // level inconsistencies
+    nUnrefinementBufferLayers      4;
+
+    // Whether to use edge based consistency check. Needed when one allows more
+    // than 2 refinement levels (automatically switched on)
+    edgeBasedConsistency           yes;
+
+    refinements
+    (
+        
+	basedOnAlpha
+	{
+	    // ...
+
+	    refinementSelection
+	    {
+		type        codedFieldBoundsRefinement;
+		fieldName   target; // Name of the scalar field to create
+		// Initial bounding values
+		lowerBound  0;
+		upperBound  1;
+
+		cellPointCellSmoothing off;
+
+		// Refine if alpha1 > 80% of MaxAlpha and if x > 0.5m, unrefine otherwise
+		// The following will be in its own scope, so everything
+		// you define here will be lost as soon as we leave this scope
+		code
+		#{
+		    Info << "** dynamic code **" << endl;
+		    auto CWater = mesh().lookupObject<volScalarField>("CWater");
+		    auto CAir = mesh().lookupObject<volScalarField>("CAir");
+            auto PhiWater = mesh().lookupObject<volScalarField>("PhiWater");
+		    //auto PhiAir = mesh().lookupObject<volScalarField>("PhiAir");
+                    auto U = mesh().lookupObject<volVectorField>("U");
+                    volScalarField magU = mag(U);
+                    auto maxU = gMax(magU);
+                    auto minU = gMin(magU);
+                    volScalarField magPhi = mag(PhiWater);
+                    auto maxPhi = gMax(magPhi);
+                    auto minPhi = gMin(magPhi);
+                    
+		    forAll(field_, ci)
+		    {
+		        field_[ci] =  magU[ci] > minU + 0.8*(maxU-minU) ? lowerBound_+0.01 : 0 ;
+                field_[ci] =  magPhi[ci] > minPhi + 0.8*(maxPhi-minPhi) ? lowerBound_+0.01 : 0 ;
+		    }
+		    //lowerBound_ = 1;
+		    // upperBound_ of 1 is good
+		    // Also dict() returns a copy of the basedOnAlpha dictionary
+		#};
+	    }
+	}        
+
+
+
+ref1
+        {
+            // Refinement-specific configuration
+            maxRefinementLevel   1;
+            refinementSelection
+            {
+                // Refines around field interface
+                type        interfaceRefinement;
+                fieldNames  ( CWater CAir );
+                innerRefLayers  2;
+                outerRefLayers  2;
+
+                // Whether to use cell-point-cell smoothing for selecting
+                // refinement candidates. Off by default
+                cellPointCellSmoothing off;
+            }
+        }
+
+        /*ref2
+        {
+            // Refinement-specific configuration
+            //maxRefinementLevel   1;
+            refinementSelection
+            {
+                type        protectedInitialRefinement;
+
+                // Whether to use cell-point-cell smoothing for selecting
+                // refinement candidates. Off by default
+                cellPointCellSmoothing off;
+            }
+        }*/
+
+    );
+}
+
+// ************************************************************************* //

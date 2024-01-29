@@ -102,7 +102,6 @@ class Visualization:
         Returns:
             str: label of the dataseries
         """
-        print(len_xy)
         if len_xy > 1:
             label_name = sim.name_plot + " " + self.naming_dict[label_y][0]
         else:
@@ -124,7 +123,6 @@ class Visualization:
         r = 3e-9
         sigma = 0.072
         eta = 2e-6
-        print("t", len(t))
         theta = np.deg2rad(theta)
         lw = np.sqrt((r * sigma * np.cos(theta) / (2 * eta)) * t)
         lw[0] = np.nan

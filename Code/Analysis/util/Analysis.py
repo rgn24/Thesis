@@ -8,13 +8,13 @@ class Analysis:
         self.path = path
         self.viewed = viewed
         self.naming = self.set_naming(naming)
-        print("Naming Viewed", self.naming, self.viewed)
+        #print("Naming Viewed", self.naming, self.viewed)
 
 
         self.all_dirs_abs = self.get_dirs()
         self.all_dirs_rel = [os.path.relpath(d, self.path) for d in self.all_dirs_abs]
         self.viewed_abs_path = self.set_abs_viewed_path()
-        print("ABS", self.viewed_abs_path)
+        #print("ABS", self.viewed_abs_path)
         self.ignored_simulations = []
         self.simulations = []
 

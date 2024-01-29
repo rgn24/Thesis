@@ -3,9 +3,8 @@ import os
 from util.Analysis import Analysis
 GLOBAL_PATH = "M:\DataPlots_"
 
-GLOBAL_PATH = "M:\FINAL_DATA"
+GLOBAL_PATH = "data"
 #GLOBAL_PATH = "M:\Data_Plots\compMesh"
-print(os.listdir(GLOBAL_PATH))
 
 
 #comparison of Equilibrium and out of equilibrium (CA15)
