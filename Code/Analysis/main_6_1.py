@@ -1,11 +1,9 @@
 import os
+import sys
+script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+print(script_directory)
 
 from util.Analysis import Analysis
-GLOBAL_PATH = "M:\DataPlots_"
-
-GLOBAL_PATH = "data"
-#GLOBAL_PATH = "M:\Data_Plots\compMesh"
-
 
 #comparison of Equilibrium and out of equilibrium (CA15)
 gamma_comp = ["CA15", "GM025"]
@@ -81,12 +79,23 @@ VIEWED_SIMULATIONS = data_sets["viewed"]
 NAMING_SIMULATIONS = data_sets["naming"]
 SAVE_NAME = data_sets["save_name"]
 
+# Global path to the datasets!
+# GLOBAL_PATH
+#    |--- Simulation_1
+#    |--- Simulation_2
+#    |--- Simulation_xxx
+#    |--- Plots
+#
+# A folder called Plots will be created in the data(GLOBAL_PATH) folder, if not already present.
+GLOBAL_PATH = f"{script_directory}/data"
+
 if __name__ == '__main__':
     analysis = Analysis(GLOBAL_PATH, VIEWED_SIMULATIONS, NAMING_SIMULATIONS)
     analysis.load_simulations()
     vis = analysis.postprocess()
+    # to see availabe data, uncomment the following line
+    #analysis.simulations[0].print_info()
     
     # plot generation 
     
-    #vis.subplot (imbibition height over time, figuresize(inch(matplotlib default unit)), fontsize of the text, save the plot, name of the saved plot (without endig; default save as a pdf and svg), show the plot in runtime, every element, same color for plots of one dataset, starting point, scaliung factor for lw)
     vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=18, save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)

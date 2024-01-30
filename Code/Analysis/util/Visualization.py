@@ -118,13 +118,16 @@ class Visualization:
                 ret_str_axis += self.naming_dict[elem][0] + self.naming_dict[elem][1]
         return ret_str_axis
 
-    def lucas_washburn(self, t, theta=None):
+    def lucas_washburn(self, t, theta=None, radius=None):
         # TODO radius is as of now not variable. Should be changed
-        r = 3e-9
+        if radius is None:
+            radius = 3e-9
+        else:
+            radius = radius
         sigma = 0.072
         eta = 2e-6
         theta = np.deg2rad(theta)
-        lw = np.sqrt((r * sigma * np.cos(theta) / (2 * eta)) * t)
+        lw = np.sqrt((radius * sigma * np.cos(theta) / (2 * eta)) * t)
         lw[0] = np.nan
         return 0.042 * lw
 
@@ -188,12 +191,8 @@ class Visualization:
 
         ## plotting LW, if wanted
         if lw is not None:
-            #print("LONGEST", self.longest, "Name", self.simulations[self.longest].name, "shape",
-            #      self.simulations[self.longest].df["Time"].shape)
-            lw_data = self.lucas_washburn(self.simulations[self.longest].df["Time"], lw)
+            lw_data = self.lucas_washburn(self.simulations[self.longest].df[x], lw, self.simulations[self.longest].geom["radius"])
             linear_data = self.linear_growth(self.simulations[self.longest].df[x], lw)
-            # lw_data = lucas_washburn(t=datasets[longest_id].data[x])
-            #print(len(lw_data))
             plt.plot(self.simulations[self.longest].df[x], lw_data, "-", color="black", label=r"\textbf{Lucas-Washburn}-prediction")
             if log_log == "loglog":
                 plt.plot(self.simulations[self.longest].df[x], linear_data, "-", color="black", label=r"\textbf{$z\sim t$}", linestyle="dashed")
@@ -309,7 +308,7 @@ class Visualization:
 
         ## plotting LW, if wanted
         if lw is not None:
-            lw_data = self.lucas_washburn(self.simulations[self.longest].df[x], lw)
+            lw_data = self.lucas_washburn(self.simulations[self.longest].df[x], lw, self.simulations[self.longest].geom["radius"])
             linear_data = self.linear_growth(self.simulations[self.longest].df[x], lw)
             # lw_data = lucas_washburn(t=datasets[longest_id].data[x])
             ax1.plot(self.simulations[self.longest].df[x], lw_data, "-", color="black", label=r"\textbf{Lucas-Washburn}-prediction")
@@ -319,18 +318,6 @@ class Visualization:
                      label=r"\textbf{$z\sim t$}", linestyle="dashed")
         if not active:
             ax2.loglog()
-
-        # plot settings
-        ##if log_log =="loglog":
-        ##    plt.loglog()
-        ##elif log_log == "semilogx":
-        ##    plt.semilogx()
-        ##elif log_log == "semilogy":
-        ##    plt.semilogy()
-        ##elif log_log is None:
-        ##    pass
-        ##else:
-        ##    print("input unknown valid inputs are: loglog, semilogx, semilogy or no input. Not scaling was applied")
 
         if xy_name is not None:
             ax1.set_xlabel(xy_name[0], fontsize=font_size)

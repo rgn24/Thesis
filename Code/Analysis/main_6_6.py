@@ -74,7 +74,7 @@ mesh_comp_dict = {"viewed": mesh_comp, "naming": mesh_comp_naming, "save_name": 
 
 
 # choose the comparison you want to plot
-data_sets = equi_comp_dict
+data_sets = bigR_comp_dict
 VIEWED_SIMULATIONS = data_sets["viewed"]
 NAMING_SIMULATIONS = data_sets["naming"]
 SAVE_NAME = data_sets["save_name"]
@@ -98,19 +98,4 @@ if __name__ == '__main__':
     
     # plot generation 
     
-    #vis.plot(xy=[["Time"], ["f_p", "f_t", "f_w"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th="log", y_limits=None, x_limits=[0,None], monocolor=True, linestyle="-", start_from=1, font_size=18)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log="semilogx", save=True, save_name="predicted_radius", show=True,
-    #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
-    #vis.plot(xy=[["Time"], ["ca_first_element", "ca_radius", "ca_cox_voinov"]], log_log="semilogx", save=False, save_name=SAVE_NAME[0],
-    #         show=True,
-    #         n_th="log", y_limits=None, monocolor=True, linestyle="-")
-
-    #vis.plot(xy=[["imbibition_height"], ["f_p_over_f_t"]], log_log=None, save=True, save_name=f"{SAVE_NAME[0]}_fp_ft_over_imbibition", show=True, n_th=10, y_limits=[0,None], monocolor=True, font_size=18)
-    #vis.plot(xy=[["Time"], ["imbibition_height"]], log_log="loglog", save=False, save_name=SAVE_NAME[0], show=True, n_th=None, y_limits=None, monocolor=False, lw=1, start_from=2)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log=None, save=False, save_name=SAVE_NAME[0], show=True,
-    #         n_th=None, y_limits=[0,2], monocolor=False,  start_from=2)
-    #vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=18, save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)
-    vis.subplot(xy=[["Time"], ["f_p_over_f_t"]], fig_size=(14, 7), font_size=14, save=True,
-                save_name=SAVE_NAME[1]+"_fpft_over_time", show=True, n_th=20, y_limits=None, monocolor=False, active=True)
-    #vis.plot(xy=[["Time"], ["ca_cox_voinov"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th=10, y_limits=None, monocolor=True)
-    #vis.plot(xy=[["Time"], ["slope"]], log_log="semilogx", save=True, save_name=SAVE_NAME[0], show=True, n_th=None, y_limits=None, monocolor=False)
+    vis.subplot(xy=[["Time"], ["imbibition_height"]], fig_size=(14, 7), font_size=18, save=True, save_name=SAVE_NAME[1], show=True, n_th=1, x_limits=None, monocolor=True, start_from=2, lw=1)
